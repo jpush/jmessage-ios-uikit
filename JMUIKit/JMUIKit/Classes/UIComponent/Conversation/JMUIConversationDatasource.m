@@ -58,11 +58,9 @@
     [_allMessageDic setObject:model forKey:model.message.msgId];
     [_allMessageIdArr addObject:model.message.msgId];
   }
-//  [_messageListTable reloadData];
-//  [self scrollToBottomAnimated:NO];
 }
 
-- (void)addMessage:(JMUIChatModel *)model {
+- (void)appendMessage:(JMUIChatModel *)model {
   if (model.isTime) {
     [_allMessageDic setObject:model forKey:model.timeId];
     [_allMessageIdArr addObject:model.timeId];
@@ -70,7 +68,25 @@
     [_allMessageDic setObject:model forKey:model.message.msgId];
     [_allMessageIdArr addObject:model.message.msgId];
   }
-//  [self addCellToTabel];
+}
+
+- (void)appendTimeData:(NSTimeInterval)timeInterVal {
+  JMUIChatModel *timeModel =[[JMUIChatModel alloc] init];
+  timeModel.timeId = [self getTimeId];
+  timeModel.isTime = YES;
+  timeModel.messageTime = @(timeInterVal);
+  timeModel.contentHeight = [timeModel getTextHeight];
+  [self appendMessage:timeModel];
+}
+
+- (void)addmessage:(JMUIChatModel *)model toIndex:(NSInteger)index {
+  if (model.isTime) {
+    [_allMessageIdArr insertObject:model atIndex:index];
+    [_allMessageDic setObject:model forKey:model.timeId];
+  } else {
+    [_allMessageIdArr insertObject:model atIndex:index];
+    [_allMessageDic setObject:model forKey:model.message.msgId];
+  }
 }
 
 //比较和上一条消息时间超过5分钟之内增加时间model
@@ -103,6 +119,36 @@
   } else {
     NSLog(@"不用显示时间");
   }
+}
+
+- (JMUIChatModel *)getMessageWithIndex:(NSInteger)index {
+  NSString *messageId = _allMessageIdArr[index];
+  JMUIChatModel *model = _allMessageDic[messageId];
+  return model;
+}
+
+- (JMUIChatModel *)getMessageWithMsgId:(NSString *)messageId {
+  return  _allMessageDic[messageId];
+}
+
+- (JMUIChatModel *)lastMessage {
+  NSString *messageId = [_allMessageIdArr lastObject];
+  JMUIChatModel *lastModel = _allMessageDic[messageId];
+  return lastModel;
+}
+
+- (NSInteger)messageCount {
+  return _allMessageIdArr.count;
+}
+
+- (BOOL)noMoreHistoryMessage {
+  return isNoMoreHistoryMsg;
+}
+
+- (NSIndexPath *)tableIndexPathWithMessageId:(NSString *)messageId {
+  NSInteger index = [_allMessageIdArr indexOfObject:messageId];
+  NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
+  return indexPath;
 }
 
 - (NSString *)getTimeId {

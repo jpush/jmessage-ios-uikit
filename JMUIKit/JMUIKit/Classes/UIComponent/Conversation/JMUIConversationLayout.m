@@ -47,12 +47,25 @@
   });
 }
 
+- (void)appendTableViewCellAtLastIndex:(NSInteger)index {
+  NSIndexPath *path = [NSIndexPath indexPathForRow:index - 1 inSection:0];
+  [_messageListTable beginUpdates];
+  [_messageListTable insertRowsAtIndexPaths:@[path] withRowAnimation:UITableViewRowAnimationNone];
+  [_messageListTable endUpdates];
+  dispatch_async(dispatch_get_main_queue(), ^{
+    [self messageTableScrollToIndeCell:index];
+  });
+}
+
 - (void)messageTableScrollToBottom:(BOOL)animation {
   if (_messageListTable.contentSize.height + _messageListTable.contentInset.top > _messageListTable.frame.size.height)
   {
     CGPoint offset = CGPointMake(0, _messageListTable.contentSize.height - _messageListTable.frame.size.height);
     [_messageListTable setContentOffset:offset animated:animation];
   }
+}
 
+- (void)messageTableScrollToIndeCell:(NSInteger)index {
+  [_messageListTable scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:index-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
 }
 @end

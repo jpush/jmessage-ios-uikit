@@ -25,7 +25,59 @@
                   fristPageMsgNumber:(NSInteger)pageNumber
                                limit:(NSInteger)limit;
 
+/**
+ *  清除所有的消息缓存
+ */
 - (void)cleanCache;
-- (void)addMessage:(JMUIChatModel *)model;
+
+/**
+ *  把消息拼接到消息列表的最后
+ */
+- (void)appendMessage:(JMUIChatModel *)model;
+
+/**
+ *  拼接时间消息到消息列表最后一行
+ */
+- (void)appendTimeData:(NSTimeInterval)timeInterVal;
+
+/**
+ *  插入消息到消息列表的指定行
+ */
+- (void)addmessage:(JMUIChatModel *)model toIndex:(NSInteger)index;
+
+/**
+ *  分页获取历史消息
+ */
 - (void)getPageMessage;
+
+/**
+ *  返回消息数量
+ */
+- (NSInteger)messageCount;
+
+/**
+ *  用于标识还有没更多历史消息
+ */
+- (BOOL)noMoreHistoryMessage;
+
+/**
+ *  通过index 获取置顶消息model
+ */
+- (JMUIChatModel *)getMessageWithIndex:(NSInteger)index;
+
+/**
+ *  通过msgId 获取指定消息model
+ */
+- (JMUIChatModel *)getMessageWithMsgId:(NSString *)messageId;
+
+/**
+ *  返回最后一条消息
+ */
+- (JMUIChatModel *)lastMessage;
+
+/**
+ *  返回 指定message 的位置
+ */
+- (NSIndexPath *)tableIndexPathWithMessageId:(NSString *)messageId;
+
 @end

@@ -502,6 +502,7 @@
 				626863591C3A0CCC00D5B1F9 /* Controller */,
 				6268635D1C3A0CCC00D5B1F9 /* Model */,
 				626863601C3A0CCC00D5B1F9 /* View */,
+				62DEF0391C3B9B2D00619647 /* Config */,
 				62DEF0331C3B65DE00619647 /* JMUIConversationDatasource.h */,
 				62DEF0341C3B65DE00619647 /* JMUIConversationDatasource.m */,
 				62DEF0361C3B7F6500619647 /* JMUIConversationLayout.h */,
@@ -589,6 +590,13 @@
 				6268638C1C3A3B1300D5B1F9 /* JMUIFootTableViewCell.xib */,
 			);
 			path = FootTableCell;
+			sourceTree = "<group>";
+		};
+		62DEF0391C3B9B2D00619647 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		62FFF5B91C2BB48500CF7D9F = {

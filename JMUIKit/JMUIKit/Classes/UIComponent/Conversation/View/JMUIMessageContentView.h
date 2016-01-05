@@ -15,5 +15,6 @@
 @property(strong, nonatomic)UILabel *textContent;
 @property(strong, nonatomic)UIImageView *voiceConent;
 @property(strong, nonatomic)JMSGMessage *message;
+
 - (void)setMessageContentWith:(JMSGMessage *)message;
 @end

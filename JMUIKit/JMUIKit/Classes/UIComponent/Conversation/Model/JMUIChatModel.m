@@ -103,7 +103,6 @@ static NSInteger const voiceBubbleHeight = 50;
       break;
     case kJMSGContentTypeEventNotification:
     {
-//      [self getTextSizeWithString:[((JMSGEventContent *)self.message.content) showEventNotification]];
       [self getNotificationWithString:[((JMSGEventContent *)self.message.content) showEventNotification]];
     }
       break;

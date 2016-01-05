@@ -14,7 +14,23 @@
 
 - (instancetype)initWithInputView:(JMUIInputView *)inputView tableView:(UITableView *)tableview;
 
+/**
+ *  插入cells 到Tableview指定的行
+ */
 - (void)insertTableViewCellAtRows:(NSArray *)addIndexs;
 
+/**
+ *  添加cells 拼接到Tableview最后
+ */
+- (void)appendTableViewCellAtLastIndex:(NSInteger)index;
+
+/**
+ *  滚动TableView到最后一行
+ */
 - (void)messageTableScrollToBottom:(BOOL)animation;
+
+/**
+ *  滚动TableView 到指定的一行的底部
+ */
+- (void)messageTableScrollToIndeCell:(NSInteger)index;
 @end

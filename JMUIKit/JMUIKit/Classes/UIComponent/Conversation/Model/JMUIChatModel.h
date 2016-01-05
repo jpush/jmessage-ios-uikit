@@ -23,6 +23,7 @@
 
 @property (nonatomic, assign) BOOL isErrorMessage;
 @property (nonatomic, strong) NSError *messageError;
+
 - (float)getTextHeight;
 - (void)setupImageSize;
 

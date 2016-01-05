@@ -94,19 +94,6 @@
 }
 
 - (void)drawRect:(CGRect)rect {
-//  if (self.startRecordButton){
-//    //        self.startRecordButton.frame = CGRectMake(self.voiceButton.frame.origin.x+self.voiceButton.frame.size.width+5, 7.5, self.textView.bounds.size.width+5, 30);
-//    [self.startRecordButton mas_remakeConstraints:^(MASConstraintMaker *make) {
-//      
-//    }];
-//    [self.startRecordButton mas_makeConstraints:^(MASConstraintMaker *make) {
-//      make.height.mas_equalTo(30);
-//      make.top.mas_equalTo(self).with.offset(7.5);
-//      make.left.mas_equalTo(self.voiceButton.mas_right).with.offset(5);
-//      make.right.mas_equalTo(self.addButton.mas_left).with.offset(-5);
-//    }];
-//    return;
-//  }
   self.voiceButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleTopMargin;
   [self.voiceButton setImage:[UIImage jmui_imageInResource:@"voice_toolbar"] forState:UIControlStateNormal];
   self.textView.delegate = self;
@@ -114,9 +101,7 @@
   self.textView.returnKeyType = UIReturnKeySend;
   UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapClick:)];
   [self addGestureRecognizer:gesture];
-//  [self setFrame:CGRectMake(0, kApplicationHeight+kStatusBarHeight-45, self.bounds.size.width, 45)];
-  
-  //    self.startRecordButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+
   self.startRecordButton = [UIButton new];
   
   [self.startRecordButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -136,7 +121,6 @@
   
   UIWindow *window =(UIWindow *)[UIApplication sharedApplication].keyWindow;
   self.recordAnimationView=[[JMUIRecordAnimationView alloc]initWithFrame:CGRectMake((kApplicationWidth - 140)/2, (kScreenHeight -kNavigationBarHeight - kTabBarHeight - 140)/2, 140, 140)];
-//  self.recordAnimationView = []
   [window addSubview:self.recordAnimationView];
 }
 
