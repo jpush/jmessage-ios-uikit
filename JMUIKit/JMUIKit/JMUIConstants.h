@@ -37,6 +37,8 @@
 
 
 #endif /* JMUIConstants_h */
+// color
+#define kSeparationLineColor UIColorFromRGB(0xd0d0d0)
 
 
 #define kuserName @"userName"

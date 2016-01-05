@@ -7,10 +7,12 @@
 //
 
 #import "AppDelegate.h"
-#import "RootViewController.h"
 #import "JMUIConversationViewController.h"
 #import <JMessage/JMessage.h>
 #import "JMUIConstants.h"
+#import "JMUIGroupDetailViewController.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+Add.h"
 
 @interface AppDelegate ()
 
@@ -39,16 +41,24 @@
   }
   [self registerJPushStatusNotification];
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-  self.window.rootViewController = [JMUIConversationViewController new];
+  JMUIConversationViewController *rootVC = [JMUIConversationViewController new];
+//  JMUIGroupDetailViewController *rootVC = [UIViewController new];
+  rootVC.view.backgroundColor = [UIColor whiteColor];
+  UINavigationController *NVC = [[UINavigationController alloc] initWithRootViewController:rootVC];
+  [MBProgressHUD showMessage:@"正在登录" toView:rootVC.view];
+  self.window.rootViewController = NVC;
   [self.window makeKeyAndVisible];
   
-//  [self performSelector:@selector(loginUser) withObject:Nil afterDelay:6];
+  [self performSelector:@selector(loginUser) withObject:Nil afterDelay:6];
   return YES;
 }
 
 - (void)loginUser {
   if ([[NSUserDefaults standardUserDefaults] objectForKey:kuserName]) {
     JMUIConversationViewController *rootVC = [JMUIConversationViewController new];
+//    JMUIGroupDetailViewController *rootVC = [JMUIGroupDetailViewController new];
+
+    UINavigationController *NVC = [[UINavigationController alloc] initWithRootViewController:rootVC];
     self.window.rootViewController = rootVC;
   } else {
     [JMSGUser loginWithUsername:@"6661" password:@"111111" completionHandler:^(id resultObject, NSError *error) {
@@ -58,7 +68,10 @@
       }
       [[NSUserDefaults standardUserDefaults] setObject:@"6661" forKey:kuserName];
       JMUIConversationViewController *rootVC = [JMUIConversationViewController new];
-      self.window.rootViewController = rootVC;
+//      JMUIGroupDetailViewController *rootVC = [JMUIGroupDetailViewController new];
+
+      UINavigationController *NVC = [[UINavigationController alloc] initWithRootViewController:rootVC];
+      self.window.rootViewController = NVC;
     }];
   }
 }

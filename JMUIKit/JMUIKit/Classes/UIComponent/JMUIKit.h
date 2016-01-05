@@ -15,6 +15,7 @@
 #import <JMessage/JMessage.h>
 #import "MBProgressHUD.h"
 #import "MBProgressHUD+Add.h"
+#import "JMUIViewUtil.h"
 
 //#import "JMUI"
 #endif /* JMUIKIT_h */
