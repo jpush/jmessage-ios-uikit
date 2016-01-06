@@ -33,13 +33,6 @@
                         <outlet property="delegate" destination="-1" id="ftR-zS-Ggm"/>
                     </connections>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P89-Tl-Rf8">
-                    <rect key="frame" x="85" y="178" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
-                    <connections>
-                        <action selector="clickToScrollbottom:" destination="-1" eventType="touchUpInside" id="d2Y-zB-Yj4"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>

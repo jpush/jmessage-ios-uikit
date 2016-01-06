@@ -13,7 +13,7 @@
 #import "JMUIGroupDetailViewController.h"
 #import "MBProgressHUD.h"
 #import "MBProgressHUD+Add.h"
-
+#import "RootViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -41,35 +41,13 @@
   }
   [self registerJPushStatusNotification];
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-  UIViewController *rootVC = [UIViewController new];
+  RootViewController *rootVC = [RootViewController new];
   rootVC.view.backgroundColor = [UIColor whiteColor];
   UINavigationController *NVC = [[UINavigationController alloc] initWithRootViewController:rootVC];
-  [MBProgressHUD showMessage:@"正在登录" toView:rootVC.view];
   self.window.rootViewController = NVC;
   [self.window makeKeyAndVisible];
   
-  [self performSelector:@selector(loginUser) withObject:Nil afterDelay:6];
   return YES;
-}
-
-- (void)loginUser {
-  if ([[NSUserDefaults standardUserDefaults] objectForKey:kuserName]) {
-    JMUIConversationViewController *rootVC = [JMUIConversationViewController new];
-    UINavigationController *NVC = [[UINavigationController alloc] initWithRootViewController:rootVC];
-    self.window.rootViewController = NVC;
-  } else {
-    [JMSGUser loginWithUsername:@"6661" password:@"111111" completionHandler:^(id resultObject, NSError *error) {
-      if (error) {
-        NSLog(@" 登录出错");
-        return ;
-      }
-      [[NSUserDefaults standardUserDefaults] setObject:@"6661" forKey:kuserName];
-      JMUIConversationViewController *rootVC = [JMUIConversationViewController new];
-
-      UINavigationController *NVC = [[UINavigationController alloc] initWithRootViewController:rootVC];
-      self.window.rootViewController = NVC;
-    }];
-  }
 }
 
 - (void)registerJPushStatusNotification {

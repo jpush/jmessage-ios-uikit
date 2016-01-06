@@ -33,4 +33,6 @@
  *  滚动TableView 到指定的一行的底部
  */
 - (void)messageTableScrollToIndeCell:(NSInteger)index;
+
+
 @end

@@ -13,9 +13,10 @@
 #import "JMUIConversationDatasource.h"
 #import "JMUIConversationLayout.h"
 
-#define interval 60*2 //static =const
+
 #define messageTableColor [UIColor colorWithRed:236/255.0 green:237/255.0 blue:240/255.0 alpha:1]
 
+static NSInteger const interval = 60*2;
 static NSInteger const messagePageNumber = 25;
 static NSInteger const messagefristPageNumber = 20;
 
@@ -29,10 +30,6 @@ static NSInteger const messagefristPageNumber = 20;
 @end
 
 @implementation JMUIConversationViewController
-- (IBAction)clickToScrollbottom:(id)sender {
-  [_conversationLayout messageTableScrollToBottom:NO];
-}
-
 - (void)viewDidLoad {
   [super viewDidLoad];
   self.navigationController.navigationBar.translucent = NO;
@@ -50,10 +47,11 @@ static NSInteger const messagefristPageNumber = 20;
 }
 
 - (void)setupData {
-//  _allMessageDic = @{}.mutableCopy;
-//  _allMessageIdArr = @[].mutableCopy;
-
-  [self getSingleConversation];
+  _messageDatasource = [[JMUIConversationDatasource alloc] initWithConversation:_conversation
+                                                               showTimeInterval:60 * 5
+                                                             fristPageMsgNumber:20
+                                                                          limit:11];
+  [_messageDatasource getPageMessage];
 }
 
 - (void)setupAllViews {
@@ -62,30 +60,6 @@ static NSInteger const messagefristPageNumber = 20;
   _conversationLayout = [[JMUIConversationLayout alloc] initWithInputView:_inputView tableView:_messageListTable];
 }
 
-- (void)getSingleConversation {
-  JMSGConversation *conversation = [JMSGConversation singleConversationWithUsername:@"5558"];
-  if (conversation == nil) {
-    [JMSGConversation createSingleConversationWithUsername:@"5558" completionHandler:^(id resultObject, NSError *error) {
-      if (error) {
-        NSLog(@"创建会话失败");
-        return ;
-      }
-       _conversation = resultObject;
-      _messageDatasource = [[JMUIConversationDatasource alloc] initWithConversation:_conversation
-                                                                   showTimeInterval:60 * 5
-                                                                 fristPageMsgNumber:20
-                                                                              limit:11];
-      [_messageDatasource getPageMessage];
-    }];
-  } else {
-    _conversation = conversation;
-    _messageDatasource = [[JMUIConversationDatasource alloc] initWithConversation:_conversation
-                                                                 showTimeInterval:60 * 5
-                                                               fristPageMsgNumber:20
-                                                                            limit:11];
-    [_messageDatasource getPageMessage];
-  }
-}
 - (void)appendMessage:(JMUIChatModel *)model {
   [_messageDatasource appendMessage:model];
   [_conversationLayout appendTableViewCellAtLastIndex:[_messageDatasource messageCount]];
@@ -197,7 +171,6 @@ static NSInteger const messagefristPageNumber = 20;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//  return [_allMessageIdArr count];
   return [_messageDatasource messageCount];
 }
 
@@ -262,6 +235,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 
 - (void)sendText :(NSString *)text {
   NSLog(@"send text");
+  
   JMSGMessage *message = nil;
   JMSGTextContent *textContent = [[JMSGTextContent alloc] initWithText:text];
   JMUIChatModel *model = [[JMUIChatModel alloc] init];
