@@ -21,10 +21,10 @@ JMUIToolBarDelegate,
 JMUIMoreViewDelegate,
 JMessageDelegate
 >
+
 @property (strong, nonatomic)JMSGConversation *conversation;
-@property (weak, nonatomic) IBOutlet JMUIInputView *inputView;
-@property (weak, nonatomic) IBOutlet UITableView *messageListTable;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *inputViewToBottom;
+@property (strong, nonatomic)JMUIInputView *inputView;
+@property (strong, nonatomic)UITableView *messageListTable;
 
 /**
  *  管理录音工具对象

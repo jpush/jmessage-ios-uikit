@@ -12,7 +12,7 @@
 #import "JMUIFileManager.h"
 #import "JMUIConversationDatasource.h"
 #import "JMUIConversationLayout.h"
-
+#import "UIView+JMUI.h"
 
 #define messageTableColor [UIColor colorWithRed:236/255.0 green:237/255.0 blue:240/255.0 alpha:1]
 
@@ -34,8 +34,7 @@ static NSInteger const messagefristPageNumber = 20;
   [super viewDidLoad];
   self.navigationController.navigationBar.translucent = NO;
   self.title = @"Conversation";
-  _inputView.delegate = self;
-  
+  [self addNotification];
   [self setupData];
   [self setupAllViews];
 
@@ -44,6 +43,18 @@ static NSInteger const messagefristPageNumber = 20;
 
 - (void)viewDidLayoutSubviews {
   [_conversationLayout messageTableScrollToBottom:NO];
+}
+
+- (void)addNotification {
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(inputKeyboardWillShow:)
+   
+                                               name:UIKeyboardWillShowNotification
+                                             object:nil];
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(inputKeyboardWillHide:)
+                                               name:UIKeyboardWillHideNotification
+                                             object:nil];
 }
 
 - (void)setupData {
@@ -55,9 +66,27 @@ static NSInteger const messagefristPageNumber = 20;
 }
 
 - (void)setupAllViews {
+  _messageListTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kApplicationWidth, self.view.frame.size.height - 45)];
+  _messageListTable.delegate = self;
+  _messageListTable.dataSource = self;
+  _inputView = [JMUIInputView new];
+  
+  [self.view addSubview: _messageListTable];
+  [self.view addSubview:_inputView];
+  _inputView.delegate = self;
   _messageListTable.separatorStyle = UITableViewCellSeparatorStyleNone;
   _messageListTable.backgroundColor = messageTableColor;
-  _conversationLayout = [[JMUIConversationLayout alloc] initWithInputView:_inputView tableView:_messageListTable];
+  _conversationLayout = [[JMUIConversationLayout alloc] initWithInputView:_inputView
+                                                                tableView:_messageListTable];
+  
+  UITapGestureRecognizer *gesture =[[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                           action:@selector(tapClick:)];
+  [self.view addGestureRecognizer:gesture];
+}
+
+- (void)tapClick:(UIGestureRecognizer *)gesture
+{
+  [_inputView hideKeyboard];
 }
 
 - (void)appendMessage:(JMUIChatModel *)model {
@@ -377,6 +406,16 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 }
 
 #pragma -mark JMUIMoreViewDelegate
+
+
+#pragma -mark Notification listener
+- (void)inputKeyboardWillShow:(NSNotification *)notification{
+  [_conversationLayout showMoreView];
+}
+
+- (void)inputKeyboardWillHide:(NSNotification *)notification {
+  [_conversationLayout hideMoreView];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -14,4 +14,6 @@
 @property(strong, nonatomic)JMUIMoreView *moreView;
 
 @property(weak, nonatomic)id<JMUIMoreViewDelegate, JMUIToolBarDelegate>delegate;
+
+- (void)hideKeyboard;
 @end

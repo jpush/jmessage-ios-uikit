@@ -14,6 +14,24 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
   self = [super initWithCoder:aDecoder];
   if (self) {
+    _toolBar = NIB(JMUIInputToolbar);
+    _toolBar.delegate = _delegate;
+    _moreView = NIB(JMUIMoreView);
+    _moreView.delegate = _delegate;
+    
+    [self performSelector:@selector(addtoolbar) withObject:nil afterDelay:0.02];
+  }
+  return self;
+}
+
+- (id)init {
+  self = [super init];
+  if (self) {
+    _toolBar = NIB(JMUIInputToolbar);
+    _toolBar.delegate = _delegate;
+    _moreView = NIB(JMUIMoreView);
+    _moreView.delegate = _delegate;
+    [self performSelector:@selector(addtoolbar) withObject:nil afterDelay:0.02];
   }
   return self;
 }
@@ -42,4 +60,7 @@
   _moreView.delegate = delegate;
 }
 
+- (void)hideKeyboard {
+  [_toolBar.textView resignFirstResponder];
+}
 @end

@@ -35,4 +35,13 @@
 - (void)messageTableScrollToIndeCell:(NSInteger)index;
 
 
+/**
+ *  显示弹出moreView
+ */
+- (void)showMoreView;
+
+/**
+ *  隐藏弹出moreView
+ */
+- (void)hideMoreView;
 @end

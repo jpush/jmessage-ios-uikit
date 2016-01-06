@@ -7,7 +7,10 @@
 //
 
 #import "JMUIConversationLayout.h"
+#import "UIView+JMUI.h"
 
+static NSInteger const inputViewHeight = 297;
+static CGFloat const animationDuration = 0.25;
 
 @interface JMUIConversationLayout (){
   UITableView *_messageListTable;
@@ -22,7 +25,14 @@
 {
   if (self = [self init]) {
     _inputView = inputView;
+    _inputView.jmui_height = inputViewHeight;
+    _inputView.jmui_width = kApplicationWidth;
+    _inputView.jmui_left = 0;
+    _inputView.jmui_top = kApplicationHeight - 45;
+    
     _messageListTable = tableview;
+    _messageListTable.jmui_height = [_messageListTable superview].jmui_height - 45;
+    
     _inputView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleTopMargin;
   }
   return self;
@@ -61,11 +71,31 @@
   if (_messageListTable.contentSize.height + _messageListTable.contentInset.top > _messageListTable.frame.size.height)
   {
     CGPoint offset = CGPointMake(0, _messageListTable.contentSize.height - _messageListTable.frame.size.height);
-    [_messageListTable setContentOffset:offset animated:animation];
+    if (animation) {
+      [UIView animateWithDuration:animationDuration animations:^{
+        [_messageListTable setContentOffset:offset];
+      }];
+    } else {
+      [_messageListTable setContentOffset:offset animated:animation];
+      [_messageListTable setContentOffset:offset];
+    }
   }
 }
 
 - (void)messageTableScrollToIndeCell:(NSInteger)index {
   [_messageListTable scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:index-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+}
+
+- (void)showMoreView {
+    _inputView.jmui_top = kApplicationHeight - _inputView.jmui_height - 64;
+    _messageListTable.jmui_height = [_messageListTable superview].jmui_height - _inputView.jmui_height;
+    [self messageTableScrollToBottom:YES];
+}
+
+- (void)hideMoreView {
+  [UIView animateWithDuration:animationDuration animations:^{
+    _inputView.jmui_top = [_inputView superview].jmui_height - 45;
+    _messageListTable.jmui_height = [_messageListTable superview].jmui_height - 45;
+  }];
 }
 @end
