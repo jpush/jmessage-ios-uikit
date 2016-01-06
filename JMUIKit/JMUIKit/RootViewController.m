@@ -13,7 +13,7 @@
 #import "JMUIConversationDatasource.h"
 #import "MBProgressHUD.h"
 #import "MBProgressHUD+Add.h"
-
+#import "MyConversationViewController.h"
 @interface RootViewController ()
 
 @end
@@ -60,18 +60,14 @@
         return ;
       }
       
-      JMUIConversationViewController *conversationVC = [JMUIConversationViewController new];
+      MyConversationViewController *conversationVC = [MyConversationViewController new];
       conversationVC.conversation = (JMSGConversation *)resultObject;
-      UINavigationController *NVC = [[UINavigationController alloc] initWithRootViewController:conversationVC];
-      AppDelegate *appDelegate = (AppDelegate *) [UIApplication sharedApplication].delegate;
-      appDelegate.window.rootViewController = NVC;
+      [self.navigationController pushViewController:conversationVC animated:YES];
     }];
   } else {
-    JMUIConversationViewController *conversationVC = [JMUIConversationViewController new];
+    MyConversationViewController *conversationVC = [MyConversationViewController new];
     conversationVC.conversation = conversation;
-    UINavigationController *NVC = [[UINavigationController alloc] initWithRootViewController:conversationVC];
-    AppDelegate *appDelegate = (AppDelegate *) [UIApplication sharedApplication].delegate;
-    appDelegate.window.rootViewController = NVC;
+    [self.navigationController pushViewController:conversationVC animated:YES];
   }
 }
 

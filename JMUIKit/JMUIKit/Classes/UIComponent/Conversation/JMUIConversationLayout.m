@@ -28,7 +28,7 @@ static CGFloat const animationDuration = 0.25;
     _inputView.jmui_height = inputViewHeight;
     _inputView.jmui_width = kApplicationWidth;
     _inputView.jmui_left = 0;
-    _inputView.jmui_top = kApplicationHeight - 45;
+    _inputView.jmui_top = [_inputView superview].jmui_height - 45;
     
     _messageListTable = tableview;
     _messageListTable.jmui_height = [_messageListTable superview].jmui_height - 45;
@@ -84,6 +84,10 @@ static CGFloat const animationDuration = 0.25;
 
 - (void)messageTableScrollToIndeCell:(NSInteger)index {
   [_messageListTable scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:index-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+}
+
+- (void)hideKeyboard {
+  [_inputView hideKeyboard];
 }
 
 - (void)showMoreView {

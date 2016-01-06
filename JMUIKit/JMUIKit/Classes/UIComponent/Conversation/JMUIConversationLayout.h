@@ -36,6 +36,11 @@
 
 
 /**
+ *  隐藏keyboard
+ */
+- (void)hideKeyboard;
+
+/**
  *  显示弹出moreView
  */
 - (void)showMoreView;

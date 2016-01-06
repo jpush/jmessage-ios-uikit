@@ -84,6 +84,7 @@
 		626863A11C3A3B1300D5B1F9 /* JMUIGroupMemberCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 626863951C3A3B1300D5B1F9 /* JMUIGroupMemberCollectionViewCell.xib */; };
 		62C01FD31C3CB4440028B936 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C01FD11C3CB4440028B936 /* RootViewController.m */; };
 		62C01FD41C3CB4440028B936 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C01FD21C3CB4440028B936 /* RootViewController.xib */; };
+		62C020A41C3D133C0028B936 /* MyConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C020A31C3D133C0028B936 /* MyConversationViewController.m */; };
 		62DEF0351C3B65DE00619647 /* JMUIConversationDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DEF0341C3B65DE00619647 /* JMUIConversationDatasource.m */; };
 		62DEF0381C3B7F6500619647 /* JMUIConversationLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DEF0371C3B7F6500619647 /* JMUIConversationLayout.m */; };
 		62DEF0481C3BBF1000619647 /* JMUIFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DEF0411C3BBF1000619647 /* JMUIFileManager.m */; };
@@ -237,6 +238,8 @@
 		62C01FD01C3CB4440028B936 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		62C01FD11C3CB4440028B936 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		62C01FD21C3CB4440028B936 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		62C020A21C3D133C0028B936 /* MyConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyConversationViewController.h; sourceTree = "<group>"; };
+		62C020A31C3D133C0028B936 /* MyConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyConversationViewController.m; sourceTree = "<group>"; };
 		62DEF0331C3B65DE00619647 /* JMUIConversationDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIConversationDatasource.h; sourceTree = "<group>"; };
 		62DEF0341C3B65DE00619647 /* JMUIConversationDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIConversationDatasource.m; sourceTree = "<group>"; };
 		62DEF0361C3B7F6500619647 /* JMUIConversationLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIConversationLayout.h; sourceTree = "<group>"; };
@@ -635,6 +638,8 @@
 				62C01FD01C3CB4440028B936 /* RootViewController.h */,
 				62C01FD11C3CB4440028B936 /* RootViewController.m */,
 				62C01FD21C3CB4440028B936 /* RootViewController.xib */,
+				62C020A21C3D133C0028B936 /* MyConversationViewController.h */,
+				62C020A31C3D133C0028B936 /* MyConversationViewController.m */,
 				62FFF5D11C2BB48500CF7D9F /* Assets.xcassets */,
 				62FFF5D61C2BB48500CF7D9F /* Info.plist */,
 				6254C4911C2D24F400098DB0 /* LaunchScreen.storyboard */,
@@ -917,6 +922,7 @@
 				626863201C3985AC00D5B1F9 /* ThumbImageCollectionViewCell.m in Sources */,
 				626862CB1C3982CF00D5B1F9 /* JMUIInputToolbar.m in Sources */,
 				6268639E1C3A3B1300D5B1F9 /* JMUIGroupDetailFooterReusableView.m in Sources */,
+				62C020A41C3D133C0028B936 /* MyConversationViewController.m in Sources */,
 				6254C4C91C31062C00098DB0 /* MBProgressHUD+Add.m in Sources */,
 				626863111C3985AC00D5B1F9 /* JCHATPhotoSelectViewController.m in Sources */,
 				6254C4841C2D146300098DB0 /* NSDate+Utilities.m in Sources */,

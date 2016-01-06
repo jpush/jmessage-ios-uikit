@@ -86,7 +86,8 @@ static NSInteger const messagefristPageNumber = 20;
 
 - (void)tapClick:(UIGestureRecognizer *)gesture
 {
-  [_inputView hideKeyboard];
+  [_conversationLayout hideKeyboard];
+  [_conversationLayout hideMoreView];
 }
 
 - (void)appendMessage:(JMUIChatModel *)model {
@@ -301,6 +302,20 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath {
   [self appendMessage:model];
 }
 
+- (void)pressMoreBtnClick :(UIButton *)btn {
+  [_conversationLayout hideKeyboard];
+  [_conversationLayout showMoreView];
+}
+
+- (void)noPressmoreBtnClick :(UIButton *)btn {
+  [_conversationLayout hideKeyboard];
+  [_conversationLayout showMoreView];
+}
+- (void)pressVoiceBtnToHideKeyBoard {
+  [_conversationLayout hideMoreView];
+  [_conversationLayout hideKeyboard];
+}
+
 - (void)didStartRecordingVoiceAction {
   NSLog(@"Action - didStartRecordingVoice");
   [self startRecord];
@@ -414,7 +429,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 }
 
 - (void)inputKeyboardWillHide:(NSNotification *)notification {
-  [_conversationLayout hideMoreView];
+
 }
 
 - (void)didReceiveMemoryWarning {
