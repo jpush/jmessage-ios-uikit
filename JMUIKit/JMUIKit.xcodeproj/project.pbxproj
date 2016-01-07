@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6254C47D1C2D11DF00098DB0 /* JMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6254C47C1C2D11DF00098DB0 /* JMessage.framework */; };
-		6254C4841C2D146300098DB0 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254C4831C2D146300098DB0 /* NSDate+Utilities.m */; };
 		6254C4921C2D24F400098DB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6254C4911C2D24F400098DB0 /* LaunchScreen.storyboard */; };
 		6254C4941C2D27AD00098DB0 /* JMUIKitResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6254C4931C2D27AD00098DB0 /* JMUIKitResource.bundle */; };
-		6254C4971C2D2AF200098DB0 /* UIImage+JMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254C4961C2D2AF200098DB0 /* UIImage+JMUI.m */; };
 		6254C4C91C31062C00098DB0 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254C4C51C31062C00098DB0 /* MBProgressHUD+Add.m */; };
 		6254C4CA1C31062C00098DB0 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6254C4C61C31062C00098DB0 /* MBProgressHUD.bundle */; };
 		6254C4CB1C31062C00098DB0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254C4C81C31062C00098DB0 /* MBProgressHUD.m */; };
@@ -37,10 +35,6 @@
 		626862CE1C3982CF00D5B1F9 /* JMUIMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 626862BB1C3982CF00D5B1F9 /* JMUIMoreView.m */; };
 		626862CF1C3982CF00D5B1F9 /* JMUIMoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 626862BC1C3982CF00D5B1F9 /* JMUIMoreView.xib */; };
 		626862D01C3982CF00D5B1F9 /* JMUIRecordAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 626862BE1C3982CF00D5B1F9 /* JMUIRecordAnimationView.m */; };
-		626862D11C3982CF00D5B1F9 /* XHVoiceCommonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 626862C51C3982CF00D5B1F9 /* XHVoiceCommonHelper.m */; };
-		626862D21C3982CF00D5B1F9 /* XHVoiceRecordHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 626862C71C3982CF00D5B1F9 /* XHVoiceRecordHelper.m */; };
-		626862D31C3982CF00D5B1F9 /* XHVoiceRecordHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 626862C91C3982CF00D5B1F9 /* XHVoiceRecordHUD.m */; };
-		626862E11C39830E00D5B1F9 /* JMUIStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 626862DD1C39830E00D5B1F9 /* JMUIStringUtils.m */; };
 		6268630B1C3985AC00D5B1F9 /* JCHATAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 626862E71C3985AC00D5B1F9 /* JCHATAlbumViewController.m */; };
 		6268630C1C3985AC00D5B1F9 /* JCHATAlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 626862E81C3985AC00D5B1F9 /* JCHATAlbumViewController.xib */; };
 		6268630D1C3985AC00D5B1F9 /* JCHATPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 626862EA1C3985AC00D5B1F9 /* JCHATPhotoBrowserViewController.m */; };
@@ -65,13 +59,6 @@
 		626863201C3985AC00D5B1F9 /* ThumbImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 626863091C3985AC00D5B1F9 /* ThumbImageCollectionViewCell.m */; };
 		626863211C3985AC00D5B1F9 /* ThumbImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6268630A1C3985AC00D5B1F9 /* ThumbImageCollectionViewCell.xib */; };
 		6268633B1C3989DA00D5B1F9 /* JMUIMessageTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6268633A1C3989DA00D5B1F9 /* JMUIMessageTextView.m */; };
-		626863711C3A0CCC00D5B1F9 /* JMUIConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6268635B1C3A0CCC00D5B1F9 /* JMUIConversationViewController.m */; };
-		626863731C3A0CCC00D5B1F9 /* JMUIChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6268635F1C3A0CCC00D5B1F9 /* JMUIChatModel.m */; };
-		626863741C3A0CCC00D5B1F9 /* JMUIMessageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 626863621C3A0CCC00D5B1F9 /* JMUIMessageContentView.m */; };
-		626863761C3A0CCC00D5B1F9 /* JMUILoadMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 626863671C3A0CCC00D5B1F9 /* JMUILoadMessageTableViewCell.m */; };
-		626863791C3A0CCC00D5B1F9 /* JMUIMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6268636D1C3A0CCC00D5B1F9 /* JMUIMessageTableViewCell.m */; };
-		6268637A1C3A0CCC00D5B1F9 /* JMUIShowTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6268636F1C3A0CCC00D5B1F9 /* JMUIShowTimeCell.m */; };
-		6268637B1C3A0CCC00D5B1F9 /* JMUIShowTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 626863701C3A0CCC00D5B1F9 /* JMUIShowTimeCell.xib */; };
 		626863961C3A3B1300D5B1F9 /* JMUIGroupDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 626863831C3A3B1300D5B1F9 /* JMUIGroupDetailViewController.m */; };
 		626863971C3A3B1300D5B1F9 /* JMUIGroupDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 626863841C3A3B1300D5B1F9 /* JMUIGroupDetailViewController.xib */; };
 		6268639A1C3A3B1300D5B1F9 /* JMUIFootTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6268638B1C3A3B1300D5B1F9 /* JMUIFootTableViewCell.m */; };
@@ -85,20 +72,33 @@
 		62C01FD31C3CB4440028B936 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C01FD11C3CB4440028B936 /* RootViewController.m */; };
 		62C01FD41C3CB4440028B936 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C01FD21C3CB4440028B936 /* RootViewController.xib */; };
 		62C020A41C3D133C0028B936 /* MyConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C020A31C3D133C0028B936 /* MyConversationViewController.m */; };
-		62DEF0351C3B65DE00619647 /* JMUIConversationDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DEF0341C3B65DE00619647 /* JMUIConversationDatasource.m */; };
-		62DEF0381C3B7F6500619647 /* JMUIConversationLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DEF0371C3B7F6500619647 /* JMUIConversationLayout.m */; };
-		62DEF0481C3BBF1000619647 /* JMUIFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DEF0411C3BBF1000619647 /* JMUIFileManager.m */; };
-		62DEF0491C3BBF1000619647 /* JMUIReuseCellMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DEF0431C3BBF1000619647 /* JMUIReuseCellMaker.m */; };
-		62DEF04A1C3BBF1000619647 /* JMUISendMsgController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DEF0451C3BBF1000619647 /* JMUISendMsgController.m */; };
-		62DEF04B1C3BBF1000619647 /* JMUISendMsgManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DEF0471C3BBF1000619647 /* JMUISendMsgManager.m */; };
+		62C0217F1C3E2F3F0028B936 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C0216A1C3E2F3F0028B936 /* NSDate+Utilities.m */; };
+		62C021801C3E2F3F0028B936 /* NSString+JMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C0216C1C3E2F3F0028B936 /* NSString+JMUI.m */; };
+		62C021811C3E2F3F0028B936 /* UIImage+JMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C0216E1C3E2F3F0028B936 /* UIImage+JMUI.m */; };
+		62C021821C3E2F3F0028B936 /* UIView+JMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C021701C3E2F3F0028B936 /* UIView+JMUI.m */; };
+		62C021831C3E2F3F0028B936 /* JMUIFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C021731C3E2F3F0028B936 /* JMUIFileManager.m */; };
+		62C021841C3E2F3F0028B936 /* JMUIReuseCellMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C021751C3E2F3F0028B936 /* JMUIReuseCellMaker.m */; };
+		62C021851C3E2F3F0028B936 /* JMUISendMsgController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C021771C3E2F3F0028B936 /* JMUISendMsgController.m */; };
+		62C021861C3E2F3F0028B936 /* JMUISendMsgManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C021791C3E2F3F0028B936 /* JMUISendMsgManager.m */; };
+		62C021871C3E2F3F0028B936 /* JMUIViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C0217B1C3E2F3F0028B936 /* JMUIViewUtil.m */; };
+		62C021881C3E2F3F0028B936 /* JMUIStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C0217E1C3E2F3F0028B936 /* JMUIStringUtils.m */; };
+		62C021AB1C3E2FD10028B936 /* JMUIConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C0218D1C3E2FD10028B936 /* JMUIConversationViewController.m */; };
+		62C021AC1C3E2FD10028B936 /* JMUIConversationDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C0218F1C3E2FD10028B936 /* JMUIConversationDatasource.m */; };
+		62C021AD1C3E2FD10028B936 /* JMUIConversationLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C021911C3E2FD10028B936 /* JMUIConversationLayout.m */; };
+		62C021AE1C3E2FD10028B936 /* JMUIChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C021941C3E2FD10028B936 /* JMUIChatModel.m */; };
+		62C021AF1C3E2FD10028B936 /* JMUIMessageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C021971C3E2FD10028B936 /* JMUIMessageContentView.m */; };
+		62C021B01C3E2FD10028B936 /* XHVoiceCommonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C0219E1C3E2FD10028B936 /* XHVoiceCommonHelper.m */; };
+		62C021B11C3E2FD10028B936 /* XHVoiceRecordHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C021A01C3E2FD10028B936 /* XHVoiceRecordHelper.m */; };
+		62C021B21C3E2FD10028B936 /* XHVoiceRecordHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C021A21C3E2FD10028B936 /* XHVoiceRecordHUD.m */; };
+		62C021B31C3E2FD10028B936 /* JMUILoadMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C021A51C3E2FD10028B936 /* JMUILoadMessageTableViewCell.m */; };
+		62C021B41C3E2FD10028B936 /* JMUIMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C021A71C3E2FD10028B936 /* JMUIMessageTableViewCell.m */; };
+		62C021B51C3E2FD10028B936 /* JMUIShowTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C021A91C3E2FD10028B936 /* JMUIShowTimeCell.m */; };
+		62C021B61C3E2FD10028B936 /* JMUIShowTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C021AA1C3E2FD10028B936 /* JMUIShowTimeCell.xib */; };
 		62FFF5C71C2BB48500CF7D9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FFF5C61C2BB48500CF7D9F /* main.m */; };
 		62FFF5CA1C2BB48500CF7D9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FFF5C91C2BB48500CF7D9F /* AppDelegate.m */; };
 		62FFF5D21C2BB48500CF7D9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62FFF5D11C2BB48500CF7D9F /* Assets.xcassets */; };
 		62FFF5E01C2BB48500CF7D9F /* JMUIKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FFF5DF1C2BB48500CF7D9F /* JMUIKitTests.m */; };
 		62FFF5EB1C2BB48500CF7D9F /* JMUIKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FFF5EA1C2BB48500CF7D9F /* JMUIKitUITests.m */; };
-		62FFF5FE1C2BB6EF00CF7D9F /* UIView+JMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FFF5FD1C2BB6EF00CF7D9F /* UIView+JMUI.m */; };
-		62FFF6191C2BD93300CF7D9F /* JMUIViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FFF6181C2BD93300CF7D9F /* JMUIViewUtil.m */; };
-		62FFF61C1C2BDEF800CF7D9F /* NSString+JMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FFF61B1C2BDEF800CF7D9F /* NSString+JMUI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,14 +119,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6254C4691C2BE42200098DB0 /* JMUIConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMUIConstants.h; sourceTree = "<group>"; };
 		6254C47C1C2D11DF00098DB0 /* JMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMessage.framework; sourceTree = "<group>"; };
-		6254C4821C2D146300098DB0 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
-		6254C4831C2D146300098DB0 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
 		6254C4911C2D24F400098DB0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6254C4931C2D27AD00098DB0 /* JMUIKitResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JMUIKitResource.bundle; sourceTree = "<group>"; };
-		6254C4951C2D2AF200098DB0 /* UIImage+JMUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JMUI.h"; sourceTree = "<group>"; };
-		6254C4961C2D2AF200098DB0 /* UIImage+JMUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JMUI.m"; sourceTree = "<group>"; };
 		6254C4A11C30CE2200098DB0 /* JMUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMUIKit.h; sourceTree = "<group>"; };
 		6254C4C41C31062C00098DB0 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
 		6254C4C51C31062C00098DB0 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
@@ -160,17 +155,6 @@
 		626862BC1C3982CF00D5B1F9 /* JMUIMoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMUIMoreView.xib; sourceTree = "<group>"; };
 		626862BD1C3982CF00D5B1F9 /* JMUIRecordAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIRecordAnimationView.h; sourceTree = "<group>"; };
 		626862BE1C3982CF00D5B1F9 /* JMUIRecordAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIRecordAnimationView.m; sourceTree = "<group>"; };
-		626862C11C3982CF00D5B1F9 /* XHFoundationMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHFoundationMacro.h; sourceTree = "<group>"; };
-		626862C21C3982CF00D5B1F9 /* XHMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHMacro.h; sourceTree = "<group>"; };
-		626862C31C3982CF00D5B1F9 /* XHUIKitMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHUIKitMacro.h; sourceTree = "<group>"; };
-		626862C41C3982CF00D5B1F9 /* XHVoiceCommonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHVoiceCommonHelper.h; sourceTree = "<group>"; };
-		626862C51C3982CF00D5B1F9 /* XHVoiceCommonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHVoiceCommonHelper.m; sourceTree = "<group>"; };
-		626862C61C3982CF00D5B1F9 /* XHVoiceRecordHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHVoiceRecordHelper.h; sourceTree = "<group>"; };
-		626862C71C3982CF00D5B1F9 /* XHVoiceRecordHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHVoiceRecordHelper.m; sourceTree = "<group>"; };
-		626862C81C3982CF00D5B1F9 /* XHVoiceRecordHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHVoiceRecordHUD.h; sourceTree = "<group>"; };
-		626862C91C3982CF00D5B1F9 /* XHVoiceRecordHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHVoiceRecordHUD.m; sourceTree = "<group>"; };
-		626862DC1C39830E00D5B1F9 /* JMUIStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIStringUtils.h; sourceTree = "<group>"; };
-		626862DD1C39830E00D5B1F9 /* JMUIStringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIStringUtils.m; sourceTree = "<group>"; };
 		626862E61C3985AC00D5B1F9 /* JCHATAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCHATAlbumViewController.h; sourceTree = "<group>"; };
 		626862E71C3985AC00D5B1F9 /* JCHATAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCHATAlbumViewController.m; sourceTree = "<group>"; };
 		626862E81C3985AC00D5B1F9 /* JCHATAlbumViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JCHATAlbumViewController.xib; sourceTree = "<group>"; };
@@ -207,19 +191,6 @@
 		6268630A1C3985AC00D5B1F9 /* ThumbImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThumbImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		626863391C3989DA00D5B1F9 /* JMUIMessageTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIMessageTextView.h; sourceTree = "<group>"; };
 		6268633A1C3989DA00D5B1F9 /* JMUIMessageTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIMessageTextView.m; sourceTree = "<group>"; };
-		6268635A1C3A0CCC00D5B1F9 /* JMUIConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIConversationViewController.h; sourceTree = "<group>"; };
-		6268635B1C3A0CCC00D5B1F9 /* JMUIConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIConversationViewController.m; sourceTree = "<group>"; };
-		6268635E1C3A0CCC00D5B1F9 /* JMUIChatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIChatModel.h; sourceTree = "<group>"; };
-		6268635F1C3A0CCC00D5B1F9 /* JMUIChatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIChatModel.m; sourceTree = "<group>"; };
-		626863611C3A0CCC00D5B1F9 /* JMUIMessageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIMessageContentView.h; sourceTree = "<group>"; };
-		626863621C3A0CCC00D5B1F9 /* JMUIMessageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIMessageContentView.m; sourceTree = "<group>"; };
-		626863661C3A0CCC00D5B1F9 /* JMUILoadMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUILoadMessageTableViewCell.h; sourceTree = "<group>"; };
-		626863671C3A0CCC00D5B1F9 /* JMUILoadMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUILoadMessageTableViewCell.m; sourceTree = "<group>"; };
-		6268636C1C3A0CCC00D5B1F9 /* JMUIMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIMessageTableViewCell.h; sourceTree = "<group>"; };
-		6268636D1C3A0CCC00D5B1F9 /* JMUIMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIMessageTableViewCell.m; sourceTree = "<group>"; };
-		6268636E1C3A0CCC00D5B1F9 /* JMUIShowTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIShowTimeCell.h; sourceTree = "<group>"; };
-		6268636F1C3A0CCC00D5B1F9 /* JMUIShowTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIShowTimeCell.m; sourceTree = "<group>"; };
-		626863701C3A0CCC00D5B1F9 /* JMUIShowTimeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMUIShowTimeCell.xib; sourceTree = "<group>"; };
 		626863821C3A3B1300D5B1F9 /* JMUIGroupDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIGroupDetailViewController.h; sourceTree = "<group>"; };
 		626863831C3A3B1300D5B1F9 /* JMUIGroupDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIGroupDetailViewController.m; sourceTree = "<group>"; };
 		626863841C3A3B1300D5B1F9 /* JMUIGroupDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMUIGroupDetailViewController.xib; sourceTree = "<group>"; };
@@ -240,18 +211,53 @@
 		62C01FD21C3CB4440028B936 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		62C020A21C3D133C0028B936 /* MyConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyConversationViewController.h; sourceTree = "<group>"; };
 		62C020A31C3D133C0028B936 /* MyConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyConversationViewController.m; sourceTree = "<group>"; };
-		62DEF0331C3B65DE00619647 /* JMUIConversationDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIConversationDatasource.h; sourceTree = "<group>"; };
-		62DEF0341C3B65DE00619647 /* JMUIConversationDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIConversationDatasource.m; sourceTree = "<group>"; };
-		62DEF0361C3B7F6500619647 /* JMUIConversationLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIConversationLayout.h; sourceTree = "<group>"; };
-		62DEF0371C3B7F6500619647 /* JMUIConversationLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIConversationLayout.m; sourceTree = "<group>"; };
-		62DEF0401C3BBF1000619647 /* JMUIFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIFileManager.h; sourceTree = "<group>"; };
-		62DEF0411C3BBF1000619647 /* JMUIFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIFileManager.m; sourceTree = "<group>"; };
-		62DEF0421C3BBF1000619647 /* JMUIReuseCellMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIReuseCellMaker.h; sourceTree = "<group>"; };
-		62DEF0431C3BBF1000619647 /* JMUIReuseCellMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIReuseCellMaker.m; sourceTree = "<group>"; };
-		62DEF0441C3BBF1000619647 /* JMUISendMsgController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUISendMsgController.h; sourceTree = "<group>"; };
-		62DEF0451C3BBF1000619647 /* JMUISendMsgController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUISendMsgController.m; sourceTree = "<group>"; };
-		62DEF0461C3BBF1000619647 /* JMUISendMsgManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUISendMsgManager.h; sourceTree = "<group>"; };
-		62DEF0471C3BBF1000619647 /* JMUISendMsgManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUISendMsgManager.m; sourceTree = "<group>"; };
+		62C021691C3E2F3F0028B936 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
+		62C0216A1C3E2F3F0028B936 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
+		62C0216B1C3E2F3F0028B936 /* NSString+JMUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JMUI.h"; sourceTree = "<group>"; };
+		62C0216C1C3E2F3F0028B936 /* NSString+JMUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JMUI.m"; sourceTree = "<group>"; };
+		62C0216D1C3E2F3F0028B936 /* UIImage+JMUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JMUI.h"; sourceTree = "<group>"; };
+		62C0216E1C3E2F3F0028B936 /* UIImage+JMUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JMUI.m"; sourceTree = "<group>"; };
+		62C0216F1C3E2F3F0028B936 /* UIView+JMUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JMUI.h"; sourceTree = "<group>"; };
+		62C021701C3E2F3F0028B936 /* UIView+JMUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JMUI.m"; sourceTree = "<group>"; };
+		62C021711C3E2F3F0028B936 /* JMUIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIConstants.h; sourceTree = "<group>"; };
+		62C021721C3E2F3F0028B936 /* JMUIFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIFileManager.h; sourceTree = "<group>"; };
+		62C021731C3E2F3F0028B936 /* JMUIFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIFileManager.m; sourceTree = "<group>"; };
+		62C021741C3E2F3F0028B936 /* JMUIReuseCellMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIReuseCellMaker.h; sourceTree = "<group>"; };
+		62C021751C3E2F3F0028B936 /* JMUIReuseCellMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIReuseCellMaker.m; sourceTree = "<group>"; };
+		62C021761C3E2F3F0028B936 /* JMUISendMsgController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUISendMsgController.h; sourceTree = "<group>"; };
+		62C021771C3E2F3F0028B936 /* JMUISendMsgController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUISendMsgController.m; sourceTree = "<group>"; };
+		62C021781C3E2F3F0028B936 /* JMUISendMsgManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUISendMsgManager.h; sourceTree = "<group>"; };
+		62C021791C3E2F3F0028B936 /* JMUISendMsgManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUISendMsgManager.m; sourceTree = "<group>"; };
+		62C0217A1C3E2F3F0028B936 /* JMUIViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIViewUtil.h; sourceTree = "<group>"; };
+		62C0217B1C3E2F3F0028B936 /* JMUIViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIViewUtil.m; sourceTree = "<group>"; };
+		62C0217D1C3E2F3F0028B936 /* JMUIStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIStringUtils.h; sourceTree = "<group>"; };
+		62C0217E1C3E2F3F0028B936 /* JMUIStringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIStringUtils.m; sourceTree = "<group>"; };
+		62C0218C1C3E2FD10028B936 /* JMUIConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIConversationViewController.h; sourceTree = "<group>"; };
+		62C0218D1C3E2FD10028B936 /* JMUIConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIConversationViewController.m; sourceTree = "<group>"; };
+		62C0218E1C3E2FD10028B936 /* JMUIConversationDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIConversationDatasource.h; sourceTree = "<group>"; };
+		62C0218F1C3E2FD10028B936 /* JMUIConversationDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIConversationDatasource.m; sourceTree = "<group>"; };
+		62C021901C3E2FD10028B936 /* JMUIConversationLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIConversationLayout.h; sourceTree = "<group>"; };
+		62C021911C3E2FD10028B936 /* JMUIConversationLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIConversationLayout.m; sourceTree = "<group>"; };
+		62C021931C3E2FD10028B936 /* JMUIChatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIChatModel.h; sourceTree = "<group>"; };
+		62C021941C3E2FD10028B936 /* JMUIChatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIChatModel.m; sourceTree = "<group>"; };
+		62C021961C3E2FD10028B936 /* JMUIMessageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIMessageContentView.h; sourceTree = "<group>"; };
+		62C021971C3E2FD10028B936 /* JMUIMessageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIMessageContentView.m; sourceTree = "<group>"; };
+		62C0219A1C3E2FD10028B936 /* XHFoundationMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHFoundationMacro.h; sourceTree = "<group>"; };
+		62C0219B1C3E2FD10028B936 /* XHMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHMacro.h; sourceTree = "<group>"; };
+		62C0219C1C3E2FD10028B936 /* XHUIKitMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHUIKitMacro.h; sourceTree = "<group>"; };
+		62C0219D1C3E2FD10028B936 /* XHVoiceCommonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHVoiceCommonHelper.h; sourceTree = "<group>"; };
+		62C0219E1C3E2FD10028B936 /* XHVoiceCommonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHVoiceCommonHelper.m; sourceTree = "<group>"; };
+		62C0219F1C3E2FD10028B936 /* XHVoiceRecordHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHVoiceRecordHelper.h; sourceTree = "<group>"; };
+		62C021A01C3E2FD10028B936 /* XHVoiceRecordHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHVoiceRecordHelper.m; sourceTree = "<group>"; };
+		62C021A11C3E2FD10028B936 /* XHVoiceRecordHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHVoiceRecordHUD.h; sourceTree = "<group>"; };
+		62C021A21C3E2FD10028B936 /* XHVoiceRecordHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHVoiceRecordHUD.m; sourceTree = "<group>"; };
+		62C021A41C3E2FD10028B936 /* JMUILoadMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUILoadMessageTableViewCell.h; sourceTree = "<group>"; };
+		62C021A51C3E2FD10028B936 /* JMUILoadMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUILoadMessageTableViewCell.m; sourceTree = "<group>"; };
+		62C021A61C3E2FD10028B936 /* JMUIMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIMessageTableViewCell.h; sourceTree = "<group>"; };
+		62C021A71C3E2FD10028B936 /* JMUIMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIMessageTableViewCell.m; sourceTree = "<group>"; };
+		62C021A81C3E2FD10028B936 /* JMUIShowTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIShowTimeCell.h; sourceTree = "<group>"; };
+		62C021A91C3E2FD10028B936 /* JMUIShowTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIShowTimeCell.m; sourceTree = "<group>"; };
+		62C021AA1C3E2FD10028B936 /* JMUIShowTimeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMUIShowTimeCell.xib; sourceTree = "<group>"; };
 		62FFF5C21C2BB48500CF7D9F /* JMUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62FFF5C61C2BB48500CF7D9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		62FFF5C81C2BB48500CF7D9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -264,12 +270,6 @@
 		62FFF5E61C2BB48500CF7D9F /* JMUIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JMUIKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62FFF5EA1C2BB48500CF7D9F /* JMUIKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMUIKitUITests.m; sourceTree = "<group>"; };
 		62FFF5EC1C2BB48500CF7D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62FFF5FC1C2BB6EF00CF7D9F /* UIView+JMUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JMUI.h"; sourceTree = "<group>"; };
-		62FFF5FD1C2BB6EF00CF7D9F /* UIView+JMUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JMUI.m"; sourceTree = "<group>"; };
-		62FFF6171C2BD93300CF7D9F /* JMUIViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIViewUtil.h; sourceTree = "<group>"; };
-		62FFF6181C2BD93300CF7D9F /* JMUIViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIViewUtil.m; sourceTree = "<group>"; };
-		62FFF61A1C2BDEF800CF7D9F /* NSString+JMUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JMUI.h"; sourceTree = "<group>"; };
-		62FFF61B1C2BDEF800CF7D9F /* NSString+JMUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JMUI.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,43 +374,8 @@
 				626862BE1C3982CF00D5B1F9 /* JMUIRecordAnimationView.m */,
 				626863391C3989DA00D5B1F9 /* JMUIMessageTextView.h */,
 				6268633A1C3989DA00D5B1F9 /* JMUIMessageTextView.m */,
-				626862BF1C3982CF00D5B1F9 /* RecordView */,
 			);
 			path = Input;
-			sourceTree = "<group>";
-		};
-		626862BF1C3982CF00D5B1F9 /* RecordView */ = {
-			isa = PBXGroup;
-			children = (
-				626862C01C3982CF00D5B1F9 /* Macro */,
-				626862C41C3982CF00D5B1F9 /* XHVoiceCommonHelper.h */,
-				626862C51C3982CF00D5B1F9 /* XHVoiceCommonHelper.m */,
-				626862C61C3982CF00D5B1F9 /* XHVoiceRecordHelper.h */,
-				626862C71C3982CF00D5B1F9 /* XHVoiceRecordHelper.m */,
-				626862C81C3982CF00D5B1F9 /* XHVoiceRecordHUD.h */,
-				626862C91C3982CF00D5B1F9 /* XHVoiceRecordHUD.m */,
-			);
-			path = RecordView;
-			sourceTree = "<group>";
-		};
-		626862C01C3982CF00D5B1F9 /* Macro */ = {
-			isa = PBXGroup;
-			children = (
-				626862C11C3982CF00D5B1F9 /* XHFoundationMacro.h */,
-				626862C21C3982CF00D5B1F9 /* XHMacro.h */,
-				626862C31C3982CF00D5B1F9 /* XHUIKitMacro.h */,
-			);
-			path = Macro;
-			sourceTree = "<group>";
-		};
-		626862DB1C39830E00D5B1F9 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				626862DC1C39830E00D5B1F9 /* JMUIStringUtils.h */,
-				626862DD1C39830E00D5B1F9 /* JMUIStringUtils.m */,
-			);
-			name = Utils;
-			path = Classes/Utils;
 			sourceTree = "<group>";
 		};
 		626862E41C3985AC00D5B1F9 /* MultiPickerImage */ = {
@@ -486,63 +451,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		626863581C3A0CCC00D5B1F9 /* Conversation */ = {
-			isa = PBXGroup;
-			children = (
-				626863591C3A0CCC00D5B1F9 /* Controller */,
-				6268635D1C3A0CCC00D5B1F9 /* Model */,
-				626863601C3A0CCC00D5B1F9 /* View */,
-				62DEF0391C3B9B2D00619647 /* Config */,
-				62DEF0331C3B65DE00619647 /* JMUIConversationDatasource.h */,
-				62DEF0341C3B65DE00619647 /* JMUIConversationDatasource.m */,
-				62DEF0361C3B7F6500619647 /* JMUIConversationLayout.h */,
-				62DEF0371C3B7F6500619647 /* JMUIConversationLayout.m */,
-			);
-			path = Conversation;
-			sourceTree = "<group>";
-		};
-		626863591C3A0CCC00D5B1F9 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				6268635A1C3A0CCC00D5B1F9 /* JMUIConversationViewController.h */,
-				6268635B1C3A0CCC00D5B1F9 /* JMUIConversationViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		6268635D1C3A0CCC00D5B1F9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				6268635E1C3A0CCC00D5B1F9 /* JMUIChatModel.h */,
-				6268635F1C3A0CCC00D5B1F9 /* JMUIChatModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		626863601C3A0CCC00D5B1F9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				626863611C3A0CCC00D5B1F9 /* JMUIMessageContentView.h */,
-				626863621C3A0CCC00D5B1F9 /* JMUIMessageContentView.m */,
-				626863651C3A0CCC00D5B1F9 /* tableViewCell */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		626863651C3A0CCC00D5B1F9 /* tableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				626863661C3A0CCC00D5B1F9 /* JMUILoadMessageTableViewCell.h */,
-				626863671C3A0CCC00D5B1F9 /* JMUILoadMessageTableViewCell.m */,
-				6268636C1C3A0CCC00D5B1F9 /* JMUIMessageTableViewCell.h */,
-				6268636D1C3A0CCC00D5B1F9 /* JMUIMessageTableViewCell.m */,
-				6268636E1C3A0CCC00D5B1F9 /* JMUIShowTimeCell.h */,
-				6268636F1C3A0CCC00D5B1F9 /* JMUIShowTimeCell.m */,
-				626863701C3A0CCC00D5B1F9 /* JMUIShowTimeCell.xib */,
-			);
-			path = tableViewCell;
-			sourceTree = "<group>";
-		};
 		626863811C3A3B1300D5B1F9 /* Info */ = {
 			isa = PBXGroup;
 			children = (
@@ -581,27 +489,138 @@
 			path = FootTableCell;
 			sourceTree = "<group>";
 		};
-		62DEF0391C3B9B2D00619647 /* Config */ = {
+		62C021671C3E2F3F0028B936 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				62C021681C3E2F3F0028B936 /* Category */,
+				62C021711C3E2F3F0028B936 /* JMUIConstants.h */,
+				62C021721C3E2F3F0028B936 /* JMUIFileManager.h */,
+				62C021731C3E2F3F0028B936 /* JMUIFileManager.m */,
+				62C021741C3E2F3F0028B936 /* JMUIReuseCellMaker.h */,
+				62C021751C3E2F3F0028B936 /* JMUIReuseCellMaker.m */,
+				62C021761C3E2F3F0028B936 /* JMUISendMsgController.h */,
+				62C021771C3E2F3F0028B936 /* JMUISendMsgController.m */,
+				62C021781C3E2F3F0028B936 /* JMUISendMsgManager.h */,
+				62C021791C3E2F3F0028B936 /* JMUISendMsgManager.m */,
+				62C0217A1C3E2F3F0028B936 /* JMUIViewUtil.h */,
+				62C0217B1C3E2F3F0028B936 /* JMUIViewUtil.m */,
+				62C0217C1C3E2F3F0028B936 /* Utils */,
+			);
+			name = Common;
+			path = Classes/Common;
+			sourceTree = "<group>";
+		};
+		62C021681C3E2F3F0028B936 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				62C021691C3E2F3F0028B936 /* NSDate+Utilities.h */,
+				62C0216A1C3E2F3F0028B936 /* NSDate+Utilities.m */,
+				62C0216B1C3E2F3F0028B936 /* NSString+JMUI.h */,
+				62C0216C1C3E2F3F0028B936 /* NSString+JMUI.m */,
+				62C0216D1C3E2F3F0028B936 /* UIImage+JMUI.h */,
+				62C0216E1C3E2F3F0028B936 /* UIImage+JMUI.m */,
+				62C0216F1C3E2F3F0028B936 /* UIView+JMUI.h */,
+				62C021701C3E2F3F0028B936 /* UIView+JMUI.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		62C0217C1C3E2F3F0028B936 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				62C0217D1C3E2F3F0028B936 /* JMUIStringUtils.h */,
+				62C0217E1C3E2F3F0028B936 /* JMUIStringUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		62C021891C3E2FD10028B936 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				62C0218A1C3E2FD10028B936 /* Config */,
+				62C0218B1C3E2FD10028B936 /* Controller */,
+				62C0218E1C3E2FD10028B936 /* JMUIConversationDatasource.h */,
+				62C0218F1C3E2FD10028B936 /* JMUIConversationDatasource.m */,
+				62C021901C3E2FD10028B936 /* JMUIConversationLayout.h */,
+				62C021911C3E2FD10028B936 /* JMUIConversationLayout.m */,
+				62C021921C3E2FD10028B936 /* Model */,
+				62C021951C3E2FD10028B936 /* View */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		62C0218A1C3E2FD10028B936 /* Config */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Config;
 			sourceTree = "<group>";
 		};
-		62DEF03F1C3BBF1000619647 /* Common */ = {
+		62C0218B1C3E2FD10028B936 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				62DEF0401C3BBF1000619647 /* JMUIFileManager.h */,
-				62DEF0411C3BBF1000619647 /* JMUIFileManager.m */,
-				62DEF0421C3BBF1000619647 /* JMUIReuseCellMaker.h */,
-				62DEF0431C3BBF1000619647 /* JMUIReuseCellMaker.m */,
-				62DEF0441C3BBF1000619647 /* JMUISendMsgController.h */,
-				62DEF0451C3BBF1000619647 /* JMUISendMsgController.m */,
-				62DEF0461C3BBF1000619647 /* JMUISendMsgManager.h */,
-				62DEF0471C3BBF1000619647 /* JMUISendMsgManager.m */,
+				62C0218C1C3E2FD10028B936 /* JMUIConversationViewController.h */,
+				62C0218D1C3E2FD10028B936 /* JMUIConversationViewController.m */,
 			);
-			name = Common;
-			path = Classes/Common;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		62C021921C3E2FD10028B936 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62C021931C3E2FD10028B936 /* JMUIChatModel.h */,
+				62C021941C3E2FD10028B936 /* JMUIChatModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		62C021951C3E2FD10028B936 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62C021961C3E2FD10028B936 /* JMUIMessageContentView.h */,
+				62C021971C3E2FD10028B936 /* JMUIMessageContentView.m */,
+				62C021981C3E2FD10028B936 /* RecordView */,
+				62C021A31C3E2FD10028B936 /* tableViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62C021981C3E2FD10028B936 /* RecordView */ = {
+			isa = PBXGroup;
+			children = (
+				62C021991C3E2FD10028B936 /* Macro */,
+				62C0219D1C3E2FD10028B936 /* XHVoiceCommonHelper.h */,
+				62C0219E1C3E2FD10028B936 /* XHVoiceCommonHelper.m */,
+				62C0219F1C3E2FD10028B936 /* XHVoiceRecordHelper.h */,
+				62C021A01C3E2FD10028B936 /* XHVoiceRecordHelper.m */,
+				62C021A11C3E2FD10028B936 /* XHVoiceRecordHUD.h */,
+				62C021A21C3E2FD10028B936 /* XHVoiceRecordHUD.m */,
+			);
+			path = RecordView;
+			sourceTree = "<group>";
+		};
+		62C021991C3E2FD10028B936 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				62C0219A1C3E2FD10028B936 /* XHFoundationMacro.h */,
+				62C0219B1C3E2FD10028B936 /* XHMacro.h */,
+				62C0219C1C3E2FD10028B936 /* XHUIKitMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		62C021A31C3E2FD10028B936 /* tableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				62C021A41C3E2FD10028B936 /* JMUILoadMessageTableViewCell.h */,
+				62C021A51C3E2FD10028B936 /* JMUILoadMessageTableViewCell.m */,
+				62C021A61C3E2FD10028B936 /* JMUIMessageTableViewCell.h */,
+				62C021A71C3E2FD10028B936 /* JMUIMessageTableViewCell.m */,
+				62C021A81C3E2FD10028B936 /* JMUIShowTimeCell.h */,
+				62C021A91C3E2FD10028B936 /* JMUIShowTimeCell.m */,
+				62C021AA1C3E2FD10028B936 /* JMUIShowTimeCell.xib */,
+			);
+			path = tableViewCell;
 			sourceTree = "<group>";
 		};
 		62FFF5B91C2BB48500CF7D9F = {
@@ -628,10 +647,7 @@
 			isa = PBXGroup;
 			children = (
 				62FFF5FF1C2BC76200CF7D9F /* UIComponent */,
-				62FFF5FB1C2BB61600CF7D9F /* Protocols */,
-				62FFF5FA1C2BB60B00CF7D9F /* Category */,
-				62DEF03F1C3BBF1000619647 /* Common */,
-				626862DB1C39830E00D5B1F9 /* Utils */,
+				62C021671C3E2F3F0028B936 /* Common */,
 				6254C4C21C31062C00098DB0 /* External */,
 				62FFF5C81C2BB48500CF7D9F /* AppDelegate.h */,
 				62FFF5C91C2BB48500CF7D9F /* AppDelegate.m */,
@@ -675,35 +691,10 @@
 			path = JMUIKitUITests;
 			sourceTree = "<group>";
 		};
-		62FFF5FA1C2BB60B00CF7D9F /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				62FFF5FC1C2BB6EF00CF7D9F /* UIView+JMUI.h */,
-				62FFF5FD1C2BB6EF00CF7D9F /* UIView+JMUI.m */,
-				62FFF61A1C2BDEF800CF7D9F /* NSString+JMUI.h */,
-				62FFF61B1C2BDEF800CF7D9F /* NSString+JMUI.m */,
-				6254C4821C2D146300098DB0 /* NSDate+Utilities.h */,
-				6254C4831C2D146300098DB0 /* NSDate+Utilities.m */,
-				6254C4951C2D2AF200098DB0 /* UIImage+JMUI.h */,
-				6254C4961C2D2AF200098DB0 /* UIImage+JMUI.m */,
-			);
-			name = Category;
-			path = Classes/Category;
-			sourceTree = "<group>";
-		};
-		62FFF5FB1C2BB61600CF7D9F /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Protocols;
-			path = Classes/Protocols;
-			sourceTree = "<group>";
-		};
 		62FFF5FF1C2BC76200CF7D9F /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
-				62FFF6161C2BD8EE00CF7D9F /* ViewUtil */,
-				626863581C3A0CCC00D5B1F9 /* Conversation */,
+				62C021891C3E2FD10028B936 /* Conversation */,
 				626863811C3A3B1300D5B1F9 /* Info */,
 				626862B21C3982CF00D5B1F9 /* Input */,
 				626862E41C3985AC00D5B1F9 /* MultiPickerImage */,
@@ -712,17 +703,6 @@
 			);
 			name = UIComponent;
 			path = Classes/UIComponent;
-			sourceTree = "<group>";
-		};
-		62FFF6161C2BD8EE00CF7D9F /* ViewUtil */ = {
-			isa = PBXGroup;
-			children = (
-				62FFF6171C2BD93300CF7D9F /* JMUIViewUtil.h */,
-				62FFF6181C2BD93300CF7D9F /* JMUIViewUtil.m */,
-				6254C4691C2BE42200098DB0 /* JMUIConstants.h */,
-			);
-			name = ViewUtil;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -832,6 +812,7 @@
 			files = (
 				626863A11C3A3B1300D5B1F9 /* JMUIGroupMemberCollectionViewCell.xib in Resources */,
 				626863171C3985AC00D5B1F9 /* image_no_picked@3x.png in Resources */,
+				62C021B61C3E2FD10028B936 /* JMUIShowTimeCell.xib in Resources */,
 				626863151C3985AC00D5B1F9 /* image_no_picked.png in Resources */,
 				626863211C3985AC00D5B1F9 /* ThumbImageCollectionViewCell.xib in Resources */,
 				62C01FD41C3CB4440028B936 /* RootViewController.xib in Resources */,
@@ -855,7 +836,6 @@
 				6254C4941C2D27AD00098DB0 /* JMUIKitResource.bundle in Resources */,
 				6268631C1C3985AC00D5B1F9 /* JCHATAlbumTableViewCell.xib in Resources */,
 				626862CC1C3982CF00D5B1F9 /* JMUIInputToolbar.xib in Resources */,
-				6268637B1C3A0CCC00D5B1F9 /* JMUIShowTimeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -880,54 +860,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62DEF0481C3BBF1000619647 /* JMUIFileManager.m in Sources */,
-				626862D31C3982CF00D5B1F9 /* XHVoiceRecordHUD.m in Sources */,
-				62DEF0351C3B65DE00619647 /* JMUIConversationDatasource.m in Sources */,
-				626863741C3A0CCC00D5B1F9 /* JMUIMessageContentView.m in Sources */,
-				62DEF0491C3BBF1000619647 /* JMUIReuseCellMaker.m in Sources */,
+				62C021831C3E2F3F0028B936 /* JMUIFileManager.m in Sources */,
+				62C021AD1C3E2FD10028B936 /* JMUIConversationLayout.m in Sources */,
+				62C021841C3E2F3F0028B936 /* JMUIReuseCellMaker.m in Sources */,
+				62C021821C3E2F3F0028B936 /* UIView+JMUI.m in Sources */,
 				626863A01C3A3B1300D5B1F9 /* JMUIGroupMemberCollectionViewCell.m in Sources */,
 				626862CD1C3982CF00D5B1F9 /* JMUIInputView.m in Sources */,
 				6268630F1C3985AC00D5B1F9 /* JCHATPhotoPickerViewController.m in Sources */,
-				62DEF0381C3B7F6500619647 /* JMUIConversationLayout.m in Sources */,
-				62FFF6191C2BD93300CF7D9F /* JMUIViewUtil.m in Sources */,
-				62DEF04B1C3BBF1000619647 /* JMUISendMsgManager.m in Sources */,
-				626863791C3A0CCC00D5B1F9 /* JMUIMessageTableViewCell.m in Sources */,
+				62C021861C3E2F3F0028B936 /* JMUISendMsgManager.m in Sources */,
+				62C021871C3E2F3F0028B936 /* JMUIViewUtil.m in Sources */,
+				62C0217F1C3E2F3F0028B936 /* NSDate+Utilities.m in Sources */,
+				62C021B31C3E2FD10028B936 /* JMUILoadMessageTableViewCell.m in Sources */,
 				6268639C1C3A3B1300D5B1F9 /* JMUIFootTableCollectionReusableView.m in Sources */,
-				6268637A1C3A0CCC00D5B1F9 /* JMUIShowTimeCell.m in Sources */,
 				6268630D1C3985AC00D5B1F9 /* JCHATPhotoBrowserViewController.m in Sources */,
+				62C021B01C3E2FD10028B936 /* XHVoiceCommonHelper.m in Sources */,
 				626863131C3985AC00D5B1F9 /* JCHATAlbumModel.m in Sources */,
-				626862E11C39830E00D5B1F9 /* JMUIStringUtils.m in Sources */,
 				6268631D1C3985AC00D5B1F9 /* JCHATPhotoBrowserCollectionViewCell.m in Sources */,
-				62FFF5FE1C2BB6EF00CF7D9F /* UIView+JMUI.m in Sources */,
+				62C021B21C3E2FD10028B936 /* XHVoiceRecordHUD.m in Sources */,
 				62FFF5CA1C2BB48500CF7D9F /* AppDelegate.m in Sources */,
+				62C021B41C3E2FD10028B936 /* JMUIMessageTableViewCell.m in Sources */,
+				62C021AF1C3E2FD10028B936 /* JMUIMessageContentView.m in Sources */,
 				62FFF5C71C2BB48500CF7D9F /* main.m in Sources */,
+				62C021AC1C3E2FD10028B936 /* JMUIConversationDatasource.m in Sources */,
 				626862CA1C3982CF00D5B1F9 /* JMUIAudioPlayerHelper.m in Sources */,
-				626863761C3A0CCC00D5B1F9 /* JMUILoadMessageTableViewCell.m in Sources */,
-				626862D11C3982CF00D5B1F9 /* XHVoiceCommonHelper.m in Sources */,
+				62C021811C3E2F3F0028B936 /* UIImage+JMUI.m in Sources */,
+				62C021801C3E2F3F0028B936 /* NSString+JMUI.m in Sources */,
+				62C021AB1C3E2FD10028B936 /* JMUIConversationViewController.m in Sources */,
 				6268639A1C3A3B1300D5B1F9 /* JMUIFootTableViewCell.m in Sources */,
 				626863961C3A3B1300D5B1F9 /* JMUIGroupDetailViewController.m in Sources */,
-				626862D21C3982CF00D5B1F9 /* XHVoiceRecordHelper.m in Sources */,
-				626863711C3A0CCC00D5B1F9 /* JMUIConversationViewController.m in Sources */,
-				62FFF61C1C2BDEF800CF7D9F /* NSString+JMUI.m in Sources */,
 				626862D01C3982CF00D5B1F9 /* JMUIRecordAnimationView.m in Sources */,
 				626863141C3985AC00D5B1F9 /* JCHATPhotoModel.m in Sources */,
+				62C021AE1C3E2FD10028B936 /* JMUIChatModel.m in Sources */,
 				626862CE1C3982CF00D5B1F9 /* JMUIMoreView.m in Sources */,
-				6254C4971C2D2AF200098DB0 /* UIImage+JMUI.m in Sources */,
-				62DEF04A1C3BBF1000619647 /* JMUISendMsgController.m in Sources */,
 				6268631B1C3985AC00D5B1F9 /* JCHATAlbumTableViewCell.m in Sources */,
+				62C021851C3E2F3F0028B936 /* JMUISendMsgController.m in Sources */,
+				62C021B51C3E2FD10028B936 /* JMUIShowTimeCell.m in Sources */,
 				6268633B1C3989DA00D5B1F9 /* JMUIMessageTextView.m in Sources */,
 				62C01FD31C3CB4440028B936 /* RootViewController.m in Sources */,
 				6268630B1C3985AC00D5B1F9 /* JCHATAlbumViewController.m in Sources */,
 				6268631F1C3985AC00D5B1F9 /* JCHATSelectImgCollectionView.m in Sources */,
 				626863201C3985AC00D5B1F9 /* ThumbImageCollectionViewCell.m in Sources */,
 				626862CB1C3982CF00D5B1F9 /* JMUIInputToolbar.m in Sources */,
+				62C021881C3E2F3F0028B936 /* JMUIStringUtils.m in Sources */,
 				6268639E1C3A3B1300D5B1F9 /* JMUIGroupDetailFooterReusableView.m in Sources */,
 				62C020A41C3D133C0028B936 /* MyConversationViewController.m in Sources */,
 				6254C4C91C31062C00098DB0 /* MBProgressHUD+Add.m in Sources */,
+				62C021B11C3E2FD10028B936 /* XHVoiceRecordHelper.m in Sources */,
 				626863111C3985AC00D5B1F9 /* JCHATPhotoSelectViewController.m in Sources */,
-				6254C4841C2D146300098DB0 /* NSDate+Utilities.m in Sources */,
 				6254C4CB1C31062C00098DB0 /* MBProgressHUD.m in Sources */,
-				626863731C3A0CCC00D5B1F9 /* JMUIChatModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

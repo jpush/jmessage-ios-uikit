@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E948102CFA9D22B2E729F1519166824568D4D75F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "edda36ef-85a5-004d-9115-9a14e77ad9fc++5282" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "edda36ef-85a5-004d-9115-9a14e77ad9fc++5282" : 0,
+    "E948102CFA9D22B2E729F1519166824568D4D75F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "40068359-A804-40AE-8A74-BBC52D90BFA0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "edda36ef-85a5-004d-9115-9a14e77ad9fc++5282" : "jmessage-ios-uikit\/JMUIConversation\/ApplicationDemo\/ApplicationDemo\/UIKit\/Externals\/MBProgressHUD\/",
+    "E948102CFA9D22B2E729F1519166824568D4D75F" : "jmessage-ios-uikit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ApplicationDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "JMUIConversation\/ApplicationDemo\/ApplicationDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jpush\/jmessage-ios-uikit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E948102CFA9D22B2E729F1519166824568D4D75F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/168.168.1.183\/svn\/iOS",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "edda36ef-85a5-004d-9115-9a14e77ad9fc++5282"
+    }
+  ]
+}
