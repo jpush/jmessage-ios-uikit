@@ -54,7 +54,7 @@
 		62C025CC1C3E520D0028B936 /* JMUIGroupMemberCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C025B21C3E520D0028B936 /* JMUIGroupMemberCollectionViewCell.m */; };
 		62C025CD1C3E520D0028B936 /* JMUIGroupMemberCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C025B31C3E520D0028B936 /* JMUIGroupMemberCollectionViewCell.xib */; };
 		62C025CE1C3E520D0028B936 /* JMUIGroupInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C025B61C3E520D0028B936 /* JMUIGroupInfoViewController.m */; };
-		62C025CF1C3E520D0028B936 /* JMUIGroupInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C025B71C3E520D0028B936 /* JMUIGroupInfoViewController.xib */; };
+		62C025D21C3E5B340028B936 /* JMUIKitResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62C025D11C3E5B340028B936 /* JMUIKitResource.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,8 +149,8 @@
 		62C025B31C3E520D0028B936 /* JMUIGroupMemberCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMUIGroupMemberCollectionViewCell.xib; sourceTree = "<group>"; };
 		62C025B51C3E520D0028B936 /* JMUIGroupInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIGroupInfoViewController.h; sourceTree = "<group>"; };
 		62C025B61C3E520D0028B936 /* JMUIGroupInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIGroupInfoViewController.m; sourceTree = "<group>"; };
-		62C025B71C3E520D0028B936 /* JMUIGroupInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMUIGroupInfoViewController.xib; sourceTree = "<group>"; };
 		62C025D01C3E52990028B936 /* JMUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMUIKit.h; sourceTree = "<group>"; };
+		62C025D11C3E5B340028B936 /* JMUIKitResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JMUIKitResource.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				62C025D01C3E52990028B936 /* JMUIKit.h */,
+				62C025D11C3E5B340028B936 /* JMUIKitResource.bundle */,
 				62C025861C3E520D0028B936 /* Common */,
 				62C0259E1C3E520D0028B936 /* External */,
 				62C025A51C3E520D0028B936 /* JMessage.framework */,
@@ -391,7 +392,6 @@
 			children = (
 				62C025B51C3E520D0028B936 /* JMUIGroupInfoViewController.h */,
 				62C025B61C3E520D0028B936 /* JMUIGroupInfoViewController.m */,
-				62C025B71C3E520D0028B936 /* JMUIGroupInfoViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -501,10 +501,10 @@
 			files = (
 				62C021001C3E2C980028B936 /* LaunchScreen.storyboard in Resources */,
 				62C025C91C3E520D0028B936 /* JMUIFootTableCollectionReusableView.xib in Resources */,
-				62C025CF1C3E520D0028B936 /* JMUIGroupInfoViewController.xib in Resources */,
 				62C025CB1C3E520D0028B936 /* JMUIGroupInfoFooterReusableView.xib in Resources */,
 				62C025C71C3E520D0028B936 /* JMUIFootTableViewCell.xib in Resources */,
 				62C025C31C3E520D0028B936 /* MBProgressHUD.bundle in Resources */,
+				62C025D21C3E5B340028B936 /* JMUIKitResource.bundle in Resources */,
 				62C020FD1C3E2C980028B936 /* Assets.xcassets in Resources */,
 				62C022611C3E33CA0028B936 /* RootViewController.xib in Resources */,
 				62C025CD1C3E520D0028B936 /* JMUIGroupMemberCollectionViewCell.xib in Resources */,

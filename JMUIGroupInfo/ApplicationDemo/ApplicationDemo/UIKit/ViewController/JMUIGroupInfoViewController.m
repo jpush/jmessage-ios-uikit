@@ -34,6 +34,7 @@ UITableViewDelegate> {
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  self.view.backgroundColor = [UIColor whiteColor];
   _isInEditToDeleteMember = NO;
   [self setupNavigationBar];
   [self setupGroupMemberGrip];
@@ -46,16 +47,19 @@ UITableViewDelegate> {
 }
 
 - (void)setupNavigationBar {
-  self.title=@"聊天详情";
+  self.title=@"群详情";
   self.navigationController.navigationBar.translucent = NO;
 }
 
 - (void)setupGroupMemberGrip {
-  _groupMemberGrip = [UICollectionView new];
-  _groupMemberGrip.frame = self.view.frame;
+  UICollectionViewFlowLayout *flowLayout=[[UICollectionViewFlowLayout alloc] init];
+  [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
   
+  _groupMemberGrip = [[UICollectionView alloc] initWithFrame:self.view.frame collectionViewLayout:flowLayout];
+  _groupMemberGrip.backgroundColor = [UIColor whiteColor];
   _groupMemberGrip.delegate = self;
   _groupMemberGrip.dataSource = self;
+  [self.view addSubview:_groupMemberGrip];
   _groupMemberGrip.minimumZoomScale = 0;
   _groupMemberGrip.backgroundColor = [UIColor whiteColor];
   [_groupMemberGrip registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"gradientCell"];
