@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JMUIConversationViewController.h"
+#import "JMUIChattingViewController.h"
 @interface MyConversationViewController : JMUIConversationViewController
 
 @end

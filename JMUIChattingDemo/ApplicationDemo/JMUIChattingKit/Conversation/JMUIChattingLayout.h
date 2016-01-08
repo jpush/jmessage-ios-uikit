@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "JMUIInputView.h"
 
-@interface JMUIConversationLayout : NSObject
+@interface JMUIChattingLayout : NSObject
 
 - (instancetype)initWithInputView:(JMUIInputView *)inputView tableView:(UITableView *)tableview;
 

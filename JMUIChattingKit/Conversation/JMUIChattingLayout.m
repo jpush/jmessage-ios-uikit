@@ -6,20 +6,20 @@
 //  Copyright © 2016年 HXHG. All rights reserved.
 //
 
-#import "JMUIConversationLayout.h"
+#import "JMUIChattingLayout.h"
 #import "UIView+JMUI.h"
 
 static NSInteger const inputViewHeight = 297;
 static CGFloat const animationDuration = 0.25;
 
-@interface JMUIConversationLayout (){
+@interface JMUIChattingLayout (){
   UITableView *_messageListTable;
   JMUIInputView *_inputView;
 }
 
 @end
 
-@implementation JMUIConversationLayout
+@implementation JMUIChattingLayout
 
 -(instancetype)initWithInputView:(JMUIInputView *)inputView tableView:(UITableView *)tableview
 {

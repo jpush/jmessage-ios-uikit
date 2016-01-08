@@ -6,12 +6,12 @@
 //  Copyright © 2015年 HXHG. All rights reserved.
 //
 
-#import "JMUIConversationViewController.h"
+#import "JMUIChattingViewController.h"
 #import "JMUIReuseCellMaker.h"
 #import "JMUIStringUtils.h"
 #import "JMUIFileManager.h"
-#import "JMUIConversationDatasource.h"
-#import "JMUIConversationLayout.h"
+#import "JMUIChattingDatasource.h"
+#import "JMUIChattingLayout.h"
 #import "UIView+JMUI.h"
 
 #define messageTableColor [UIColor colorWithRed:236/255.0 green:237/255.0 blue:240/255.0 alpha:1]
@@ -25,8 +25,8 @@ static NSInteger const messagefristPageNumber = 20;
   NSArray *array;
 }
 
-@property (strong, nonatomic)JMUIConversationDatasource *messageDatasource; //负责处理消息列表数据
-@property (strong, nonatomic)JMUIConversationLayout *conversationLayout;  //负责处理布局
+@property (strong, nonatomic)JMUIChattingDatasource *messageDatasource; //负责处理消息列表数据
+@property (strong, nonatomic)JMUIChattingLayout *conversationLayout;  //负责处理布局
 @end
 
 @implementation JMUIConversationViewController
@@ -58,7 +58,7 @@ static NSInteger const messagefristPageNumber = 20;
 }
 
 - (void)setupData {
-  _messageDatasource = [[JMUIConversationDatasource alloc] initWithConversation:_conversation
+  _messageDatasource = [[JMUIChattingDatasource alloc] initWithConversation:_conversation
                                                                showTimeInterval:60 * 5
                                                              fristPageMsgNumber:20
                                                                           limit:11];
@@ -76,7 +76,7 @@ static NSInteger const messagefristPageNumber = 20;
   _inputView.delegate = self;
   _messageListTable.separatorStyle = UITableViewCellSeparatorStyleNone;
   _messageListTable.backgroundColor = messageTableColor;
-  _conversationLayout = [[JMUIConversationLayout alloc] initWithInputView:_inputView
+  _conversationLayout = [[JMUIChattingLayout alloc] initWithInputView:_inputView
                                                                 tableView:_messageListTable];
   
   UITapGestureRecognizer *gesture =[[UITapGestureRecognizer alloc] initWithTarget:self

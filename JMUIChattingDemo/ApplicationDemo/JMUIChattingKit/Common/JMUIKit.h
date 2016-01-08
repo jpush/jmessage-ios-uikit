@@ -11,7 +11,7 @@
 
 #import "JMUIInputView.h"
 #import "JMUIMoreView.h"
-#import "JMUIConversationViewController.h"
+#import "JMUIChattingViewController.h"
 #import <JMessage/JMessage.h>
 #import "MBProgressHUD.h"
 #import "MBProgressHUD+Add.h"

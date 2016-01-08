@@ -6,16 +6,16 @@
 //  Copyright © 2016年 HXHG. All rights reserved.
 //
 
-#import "JMUIConversationDatasource.h"
+#import "JMUIChattingDatasource.h"
 
-@interface JMUIConversationDatasource (){
+@interface JMUIChattingDatasource (){
   NSInteger messageOffset;//当前获取消息的指针
   BOOL isNoMoreHistoryMsg;
 }
 
 @end
 
-@implementation JMUIConversationDatasource
+@implementation JMUIChattingDatasource
 - (instancetype)initWithConversation:(JMSGConversation*)conversation
                     showTimeInterval:(NSTimeInterval)timeInterval
                   fristPageMsgNumber:(NSInteger)pageNumber

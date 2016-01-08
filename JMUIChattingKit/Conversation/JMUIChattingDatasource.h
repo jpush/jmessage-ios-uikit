@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "JMUIChatModel.h"
 
-@interface JMUIConversationDatasource : NSObject
+@interface JMUIChattingDatasource : NSObject
 @property (strong, nonatomic)JMSGConversation *conversation;
 
 @property (strong, nonatomic)NSMutableArray *allMessageIdArr;

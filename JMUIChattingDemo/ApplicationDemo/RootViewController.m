@@ -7,13 +7,14 @@
 //
 
 #import "RootViewController.h"
-#import "JMUIConversationViewController.h"
+#import "JMUIChattingViewController.h"
 #import <JMessage/JMessage.h>
 #import "AppDelegate.h"
-#import "JMUIConversationDatasource.h"
+#import "JMUIChattingDatasource.h"
 #import "MBProgressHUD.h"
 #import "MBProgressHUD+Add.h"
 #import "MyConversationViewController.h"
+
 @interface RootViewController ()
 
 @end
