@@ -2,12 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:MultiPickerPhoto/ApplicationDemo/MultiPickerPhotosDemo.xcodeproj">
+      location = "group:JMUIConversationDemo/JMUIConversationDemo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:JMUIConversation/ApplicationDemo/JMUIConversationDemo.xcodeproj">
+      location = "group:JMUIGroupInfoDemo/JMUIGroupInfoDemo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:JMUIGroupInfo/ApplicationDemo/JMUIGroupInfoDemo.xcodeproj">
+      location = "group:JMultiPickerPhotosDemo/JMultiPickerPhotosDemo.xcodeproj">
    </FileRef>
 </Workspace>
