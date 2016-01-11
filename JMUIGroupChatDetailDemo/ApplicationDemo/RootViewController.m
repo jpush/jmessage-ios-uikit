@@ -9,11 +9,11 @@
 #import "RootViewController.h"
 #import <JMessage/JMessage.h>
 #import "AppDelegate.h"
-#import "MBProgressHUD.h"
-#import "MBProgressHUD+Add.h"
+//#import "MBProgressHUD.h"
+//#import "MBProgressHUD+Add.h"
 #import "MyGroupDetailViewController.h"
-#import "JMUIConstants.h"
 
+#define kuserName @"userName"
 @interface RootViewController ()
 
 @end
@@ -33,10 +33,10 @@
   if ([[NSUserDefaults standardUserDefaults] objectForKey:kuserName]) {
     [self getGroupConversation];
   } else {
-    [MBProgressHUD showMessage:@"正在登录" toView:self.view];
+//    [MBProgressHUD showMessage:@"正在登录" toView:self.view];
     
     [JMSGUser loginWithUsername:@"6661" password:@"111111" completionHandler:^(id resultObject, NSError *error) {
-      [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+//      [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
       if (error) {
         NSLog(@" 登录出错");
         return ;

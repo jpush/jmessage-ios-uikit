@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JMUIGroupChatDetailViewController.h"
+#import <JMUIGroupChatDetailKit/JMUIGroupChatDetailViewController.h>
+
 @interface MyGroupDetailViewController :JMUIGroupChatDetailViewController
 
 @end

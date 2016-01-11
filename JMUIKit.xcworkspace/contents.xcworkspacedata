@@ -10,4 +10,13 @@
    <FileRef
       location = "group:JMUIGroupChatDetailDemo/JMUIGroupChatDetailDemo.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:JMUIMultiSelectPhotosKit/JMUIMultiSelectPhotosKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:JMUIChattingKit/JMUIChattingKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:JMUIGroupChatDetailKit/JMUIGroupChatDetailKit.xcodeproj">
+   </FileRef>
 </Workspace>

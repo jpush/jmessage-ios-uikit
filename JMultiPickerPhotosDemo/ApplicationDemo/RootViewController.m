@@ -7,8 +7,10 @@
 //
 
 #import "RootViewController.h"
-#import "JMUIAlbumViewController.h"
-#import "JMUIMultiSelectPhotosViewController.h"
+//#import "JMUIAlbumViewController.h"
+#import <JMUIMultiSelectPhotosKit/JMUIAlbumTableViewCell.h>
+//#import "JMUIMultiSelectPhotosViewController.h"
+#import <JMUIMultiSelectPhotosKit/JMUIMultiSelectPhotosViewController.h>
 
 @interface RootViewController ()<JMUIMultiSelectPhotosDelegate> {
   UIScrollView *_imgScrollView;
