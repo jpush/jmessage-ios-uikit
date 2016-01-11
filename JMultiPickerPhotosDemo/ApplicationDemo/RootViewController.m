@@ -8,9 +8,9 @@
 
 #import "RootViewController.h"
 #import "JMUIAlbumViewController.h"
-#import "JMUIPhotoPickerViewController.h"
+#import "JMUIMultiSelectPhotosViewController.h"
 
-@interface RootViewController ()<JMUIPhotoPickerViewControllerDelegate> {
+@interface RootViewController ()<JMUIMultiSelectPhotosDelegate> {
   UIScrollView *_imgScrollView;
 }
 @end
@@ -26,8 +26,7 @@
   [self.view addSubview:_imgScrollView];
 }
 
-- (void)JMUIPhotoPickerViewController:(JMUIPhotoSelectViewController *)PhotoPickerVC
-                   selectedPhotoArray:(NSArray *)selected_photo_array {
+- (void)JMUIMultiSelectedPhotoArray:(NSArray *)selected_photo_array {
   for (UIView *imgView in [_imgScrollView subviews]) {
     [imgView removeFromSuperview];
   }
@@ -42,7 +41,7 @@
 - (IBAction)clickToLogin:(id)sender {
   ALAssetsLibrary *lib = [[ALAssetsLibrary alloc] init];
   [lib enumerateGroupsWithTypes:ALAssetsGroupSavedPhotos usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
-    JMUIPhotoPickerViewController *photoPickerVC = [[JMUIPhotoPickerViewController alloc] init];
+    JMUIMultiSelectPhotosViewController *photoPickerVC = [[JMUIMultiSelectPhotosViewController alloc] init];
     photoPickerVC.photoDelegate = self;
     [self presentViewController:photoPickerVC animated:YES completion:NULL];
   } failureBlock:^(NSError *error) {

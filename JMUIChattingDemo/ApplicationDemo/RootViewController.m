@@ -7,12 +7,11 @@
 //
 
 #import "RootViewController.h"
-#import "JMUIChattingViewController.h"
+//#import "JMUIChattingViewController.h"
+#import <JMUIChattingKit/JMUIChattingViewController.h>
 #import <JMessage/JMessage.h>
 #import "AppDelegate.h"
-#import "JMUIChattingDatasource.h"
-#import "MBProgressHUD.h"
-#import "MBProgressHUD+Add.h"
+
 #import "MyConversationViewController.h"
 
 @interface RootViewController ()
@@ -34,10 +33,10 @@
   if ([[NSUserDefaults standardUserDefaults] objectForKey:kuserName]) {
     [self getSingleConversation];
   } else {
-    [MBProgressHUD showMessage:@"正在登录" toView:self.view];
+//    [MBProgressHUD showMessage:@"正在登录" toView:self.view];
     
     [JMSGUser loginWithUsername:@"6661" password:@"111111" completionHandler:^(id resultObject, NSError *error) {
-      [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+//      [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
       if (error) {
         NSLog(@" 登录出错");
         return ;
@@ -52,10 +51,10 @@
 - (void)getSingleConversation {
   JMSGConversation *conversation = [JMSGConversation singleConversationWithUsername:@"5558"];
   if (conversation == nil) {
-    [MBProgressHUD showMessage:@"获取会话" toView:self.view];
+//    [MBProgressHUD showMessage:@"获取会话" toView:self.view];
     
     [JMSGConversation createSingleConversationWithUsername:@"5558" completionHandler:^(id resultObject, NSError *error) {
-      [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+//      [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
       if (error) {
         NSLog(@"创建会话失败");
         return ;

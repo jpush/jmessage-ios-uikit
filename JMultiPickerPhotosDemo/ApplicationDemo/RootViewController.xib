@@ -21,7 +21,7 @@
                         <constraint firstAttribute="width" constant="30" id="K25-xO-OcQ"/>
                         <constraint firstAttribute="height" constant="30" id="meT-5k-R18"/>
                     </constraints>
-                    <state key="normal" title="登录"/>
+                    <state key="normal" title="选图"/>
                     <connections>
                         <action selector="clickToLogin:" destination="-1" eventType="touchUpInside" id="bPT-Fy-7PV"/>
                     </connections>

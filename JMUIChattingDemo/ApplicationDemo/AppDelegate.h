@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
 #define JMSSAGE_APPKEY @"4f7aef34fb361292c566a1cd"
 #define CHANNEL @""
 

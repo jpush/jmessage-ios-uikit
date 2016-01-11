@@ -5,9 +5,9 @@
       location = "group:JMUIChattingDemo/JMUIChattingDemo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:JMUIGroupInfoDemo/JMUIGroupInfoDemo.xcodeproj">
+      location = "group:/Users/HuminiOS/Desktop/workproject/jmessage-ios-uikit/JMultiPickerPhotosDemo/JMUIMultiSelectPhotosDemo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:JMultiPickerPhotosDemo/JMultiPickerPhotosDemo.xcodeproj">
+      location = "group:JMUIGroupChatDetailDemo/JMUIGroupChatDetailDemo.xcodeproj">
    </FileRef>
 </Workspace>
