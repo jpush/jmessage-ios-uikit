@@ -30,6 +30,8 @@
 		62C0227F1C3E34990028B936 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C0227E1C3E34990028B936 /* Photos.framework */; };
 		62C0240E1C3E374C0028B936 /* MyConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C0240D1C3E374C0028B936 /* MyConversationViewController.m */; };
 		62C029CA1C42B3E30028B936 /* JMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C029C91C42B3E30028B936 /* JMessage.framework */; };
+		62C02BC21C44C81B0028B936 /* JMUIChattingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C02BC11C44C81B0028B936 /* JMUIChattingKit.framework */; };
+		62C02BC31C44C8D40028B936 /* JMUIChattingKit.framework in Resources */ = {isa = PBXBuildFile; fileRef = 62C02BC11C44C81B0028B936 /* JMUIChattingKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,7 @@
 		62C024101C3E3BE40028B936 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		62C029371C3FB7910028B936 /* JMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMessage.framework; sourceTree = "<group>"; };
 		62C029C91C42B3E30028B936 /* JMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMessage.framework; sourceTree = SOURCE_ROOT; };
+		62C02BC11C44C81B0028B936 /* JMUIChattingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMUIChattingKit.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 				62C022751C3E346B0028B936 /* CoreLocation.framework in Frameworks */,
 				62C022731C3E34650028B936 /* CoreFoundation.framework in Frameworks */,
 				62C022711C3E345E0028B936 /* CoreGraphics.framework in Frameworks */,
+				62C02BC21C44C81B0028B936 /* JMUIChattingKit.framework in Frameworks */,
 				62C0226F1C3E34570028B936 /* CFNetwork.framework in Frameworks */,
 				62C0226D1C3E34500028B936 /* AVFoundation.framework in Frameworks */,
 				62C0226B1C3E34490028B936 /* libsqlite3.0.tbd in Frameworks */,
@@ -162,6 +166,7 @@
 		62C022801C3E34B90028B936 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				62C02BC11C44C81B0028B936 /* JMUIChattingKit.framework */,
 				62C029371C3FB7910028B936 /* JMessage.framework */,
 				62C0227E1C3E34990028B936 /* Photos.framework */,
 				62C0227C1C3E34920028B936 /* Accelerate.framework */,
@@ -239,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62C02BC31C44C8D40028B936 /* JMUIChattingKit.framework in Resources */,
 				62C021001C3E2C980028B936 /* LaunchScreen.storyboard in Resources */,
 				62C020FD1C3E2C980028B936 /* Assets.xcassets in Resources */,
 				62C022611C3E33CA0028B936 /* RootViewController.xib in Resources */,

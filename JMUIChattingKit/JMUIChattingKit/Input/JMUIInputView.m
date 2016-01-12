@@ -36,13 +36,11 @@
 - (id)init {
   self = [super init];
   if (self) {
-//    _toolBar = NIB(JMUIInputToolbar);
     NSArray *toolbars=[[NSBundle mainBundle] loadNibNamed:@"JMUIChattingKit.framework/JMUIInputToolbar"
                                                     owner:self
                                                   options:nil];
     _toolBar = [toolbars objectAtIndex:0];
     _toolBar.delegate = _delegate;
-//    _moreView = NIB(JMUIMoreView);
     NSArray *moreViews=[[NSBundle mainBundle] loadNibNamed:@"JMUIChattingKit.framework/JMUIMoreView"
                                                      owner:self
                                                    options:nil];
@@ -52,17 +50,6 @@
   }
   return self;
 }
-
-//- (void)awakeFromNib {
-//  [super awakeFromNib];
-//  _toolBar = NIB(JMUIInputToolbar);
-//  _toolBar.delegate = _delegate;
-//  _moreView = NIB(JMUIMoreView);
-//  _moreView.delegate = _delegate;
-//  
-//  [self performSelector:@selector(addtoolbar) withObject:nil afterDelay:0.02];
-//  
-//}
 
 - (void)addtoolbar {
   _toolBar.frame = CGRectMake(0, 0, kApplicationWidth, 45);
