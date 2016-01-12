@@ -14,7 +14,7 @@
       location = "group:JMUIGroupChatDetailKit/JMUIGroupChatDetailKit.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/HuminiOS/Desktop/workproject/jmessage-ios-uikit/JMultiPickerPhotosDemo/JMUIMultiSelectPhotosDemo.xcodeproj">
+      location = "group:JMUIMultiSelectPhotosDemo/JMUIMultiSelectPhotosDemo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:JMUIMultiSelectPhotosKit/JMUIMultiSelectPhotosKit.xcodeproj">
