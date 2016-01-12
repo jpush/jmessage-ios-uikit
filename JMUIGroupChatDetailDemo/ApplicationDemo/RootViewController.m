@@ -9,8 +9,8 @@
 #import "RootViewController.h"
 #import <JMessage/JMessage.h>
 #import "AppDelegate.h"
-//#import "MBProgressHUD.h"
-//#import "MBProgressHUD+Add.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+Add.h"
 #import "MyGroupDetailViewController.h"
 
 #define kuserName @"userName"
@@ -28,8 +28,8 @@
 - (IBAction)clickToLogin:(id)sender {
   if ([[NSUserDefaults standardUserDefaults] objectForKey:kuserName]) {
     [self getGroupConversation];
-    NSLog(@"huangmin 111111  %@",[[NSUserDefaults standardUserDefaults] objectForKey:kuserName]);
   } else {
+    [MBProgressHUD showMessage:@"正在登录" toView:self.view];
     [self registerAccount];
   }
 }
@@ -39,10 +39,9 @@
 
     [self getGroupConversation];
   } else {
-//    [MBProgressHUD showMessage:@"正在登录" toView:self.view];
     
     [JMSGUser loginWithUsername:userName password:@"111111" completionHandler:^(id resultObject, NSError *error) {
-//      [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+      [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
       if (error) {
         NSLog(@" 登录出错");
         return ;
@@ -110,6 +109,7 @@
   NSString *userNameToRegister = [self getRegisterUserName];
   [JMSGUser registerWithUsername:userNameToRegister password:@"111111" completionHandler:^(id resultObject, NSError *error) {
     if (error) {
+      [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
       [self registerAccount];
       return ;
     }
