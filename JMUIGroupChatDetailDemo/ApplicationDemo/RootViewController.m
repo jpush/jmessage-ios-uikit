@@ -26,23 +26,29 @@
 }
 
 - (IBAction)clickToLogin:(id)sender {
-  [self loginUser];
+  if ([[NSUserDefaults standardUserDefaults] objectForKey:kuserName]) {
+    [self getGroupConversation];
+    NSLog(@"huangmin 111111  %@",[[NSUserDefaults standardUserDefaults] objectForKey:kuserName]);
+  } else {
+    [self registerAccount];
+  }
 }
 
-- (void)loginUser {
+- (void)loginUser:(NSString *)userName {
   if ([[NSUserDefaults standardUserDefaults] objectForKey:kuserName]) {
+
     [self getGroupConversation];
   } else {
 //    [MBProgressHUD showMessage:@"正在登录" toView:self.view];
     
-    [JMSGUser loginWithUsername:@"6661" password:@"111111" completionHandler:^(id resultObject, NSError *error) {
+    [JMSGUser loginWithUsername:userName password:@"111111" completionHandler:^(id resultObject, NSError *error) {
 //      [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
       if (error) {
         NSLog(@" 登录出错");
         return ;
       }
       [self getGroupConversation];
-      [[NSUserDefaults standardUserDefaults] setObject:@"6661" forKey:kuserName];
+      [[NSUserDefaults standardUserDefaults] setObject:userName forKey:kuserName];
     }];
   }
 }
@@ -60,7 +66,7 @@
     
     return;
   } else {
-    [JMSGGroup createGroupWithName:@"GroupConversation" desc:nil memberArray:@[@"0001",@"0002",@"0003"] completionHandler:^(id group, NSError *error) {
+    [JMSGGroup createGroupWithName:@"GroupConversation" desc:nil memberArray:@[] completionHandler:^(id group, NSError *error) {
       if (error) {
         NSLog(@"create Group fail");
         return ;
@@ -79,6 +85,36 @@
       }];
     }];
   }
+}
+
+- (NSString *)getRegisterUserName {// 随机生成要注册的用户名
+  NSString *string = [[NSString alloc]init];
+  for (int i = 0; i < 5; i++) {
+    int number = arc4random() % 36;
+    if (number < 10) {
+      int figure = arc4random() % 10;
+      NSString *tempString = [NSString stringWithFormat:@"%d", figure];
+      string = [string stringByAppendingString:tempString];
+    }else {
+      int figure = (arc4random() % 26) + 97;
+      char character = figure;
+      NSString *tempString = [NSString stringWithFormat:@"%c", character];
+      string = [string stringByAppendingString:tempString];
+    }
+  }
+  string = [NSString stringWithFormat:@"uikit_demo_%@",string];
+  return string;
+}
+
+- (void)registerAccount {
+  NSString *userNameToRegister = [self getRegisterUserName];
+  [JMSGUser registerWithUsername:userNameToRegister password:@"111111" completionHandler:^(id resultObject, NSError *error) {
+    if (error) {
+      [self registerAccount];
+      return ;
+    }
+    [self loginUser:userNameToRegister];
+  }];
 }
 
 - (void)didReceiveMemoryWarning {

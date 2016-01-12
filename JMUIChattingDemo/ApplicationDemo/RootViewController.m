@@ -26,22 +26,27 @@
 }
 
 - (IBAction)clickToLogin:(id)sender {
-  [self loginUser];
+  if ([[NSUserDefaults standardUserDefaults] objectForKey:kuserName]) {
+    NSLog(@"huangmin  123456  %@",[[NSUserDefaults standardUserDefaults] objectForKey:kuserName]);
+    [self getSingleConversation];
+  } else {
+    [self registerAccount];
+  }
 }
 
-- (void)loginUser {
+- (void)loginUser:(NSString *)userName {
   if ([[NSUserDefaults standardUserDefaults] objectForKey:kuserName]) {
     [self getSingleConversation];
   } else {
 //    [MBProgressHUD showMessage:@"正在登录" toView:self.view];
     
-    [JMSGUser loginWithUsername:@"6661" password:@"111111" completionHandler:^(id resultObject, NSError *error) {
+    [JMSGUser loginWithUsername:userName password:@"111111" completionHandler:^(id resultObject, NSError *error) {
 //      [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
       if (error) {
         NSLog(@" 登录出错");
         return ;
       }
-      [[NSUserDefaults standardUserDefaults] setObject:@"6661" forKey:kuserName];
+      [[NSUserDefaults standardUserDefaults] setObject:userName forKey:kuserName];
       [self getSingleConversation];
     }];
   }
@@ -69,6 +74,36 @@
     conversationVC.conversation = conversation;
     [self.navigationController pushViewController:conversationVC animated:YES];
   }
+}
+
+- (NSString *)getRegisterUserName {// 随机生成要注册的用户名
+  NSString *string = [[NSString alloc]init];
+  for (int i = 0; i < 5; i++) {
+    int number = arc4random() % 36;
+    if (number < 10) {
+      int figure = arc4random() % 10;
+      NSString *tempString = [NSString stringWithFormat:@"%d", figure];
+      string = [string stringByAppendingString:tempString];
+    }else {
+      int figure = (arc4random() % 26) + 97;
+      char character = figure;
+      NSString *tempString = [NSString stringWithFormat:@"%c", character];
+      string = [string stringByAppendingString:tempString];
+    }
+  }
+  string = [NSString stringWithFormat:@"uikit_demo_%@",string];
+  return string;
+}
+
+- (void)registerAccount {
+  NSString *userNameToRegister = [self getRegisterUserName];
+  [JMSGUser registerWithUsername:userNameToRegister password:@"111111" completionHandler:^(id resultObject, NSError *error) {
+    if (error) {
+      [self registerAccount];
+      return ;
+    }
+    [self loginUser:userNameToRegister];
+  }];
 }
 
 - (void)didReceiveMemoryWarning {
