@@ -7,7 +7,8 @@
 //
 
 #import "JMUIAudioPlayerHelper.h"
-#import "XHVoiceCommonHelper.h"
+//#import "XHVoiceCommonHelper.h"
+#import <JMUICommon/XHVoiceCommonHelper.h>
 #import <UIKit/UIDevice.h>
 
 @implementation JMUIAudioPlayerHelper

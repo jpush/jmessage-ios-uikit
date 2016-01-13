@@ -7,7 +7,7 @@
 //
 
 #import "JMUIShowTimeCell.h"
-#import "JMUIStringUtils.h"
+#import <JMUICommon/JMUICommon.h>
 
 @implementation JMUIShowTimeCell
 

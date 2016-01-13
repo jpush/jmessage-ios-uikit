@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "JMUIKit.h"
-
+#import <JMessage/JMessage.h>
+  
 @interface JMUIChatModel : NSObject
 @property (nonatomic, strong) JMSGMessage * message;
 

@@ -7,10 +7,10 @@
 //
 
 #import "JMUIMessageContentView.h"
-#import "UIImage+JMUI.h"
-#import "JMUIConstants.h"
-#import "MBProgressHUD+Add.h"
-#import "MBProgressHUD.h"
+#import <JMUICommon/JMUICommon.h>
+#import <JMUICommon/MBProgressHUD.h>
+#import <JMUICommon/MBProgressHUD+Add.h>
+#import "UIImage+JMUIChatting.h"
 
 static NSInteger const textMessageContentTopOffset = 10;
 static NSInteger const textMessageContentRightOffset = 15;
@@ -45,9 +45,9 @@ static NSInteger const textMessageContentRightOffset = 15;
   UIImageView *maskView = nil;
   UIImage *maskImage = nil;
   if (isReceived) {
-    maskImage = [UIImage jmui_imageInResource:@"otherChatBg"];
+    maskImage = [UIImage jmuiChatting_imageInResource:@"otherChatBg"];
   } else {
-    maskImage = [UIImage jmui_imageInResource:@"mychatBg"];
+    maskImage = [UIImage jmuiChatting_imageInResource:@"mychatBg"];
   }
   maskImage = [maskImage resizableImageWithCapInsets:UIEdgeInsetsMake(28, 20, 28, 20)];
   [self setImage:maskImage];
@@ -74,17 +74,17 @@ static NSInteger const textMessageContentRightOffset = 15;
       _textContent.hidden = YES;
       self.contentMode = UIViewContentModeScaleAspectFill;
       if (message.status == kJMSGMessageStatusReceiveDownloadFailed) {
-        [self setImage:[UIImage jmui_imageInResource:@"receiveFail"]];
+        [self setImage:[UIImage jmuiChatting_imageInResource:@"receiveFail"]];
       } else {
         [(JMSGImageContent *)message.content thumbImageData:^(NSData *data, NSString *objectId, NSError *error) {
           if (error == nil) {
             if (data != nil) {
               [self setImage:[UIImage imageWithData:data]];
             } else {
-              [self setImage:[UIImage jmui_imageInResource:@"receiveFail"]];
+              [self setImage:[UIImage jmuiChatting_imageInResource:@"receiveFail"]];
             }
           } else {
-            [self setImage:[UIImage jmui_imageInResource:@"receiveFail"]];
+            [self setImage:[UIImage jmuiChatting_imageInResource:@"receiveFail"]];
           }
         }];
       }
@@ -95,11 +95,11 @@ static NSInteger const textMessageContentRightOffset = 15;
       _voiceConent.hidden = NO;
       if (isReceived) {
         [_voiceConent setFrame:CGRectMake(20, 15, 9, 16)];
-        [_voiceConent setImage:[UIImage jmui_imageInResource:@"ReceiverVoiceNodePlaying"]];
+        [_voiceConent setImage:[UIImage jmuiChatting_imageInResource:@"ReceiverVoiceNodePlaying"]];
         
       } else {
         [_voiceConent setFrame:CGRectMake(self.frame.size.width - 30, 15, 9, 16)];
-        [_voiceConent setImage:[UIImage jmui_imageInResource:@"SenderVoiceNodePlaying"]];
+        [_voiceConent setImage:[UIImage jmuiChatting_imageInResource:@"SenderVoiceNodePlaying"]];
       }
       break;
     case kJMSGContentTypeUnknown:

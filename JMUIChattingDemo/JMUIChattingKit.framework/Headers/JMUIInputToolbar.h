@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "JMUIRecordAnimationView.h"
 #import "JMUIMessageTextView.h"
-#import "JMUIConstants.h"
+//#import "JMUIConstants.h"
+#import <JMUICommon/JMUIConstants.h>
+
 
 @protocol JMUIToolBarDelegate <NSObject>
 

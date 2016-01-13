@@ -7,9 +7,11 @@
 //
 
 #import "JMUIMessageTableViewCell.h"
-#import "JMUIConstants.h"
-#import "UIImage+JMUI.h"
+#import <JMUICommon/JMUICommon.h>
+#import "UIImage+JMUIChatting.h"
 #import "JMUISendMsgManager.h"
+#import <JMUICommon/MBProgressHUD+Add.h>
+#import <JMUICommon/MBProgressHUD.h>
 
 #define messageStatusBtnFrame [_model.message isReceived]?CGRectMake(_voiceTimeLabel.frame.origin.x + 5, _messageContent.frame.size.height/2 - 8, 17, 15):CGRectMake(_voiceTimeLabel.frame.origin.x - 20, _messageContent.frame.size.height/2 - 8, 17, 15)
 #define messagePercentLabelFrame [_model.message isReceived]?CGPointMake(_messageContent.frame.size.width/2 + crossgrap/2, _messageContent.frame.size.height/2):CGPointMake(_messageContent.frame.size.width/2 - crossgrap/2, _messageContent.frame.size.height/2)
@@ -32,7 +34,7 @@ static NSInteger const readViewRadius = 4;
     self.selectionStyle = UITableViewCellSelectionStyleNone;
     self.backgroundColor = [UIColor clearColor];
     _headView = [UIImageView new];
-    [_headView setImage:[UIImage jmui_imageInResource:@"headDefalt.png"]];
+    [_headView setImage:[UIImage jmuiChatting_imageInResource:@"headDefalt.png"]];
     _headView.layer.cornerRadius = headHeight/2;
     _headView.layer.masksToBounds = YES;
     _headView.contentMode = UIViewContentModeScaleAspectFill;
@@ -48,7 +50,7 @@ static NSInteger const readViewRadius = 4;
     
     self.sendFailView = [UIImageView new];
     [self.sendFailView setUserInteractionEnabled:YES];
-    [self.sendFailView setImage:[UIImage jmui_imageInResource:@"fail05"]];
+    [self.sendFailView setImage:[UIImage jmuiChatting_imageInResource:@"fail05"]];
     [self addSubview:self.sendFailView];
     
     _circleView = [UIActivityIndicatorView new];
@@ -106,14 +108,14 @@ static NSInteger const readViewRadius = 4;
         if (data != nil) {
           [self.headView setImage:[UIImage imageWithData:data]];
         } else {
-          [self.headView setImage:[UIImage jmui_imageInResource:@"headDefalt"]];
+          [self.headView setImage:[UIImage jmuiChatting_imageInResource:@"headDefalt"]];
         }
       } else {
         NSLog(@"该头像是异步乱序的头像");
       }
     } else {
       NSLog(@"Action -- get thumbavatar fail");
-      [self.headView setImage:[UIImage jmui_imageInResource:@"headDefalt"]];
+      [self.headView setImage:[UIImage jmuiChatting_imageInResource:@"headDefalt"]];
     }
   }];
   
@@ -355,7 +357,7 @@ static NSInteger const readViewRadius = 4;
   } else {
     voiceImagePreStr = @"SenderVoiceNodePlaying00";
   }
-  _messageContent.voiceConent.image = [UIImage jmui_imageInResource:[NSString stringWithFormat:@"%@%zd", voiceImagePreStr, self.index % 4]];
+  _messageContent.voiceConent.image = [UIImage jmuiChatting_imageInResource:[NSString stringWithFormat:@"%@%zd", voiceImagePreStr, self.index % 4]];
   if (_isPlaying) {
     self.index++;
     [self performSelector:@selector(changeVoiceImage) withObject:nil afterDelay:0.25];
@@ -372,9 +374,9 @@ static NSInteger const readViewRadius = 4;
   _isPlaying = NO;
   self.index = 0;
   if ([_model.message isReceived]) {
-    [_messageContent.voiceConent setImage:[UIImage jmui_imageInResource:@"ReceiverVoiceNodePlaying.png"]];
+    [_messageContent.voiceConent setImage:[UIImage jmuiChatting_imageInResource:@"ReceiverVoiceNodePlaying.png"]];
   } else {
-    [_messageContent.voiceConent setImage:[UIImage jmui_imageInResource:@"SenderVoiceNodePlaying.png"]];
+    [_messageContent.voiceConent setImage:[UIImage jmuiChatting_imageInResource:@"SenderVoiceNodePlaying.png"]];
   }
   if (self.continuePlayer) {
     self.continuePlayer = NO;

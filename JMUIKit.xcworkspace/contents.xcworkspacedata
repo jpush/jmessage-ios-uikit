@@ -19,4 +19,7 @@
    <FileRef
       location = "group:JMUIMultiSelectPhotosKit/JMUIMultiSelectPhotosKit.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:JMUIComman/JMUICommon.xcodeproj">
+   </FileRef>
 </Workspace>

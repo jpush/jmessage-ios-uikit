@@ -9,13 +9,12 @@
 #import "JMUIInputToolbar.h"
 #import "JMUIRecordAnimationView.h"
 #import <AVFoundation/AVFoundation.h>
-#import "JMUIFileManager.h"
+#import <JMUICommon/JMUIFileManager.h>
 #import "JMUIAudioPlayerHelper.h"
-#import "JMUIFileManager.h"
-#import "JMUIStringUtils.h"
-#import "JMUIViewUtil.h"
-#import "NSString+JMUI.h"
-#import "UIImage+JMUI.h"
+#import <JMUICommon/JMUIStringUtils.h>
+#import <JMUICommon/JMUIViewUtil.h>
+#import <JMUICommon/NSString+JMUI.h>
+#import <JMUICommon/UIImage+JMUI.h>
 
 @implementation JMUIInputToolbar
 

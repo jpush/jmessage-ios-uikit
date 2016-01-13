@@ -9,8 +9,9 @@
 #import "RootViewController.h"
 #import <JMessage/JMessage.h>
 #import "AppDelegate.h"
-#import "MBProgressHUD.h"
-#import "MBProgressHUD+Add.h"
+#import <JMUICommon/JMUICommon.h>
+#import <JMUICommon/MBProgressHUD.h>
+#import <JMUICommon/MBProgressHUD+Add.h>
 #import "MyGroupDetailViewController.h"
 
 #define kuserName @"userName"

@@ -7,7 +7,7 @@
 //
 
 #import "JMUIMessageTextView.h"
-#import "JMUIConstants.h"
+#import <JMUICommon/JMUICommon.h>
 
 @implementation JMUIMessageTextView
 #pragma mark - Setters

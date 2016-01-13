@@ -7,8 +7,8 @@
 //
 
 #import "JMUIChatModel.h"
-#import "JMUIConstants.h"
-#import "JMUIStringUtils.h"
+#import <JMUICommon/JMUICommon.h>
+
 
 #define headHeight 46
 

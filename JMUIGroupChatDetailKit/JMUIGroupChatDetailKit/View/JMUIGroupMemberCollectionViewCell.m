@@ -7,7 +7,8 @@
 //
 
 #import "JMUIGroupMemberCollectionViewCell.h"
-#import "UIImage+JMUI.h"
+#import <JMUICommon/JMUICommon.h>
+#import "UIImage+JMUIGroupChatDetail.h"
 
 @interface JMUIGroupMemberCollectionViewCell()
 {
@@ -38,10 +39,10 @@
       if (data != nil) {
         _AvatarImgView.image = [UIImage imageWithData:data];
       } else {
-        _AvatarImgView.image = [UIImage jmui_imageInResource:@"headDefalt"];
+        _AvatarImgView.image = [UIImage jmuiGroupChatDetail_imageInResource:@"headDefalt"];
       }
     } else {
-      _AvatarImgView.image = [UIImage jmui_imageInResource:@"headDefalt"];
+      _AvatarImgView.image = [UIImage jmuiGroupChatDetail_imageInResource:@"headDefalt"];
     }
   }];
 }
@@ -49,12 +50,12 @@
 - (void)setDeleteMember {
   _userNameLabel.text = @"";
   _deleteMemberBtn.hidden = YES;
-  _AvatarImgView.image = [UIImage jmui_imageInResource:@"deleteMan"];
+  _AvatarImgView.image = [UIImage jmuiGroupChatDetail_imageInResource:@"deleteMan"];
 }
 
 - (void)setAddMember {
   _userNameLabel.text = @"";
   _deleteMemberBtn.hidden = YES;
-  _AvatarImgView.image = [UIImage jmui_imageInResource:@"addMan"];
+  _AvatarImgView.image = [UIImage jmuiGroupChatDetail_imageInResource:@"addMan"];
 }
 @end

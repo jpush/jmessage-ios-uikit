@@ -7,7 +7,9 @@
 //
 
 #import "JMUIChattingLayout.h"
-#import "UIView+JMUI.h"
+//#import "UIView+JMUI.h"
+#import <JMUICommon/UIView+JMUI.h>
+
 
 static NSInteger const inputViewHeight = 297;
 static CGFloat const animationDuration = 0.25;

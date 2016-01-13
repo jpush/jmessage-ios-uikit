@@ -7,7 +7,8 @@
 //
 
 #import "JMUILoadMessageTableViewCell.h"
-#import "JMUIConstants.h"
+#import <JMUICommon/JMUICommon.h>
+
 @implementation JMUILoadMessageTableViewCell
 
 - (void)awakeFromNib {

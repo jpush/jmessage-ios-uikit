@@ -7,8 +7,9 @@
 //
 
 #import "JMUIInputView.h"
-#import "JMUIViewUtil.h"
-#import "UIView+JMUI.h"
+#import <JMUICommon/JMUIViewUtil.h>
+//#import "UIView+JMUI.h"
+#import <JMUICommon/UIView+JMUI.h>
 
 @implementation JMUIInputView
 

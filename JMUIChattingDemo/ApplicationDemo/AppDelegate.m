@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "RootViewController.h"
 #import <JMUIChattingKit/JMUIChattingViewController.h>
-//#import <JMessage/JMessage.h>
+#import <JMessage/JMessage.h>
 
 @interface AppDelegate ()
 

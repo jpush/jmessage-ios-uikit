@@ -7,7 +7,7 @@
 //
 
 #import "JMUIMoreView.h"
-#import "JMUIViewUtil.h"
+#import <JMUICommon/JMUICommon.h>
 
 @implementation JMUIMoreView
 

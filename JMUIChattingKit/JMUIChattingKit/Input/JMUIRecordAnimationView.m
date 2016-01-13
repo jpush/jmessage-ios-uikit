@@ -7,7 +7,8 @@
 //
 
 #import "JMUIRecordAnimationView.h"
-#import "UIImage+JMUI.h"
+#import "UIImage+JMUIChatting.h"
+
 @implementation JMUIRecordAnimationView
 
 
@@ -20,20 +21,20 @@
     self.layer.cornerRadius=3.0;
     self.clipsToBounds = YES;
     UIImageView *backView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
-    backView.image = [[UIImage jmui_imageInResource:@"chat_voice"] stretchableImageWithLeftCapWidth:10 topCapHeight:10];
+    backView.image = [[UIImage jmuiChatting_imageInResource:@"chat_voice"] stretchableImageWithLeftCapWidth:10 topCapHeight:10];
     [self addSubview:backView];
     
     phoneIV=[[UIImageView alloc]initWithFrame:CGRectMake(13, 10, 72, 99)];
-    phoneIV.image=[UIImage jmui_imageInResource:@"RecordingBkg"];
+    phoneIV.image=[UIImage jmuiChatting_imageInResource:@"RecordingBkg"];
     [self addSubview:phoneIV];
     
     cancelIV = [[UIImageView alloc] initWithFrame:CGRectMake(35, 10, 72, 99)];
-    cancelIV.image = [UIImage jmui_imageInResource:@"voice_delete"];
+    cancelIV.image = [UIImage jmuiChatting_imageInResource:@"voice_delete"];
     cancelIV.hidden = YES;
     [self addSubview:cancelIV];
     
     signalIV=[[UIImageView alloc]initWithFrame:CGRectMake(96,40, 18, 62)];
-    signalIV.image=[UIImage jmui_imageInResource:@"RecordingSignal001"];
+    signalIV.image=[UIImage jmuiChatting_imageInResource:@"RecordingSignal001"];
     [self addSubview:signalIV];
     
     tipLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 115, 140, 25)];
@@ -78,59 +79,59 @@
   //     signalIV.image=[UIImage imageNamed:[NSString stringWithFormat:@"RecordingSignal00%d",index]];
   if (0<lowPassResults<=0.06)
   {
-    [signalIV setImage:[UIImage jmui_imageInResource:@"RecordingSignal000.png"]];
+    [signalIV setImage:[UIImage jmuiChatting_imageInResource:@"RecordingSignal000.png"]];
     
   }
   else if (0.06<lowPassResults<=0.13) {
-    [signalIV setImage:[UIImage jmui_imageInResource:@"RecordingSignal000.png"]];
+    [signalIV setImage:[UIImage jmuiChatting_imageInResource:@"RecordingSignal000.png"]];
     
   }
   else if (0.13<lowPassResults<=0.20) {
-    [signalIV setImage:[UIImage jmui_imageInResource:@"RecordingSignal001"]];
+    [signalIV setImage:[UIImage jmuiChatting_imageInResource:@"RecordingSignal001"]];
     
   }
   else if (0.20<lowPassResults<=0.27) {
-    [signalIV setImage:[UIImage jmui_imageInResource:@"RecordingSignal001"]];
+    [signalIV setImage:[UIImage jmuiChatting_imageInResource:@"RecordingSignal001"]];
     
   }
   else if (0.27<lowPassResults<=0.34) {
-    [signalIV setImage:[UIImage jmui_imageInResource:@"RecordingSignal002.png"]];
+    [signalIV setImage:[UIImage jmuiChatting_imageInResource:@"RecordingSignal002.png"]];
     
   }
   else if (0.34<lowPassResults<=0.41) {
-    [signalIV setImage:[UIImage jmui_imageInResource:@"RecordingSignal003.png"]];
+    [signalIV setImage:[UIImage jmuiChatting_imageInResource:@"RecordingSignal003.png"]];
     
   }
   else if (0.41<lowPassResults<=0.48) {
-    [signalIV setImage:[UIImage jmui_imageInResource:@"RecordingSignal004.png"]];
+    [signalIV setImage:[UIImage jmuiChatting_imageInResource:@"RecordingSignal004.png"]];
     
   }
   else if (0.48<lowPassResults<=0.55) {
-    [signalIV setImage:[UIImage jmui_imageInResource:@"RecordingSignal005.png"]];
+    [signalIV setImage:[UIImage jmuiChatting_imageInResource:@"RecordingSignal005.png"]];
     
   }
   else if (0.55<lowPassResults<=0.62) {
-    [signalIV setImage:[UIImage jmui_imageInResource:@"RecordingSignal005.png"]];
+    [signalIV setImage:[UIImage jmuiChatting_imageInResource:@"RecordingSignal005.png"]];
     
   }
   else if (0.62<lowPassResults<=0.69) {
-    [signalIV setImage:[UIImage jmui_imageInResource:@"RecordingSignal006.png"]];
+    [signalIV setImage:[UIImage jmuiChatting_imageInResource:@"RecordingSignal006.png"]];
     
   }
   else if (0.69<lowPassResults<=0.76) {
-    [signalIV setImage:[UIImage jmui_imageInResource:@"RecordingSignal007.png"]];
+    [signalIV setImage:[UIImage jmuiChatting_imageInResource:@"RecordingSignal007.png"]];
     
   }
   else if (0.76<lowPassResults<=0.83) {
-    [signalIV setImage:[UIImage jmui_imageInResource:@"RecordingSignal007.png"]];
+    [signalIV setImage:[UIImage jmuiChatting_imageInResource:@"RecordingSignal007.png"]];
     
   }
   else if (0.83<lowPassResults<=0.9) {
-    [signalIV setImage:[UIImage jmui_imageInResource:@"RecordingSignal008.png"]];
+    [signalIV setImage:[UIImage jmuiChatting_imageInResource:@"RecordingSignal008.png"]];
     
   }
   else {
-    [signalIV setImage:[UIImage jmui_imageInResource:@"RecordingSignal000.png"]];
+    [signalIV setImage:[UIImage jmuiChatting_imageInResource:@"RecordingSignal000.png"]];
     
   }
 }

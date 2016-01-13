@@ -7,12 +7,12 @@
 //
 
 #import "JMUIChattingViewController.h"
-#import "JMUIReuseCellMaker.h"
-#import "JMUIStringUtils.h"
-#import "JMUIFileManager.h"
+#import "JMUIChattingReuseCellMaker.h"
+#import <JMUICommon/JMUICommon.h>
 #import "JMUIChattingDatasource.h"
 #import "JMUIChattingLayout.h"
-#import "UIView+JMUI.h"
+#import <JMUICommon/MBProgressHUD+Add.h>
+#import <JMUICommon/MBProgressHUD.h>
 
 #define messageTableColor [UIColor colorWithRed:236/255.0 green:237/255.0 blue:240/255.0 alpha:1]
 
@@ -240,7 +240,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath {
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   if (![_messageDatasource noMoreHistoryMessage]) {
     if (indexPath.row == 0) {
-      JMUILoadMessageTableViewCell *cell = [JMUIReuseCellMaker LoadingCellInTable:_messageListTable];
+      JMUILoadMessageTableViewCell *cell = [JMUIChattingReuseCellMaker LoadingCellInTable:_messageListTable];
       [cell startLoading];
       return cell;
     }
@@ -248,11 +248,11 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 
   JMUIChatModel *model = [_messageDatasource getMessageWithIndex:indexPath.row];
   if (model.isTime == YES || model.message.contentType == kJMSGContentTypeEventNotification || model.isErrorMessage) {
-    JMUIShowTimeCell *cell = [JMUIReuseCellMaker timeCellInTable:_messageListTable];
+    JMUIShowTimeCell *cell = [JMUIChattingReuseCellMaker timeCellInTable:_messageListTable];
     [cell layoutModel:model];
     return cell;
   } else {
-    JMUIMessageTableViewCell *cell = [JMUIReuseCellMaker messageCellInTable:_messageListTable];
+    JMUIMessageTableViewCell *cell = [JMUIChattingReuseCellMaker messageCellInTable:_messageListTable];
     [cell setCellData:model delegate:self indexPath:indexPath];
     return cell;
   }

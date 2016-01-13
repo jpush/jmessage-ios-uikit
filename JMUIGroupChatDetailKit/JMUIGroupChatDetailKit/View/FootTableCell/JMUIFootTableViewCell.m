@@ -7,9 +7,7 @@
 //
 
 #import "JMUIFootTableViewCell.h"
-#import "UIView+JMUI.h"
-#import "JMUIViewUtil.h"
-#import "JMUIConstants.h"
+#import <JMUICommon/JMUICommon.h>
 
 @implementation JMUIFootTableViewCell
 

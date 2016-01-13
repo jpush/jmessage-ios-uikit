@@ -11,10 +11,10 @@
 #import "JMUIGroupInfoFooterReusableView.h"
 #import "JMUIFootTableCollectionReusableView.h"
 #import "JMUIFootTableViewCell.h"
-#import "MBProgressHUD.h"
-#import "MBProgressHUD+Add.h"
-#import "JMUIConstants.h"
-#import "JMUIReuseCellMaker.h"
+#import <JMUICommon/JMUICommon.h>
+#import <JMUICommon/MBProgressHUD+Add.h>
+#import <JMUICommon/MBProgressHUD.h>
+#import "JMUIGroupChatDetailReuseCellMaker.h"
 
 @interface JMUIGroupChatDetailViewController ()<
 UICollectionViewDataSource,
@@ -63,12 +63,12 @@ UITableViewDelegate> {
   _groupMemberGrip.minimumZoomScale = 0;
   _groupMemberGrip.backgroundColor = [UIColor whiteColor];
   [_groupMemberGrip registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"gradientCell"];
-  [_groupMemberGrip registerNib:[UINib nibWithNibName:FrameworkNibResourcesWithName(@"JMUIGroupMemberCollectionViewCell") bundle:nil]
-     forCellWithReuseIdentifier:FrameworkNibResourcesWithName(@"JMUIGroupMemberCollectionViewCell")];
+  [_groupMemberGrip registerNib:[UINib nibWithNibName:@"JMUIGroupChatDetailKit.framework/JMUIGroupMemberCollectionViewCell" bundle:nil]
+     forCellWithReuseIdentifier:@"JMUIGroupChatDetailKit.framework/JMUIGroupMemberCollectionViewCell"];
   
-  [_groupMemberGrip registerNib:[UINib nibWithNibName:FrameworkNibResourcesWithName(@"JMUIFootTableCollectionReusableView") bundle:nil]
+  [_groupMemberGrip registerNib:[UINib nibWithNibName:@"JMUIGroupChatDetailKit.framework/JMUIFootTableCollectionReusableView" bundle:nil]
      forSupplementaryViewOfKind:UICollectionElementKindSectionFooter
-            withReuseIdentifier:FrameworkNibResourcesWithName(@"JMUIFootTableCollectionReusableView")];
+            withReuseIdentifier:@"JMUIGroupChatDetailKit.framework/JMUIFootTableCollectionReusableView"];
   _groupMemberGrip.backgroundColor = [UIColor clearColor];
   _groupMemberGrip.backgroundView = [UIView new];
   UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGripMember:)];
@@ -339,7 +339,7 @@ UITableViewDelegate> {
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-  JMUIFootTableViewCell *cell = (JMUIFootTableViewCell *)[JMUIReuseCellMaker footTableCell:tableView];
+  JMUIFootTableViewCell *cell = (JMUIFootTableViewCell *)[JMUIGroupChatDetailReuseCellMaker footTableCell:tableView];
   switch (indexPath.row) {
     case 0:
       [cell setDataWithGroupName:((JMSGGroup *)_conversation.target).displayName];

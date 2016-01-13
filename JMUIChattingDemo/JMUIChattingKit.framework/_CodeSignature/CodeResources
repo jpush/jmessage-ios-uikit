@@ -8,6 +8,10 @@
 		<data>
 		FYlDamTndtN7EgQZn+BoXETXGwo=
 		</data>
+		<key>Headers/.DS_Store</key>
+		<data>
+		wBwTOUtLr+sFfxyaq+4oPaFJu2Y=
+		</data>
 		<key>Headers/JMUIChattingDatasource.h</key>
 		<data>
 		m+aCDGcWVs43UMLMr6DkthNTAz8=
@@ -198,15 +202,11 @@
 		</data>
 		<key>Headers/JMUIChattingViewController.h</key>
 		<data>
-		50OttQHG+Cdki6wnd7gSyWOR02w=
-		</data>
-		<key>Headers/JMUIConstants.h</key>
-		<data>
-		FYf6ALCQuZ/Js3FcPDk6Boveqks=
+		J9Ik/V7DhGBq2foc/rp9uUbEP5A=
 		</data>
 		<key>Headers/JMUIInputToolbar.h</key>
 		<data>
-		/P7Y/9prb1hk5O8BhZIBP6GDLMY=
+		xWY5+dN0aZY0zfpuy4SwNj0CMV0=
 		</data>
 		<key>Headers/JMUIInputToolbar.xib</key>
 		<data>
@@ -236,25 +236,9 @@
 		<data>
 		XcHRtKRHScT+r4WihaxNdBoR58M=
 		</data>
-		<key>Headers/MBProgressHUD+Add.h</key>
-		<data>
-		AKk7Ppk+6AxNz9nT7E7qo2TOGpU=
-		</data>
-		<key>Headers/MBProgressHUD.h</key>
-		<data>
-		1iokPyK6H32LsXj2Eh49SrDTOmw=
-		</data>
-		<key>Headers/XHVoiceRecordHUD.h</key>
-		<data>
-		xzBJ7yhT9rKIqA4+kRFl0Ui9Xns=
-		</data>
-		<key>Headers/XHVoiceRecordHelper.h</key>
-		<data>
-		VmPphCZ2yFqkekQhHJU+LQOMLBQ=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		x7Zl9+iC3uoCdgErq5zkSkYBQIo=
+		JL8Nb2rFUqdYTjYE7sU1MZDLIrw=
 		</data>
 		<key>JMUIChattingKitResource.bundle/ReceiverVoiceNodePlaying001@2x.png</key>
 		<data>
@@ -451,22 +435,6 @@
 		<key>JMUIShowTimeCell.nib</key>
 		<data>
 		3V+u/guZ05PLqMV8AD4NnzGZ8r8=
-		</data>
-		<key>MBProgressHUD.bundle/error.png</key>
-		<data>
-		oEtTscjfFoMNIrbyiAdZ/IXg3M0=
-		</data>
-		<key>MBProgressHUD.bundle/error@2x.png</key>
-		<data>
-		gI8qepqBFVmpAP7Hi6FbZmx/Yxg=
-		</data>
-		<key>MBProgressHUD.bundle/success.png</key>
-		<data>
-		1n95bmodBqV2O0sPInuHpqSxAJ8=
-		</data>
-		<key>MBProgressHUD.bundle/success@2x.png</key>
-		<data>
-		bsnH0mTXMKgCiM75bjX4+3ARVAs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -661,15 +629,11 @@
 		</data>
 		<key>Headers/JMUIChattingViewController.h</key>
 		<data>
-		50OttQHG+Cdki6wnd7gSyWOR02w=
-		</data>
-		<key>Headers/JMUIConstants.h</key>
-		<data>
-		FYf6ALCQuZ/Js3FcPDk6Boveqks=
+		J9Ik/V7DhGBq2foc/rp9uUbEP5A=
 		</data>
 		<key>Headers/JMUIInputToolbar.h</key>
 		<data>
-		/P7Y/9prb1hk5O8BhZIBP6GDLMY=
+		xWY5+dN0aZY0zfpuy4SwNj0CMV0=
 		</data>
 		<key>Headers/JMUIInputToolbar.xib</key>
 		<data>
@@ -698,22 +662,6 @@
 		<key>Headers/JMUIShowTimeCell.xib</key>
 		<data>
 		XcHRtKRHScT+r4WihaxNdBoR58M=
-		</data>
-		<key>Headers/MBProgressHUD+Add.h</key>
-		<data>
-		AKk7Ppk+6AxNz9nT7E7qo2TOGpU=
-		</data>
-		<key>Headers/MBProgressHUD.h</key>
-		<data>
-		1iokPyK6H32LsXj2Eh49SrDTOmw=
-		</data>
-		<key>Headers/XHVoiceRecordHUD.h</key>
-		<data>
-		xzBJ7yhT9rKIqA4+kRFl0Ui9Xns=
-		</data>
-		<key>Headers/XHVoiceRecordHelper.h</key>
-		<data>
-		VmPphCZ2yFqkekQhHJU+LQOMLBQ=
 		</data>
 		<key>JMUIChattingKitResource.bundle/ReceiverVoiceNodePlaying001@2x.png</key>
 		<data>
@@ -910,22 +858,6 @@
 		<key>JMUIShowTimeCell.nib</key>
 		<data>
 		3V+u/guZ05PLqMV8AD4NnzGZ8r8=
-		</data>
-		<key>MBProgressHUD.bundle/error.png</key>
-		<data>
-		oEtTscjfFoMNIrbyiAdZ/IXg3M0=
-		</data>
-		<key>MBProgressHUD.bundle/error@2x.png</key>
-		<data>
-		gI8qepqBFVmpAP7Hi6FbZmx/Yxg=
-		</data>
-		<key>MBProgressHUD.bundle/success.png</key>
-		<data>
-		1n95bmodBqV2O0sPInuHpqSxAJ8=
-		</data>
-		<key>MBProgressHUD.bundle/success@2x.png</key>
-		<data>
-		bsnH0mTXMKgCiM75bjX4+3ARVAs=
 		</data>
 	</dict>
 	<key>rules</key>

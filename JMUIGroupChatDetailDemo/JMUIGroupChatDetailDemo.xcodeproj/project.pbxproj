@@ -34,6 +34,7 @@
 		62C02B191C43A16E0028B936 /* JMUIGroupChatDetailKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C02B181C43A16E0028B936 /* JMUIGroupChatDetailKit.framework */; };
 		62C02B1B1C43A1E40028B936 /* JMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C02B1A1C43A1E40028B936 /* JMessage.framework */; };
 		62C02BBD1C43ADBB0028B936 /* JMUIGroupChatDetailKit.framework in Resources */ = {isa = PBXBuildFile; fileRef = 62C02B181C43A16E0028B936 /* JMUIGroupChatDetailKit.framework */; };
+		62C02CD11C461E330028B936 /* JMUICommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C02CD01C461E330028B936 /* JMUICommon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		62C024101C3E3BE40028B936 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		62C02B181C43A16E0028B936 /* JMUIGroupChatDetailKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMUIGroupChatDetailKit.framework; sourceTree = "<group>"; };
 		62C02B1A1C43A1E40028B936 /* JMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMessage.framework; sourceTree = "<group>"; };
+		62C02CD01C461E330028B936 /* JMUICommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMUICommon.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				62C0227F1C3E34990028B936 /* Photos.framework in Frameworks */,
 				62C0227D1C3E34920028B936 /* Accelerate.framework in Frameworks */,
 				62C0227B1C3E34820028B936 /* CoreTelephony.framework in Frameworks */,
+				62C02CD11C461E330028B936 /* JMUICommon.framework in Frameworks */,
 				62C022791C3E347C0028B936 /* AudioToolbox.framework in Frameworks */,
 				62C022771C3E34750028B936 /* SystemConfiguration.framework in Frameworks */,
 				62C02B1B1C43A1E40028B936 /* JMessage.framework in Frameworks */,
@@ -201,6 +204,7 @@
 		62C022801C3E34B90028B936 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				62C02CD01C461E330028B936 /* JMUICommon.framework */,
 				62C02B1A1C43A1E40028B936 /* JMessage.framework */,
 				62C02B181C43A16E0028B936 /* JMUIGroupChatDetailKit.framework */,
 				62C0227E1C3E34990028B936 /* Photos.framework */,

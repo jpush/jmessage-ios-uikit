@@ -6,7 +6,7 @@
 	<dict>
 		<key>.DS_Store</key>
 		<data>
-		UzhasiEUcANz/44ipgHpZYuYpT0=
+		uO1McQQA1ViAC0UbxQuPjogxqIw=
 		</data>
 		<key>Headers/JMUIFootTableCollectionReusableView.xib</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		R+f8kxjieAyiP/ZU3jwqtz/aa70=
+		eIcow5R9wfAbidkHXr3XntBBcUo=
 		</data>
 		<key>JMUIFootTableCollectionReusableView.nib</key>
 		<data>
@@ -231,22 +231,6 @@
 		<key>JMUIKitResource.bundle/voice_toolbar_pre@3x.png</key>
 		<data>
 		8x1FwucCppg7rktf5n3fD02bekY=
-		</data>
-		<key>MBProgressHUD.bundle/error.png</key>
-		<data>
-		oEtTscjfFoMNIrbyiAdZ/IXg3M0=
-		</data>
-		<key>MBProgressHUD.bundle/error@2x.png</key>
-		<data>
-		gI8qepqBFVmpAP7Hi6FbZmx/Yxg=
-		</data>
-		<key>MBProgressHUD.bundle/success.png</key>
-		<data>
-		1n95bmodBqV2O0sPInuHpqSxAJ8=
-		</data>
-		<key>MBProgressHUD.bundle/success@2x.png</key>
-		<data>
-		bsnH0mTXMKgCiM75bjX4+3ARVAs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -470,22 +454,6 @@
 		<key>JMUIKitResource.bundle/voice_toolbar_pre@3x.png</key>
 		<data>
 		8x1FwucCppg7rktf5n3fD02bekY=
-		</data>
-		<key>MBProgressHUD.bundle/error.png</key>
-		<data>
-		oEtTscjfFoMNIrbyiAdZ/IXg3M0=
-		</data>
-		<key>MBProgressHUD.bundle/error@2x.png</key>
-		<data>
-		gI8qepqBFVmpAP7Hi6FbZmx/Yxg=
-		</data>
-		<key>MBProgressHUD.bundle/success.png</key>
-		<data>
-		1n95bmodBqV2O0sPInuHpqSxAJ8=
-		</data>
-		<key>MBProgressHUD.bundle/success@2x.png</key>
-		<data>
-		bsnH0mTXMKgCiM75bjX4+3ARVAs=
 		</data>
 	</dict>
 	<key>rules</key>

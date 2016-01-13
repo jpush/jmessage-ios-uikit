@@ -11,9 +11,11 @@
 #import <JMUIChattingKit/JMUIChattingViewController.h>
 #import <JMessage/JMessage.h>
 #import "AppDelegate.h"
-#import <JMUIChattingKit/MBProgressHUD+Add.h>
-#import <JMUIChattingKit/MBProgressHUD.h>
+//#import <JMUIChattingKit/MBProgressHUD+Add.h>
+//#import <JMUIChattingKit/MBProgressHUD.h>
 #import "MyConversationViewController.h"
+#import <JMUICommon/MBProgressHUD.h>
+#import <JMUICommon/MBProgressHUD+Add.h>
 
 @interface RootViewController ()
 
