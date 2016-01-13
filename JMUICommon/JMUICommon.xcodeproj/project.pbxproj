@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62C02E061C463FBF0028B936 /* JMUICommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C02DFB1C463FBF0028B936 /* JMUICommon.framework */; };
+		62C02E0B1C463FBF0028B936 /* JMUICommonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E0A1C463FBF0028B936 /* JMUICommonTests.m */; };
+		62C02E3D1C4640180028B936 /* NSDate+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E161C4640180028B936 /* NSDate+Utilities.h */; };
+		62C02E3E1C4640180028B936 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E171C4640180028B936 /* NSDate+Utilities.m */; };
+		62C02E3F1C4640180028B936 /* NSString+JMUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E181C4640180028B936 /* NSString+JMUI.h */; };
+		62C02E401C4640180028B936 /* NSString+JMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E191C4640180028B936 /* NSString+JMUI.m */; };
+		62C02E411C4640180028B936 /* UIImage+JMUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E1A1C4640180028B936 /* UIImage+JMUI.h */; };
+		62C02E421C4640180028B936 /* UIImage+JMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E1B1C4640180028B936 /* UIImage+JMUI.m */; };
+		62C02E431C4640180028B936 /* UIView+JMUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E1C1C4640180028B936 /* UIView+JMUI.h */; };
+		62C02E441C4640180028B936 /* UIView+JMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E1D1C4640180028B936 /* UIView+JMUI.m */; };
+		62C02E451C4640180028B936 /* MBProgressHUD+Add.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E201C4640180028B936 /* MBProgressHUD+Add.h */; };
+		62C02E461C4640180028B936 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E211C4640180028B936 /* MBProgressHUD+Add.m */; };
+		62C02E471C4640180028B936 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62C02E221C4640180028B936 /* MBProgressHUD.bundle */; };
+		62C02E481C4640180028B936 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E231C4640180028B936 /* MBProgressHUD.h */; };
+		62C02E491C4640180028B936 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E241C4640180028B936 /* MBProgressHUD.m */; };
+		62C02E4A1C4640180028B936 /* XHFoundationMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E271C4640180028B936 /* XHFoundationMacro.h */; };
+		62C02E4B1C4640180028B936 /* XHMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E281C4640180028B936 /* XHMacro.h */; };
+		62C02E4C1C4640180028B936 /* XHUIKitMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E291C4640180028B936 /* XHUIKitMacro.h */; };
+		62C02E4D1C4640180028B936 /* RecordViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62C02E2A1C4640180028B936 /* RecordViewResources.bundle */; };
+		62C02E4E1C4640180028B936 /* UIImage+XHRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E2B1C4640180028B936 /* UIImage+XHRecord.h */; };
+		62C02E4F1C4640180028B936 /* UIImage+XHRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E2C1C4640180028B936 /* UIImage+XHRecord.m */; };
+		62C02E501C4640180028B936 /* XHVoiceCommonHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E2D1C4640180028B936 /* XHVoiceCommonHelper.h */; };
+		62C02E511C4640180028B936 /* XHVoiceCommonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E2E1C4640180028B936 /* XHVoiceCommonHelper.m */; };
+		62C02E521C4640180028B936 /* XHVoiceRecordHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E2F1C4640180028B936 /* XHVoiceRecordHelper.h */; };
+		62C02E531C4640180028B936 /* XHVoiceRecordHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E301C4640180028B936 /* XHVoiceRecordHelper.m */; };
+		62C02E541C4640180028B936 /* XHVoiceRecordHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E311C4640180028B936 /* XHVoiceRecordHUD.h */; };
+		62C02E551C4640180028B936 /* XHVoiceRecordHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E321C4640180028B936 /* XHVoiceRecordHUD.m */; };
+		62C02E561C4640180028B936 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62C02E331C4640180028B936 /* Info.plist */; };
+		62C02E571C4640180028B936 /* JMUICommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E341C4640180028B936 /* JMUICommon.h */; };
+		62C02E581C4640180028B936 /* JMUIConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E351C4640180028B936 /* JMUIConstants.h */; };
+		62C02E591C4640180028B936 /* JMUIFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E361C4640180028B936 /* JMUIFileManager.h */; };
+		62C02E5A1C4640180028B936 /* JMUIFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E371C4640180028B936 /* JMUIFileManager.m */; };
+		62C02E5B1C4640180028B936 /* JMUIViewUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E381C4640180028B936 /* JMUIViewUtil.h */; };
+		62C02E5C1C4640180028B936 /* JMUIViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E391C4640180028B936 /* JMUIViewUtil.m */; };
+		62C02E5D1C4640180028B936 /* JMUIStringUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E3B1C4640180028B936 /* JMUIStringUtils.h */; };
+		62C02E5E1C4640180028B936 /* JMUIStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E3C1C4640180028B936 /* JMUIStringUtils.m */; };
+		62C02E601C4640460028B936 /* JMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C02E5F1C4640460028B936 /* JMessage.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		62C02E071C463FBF0028B936 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62C02DF21C463FBF0028B936 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62C02DFA1C463FBF0028B936;
+			remoteInfo = JMUICommon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		62C02DFB1C463FBF0028B936 /* JMUICommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JMUICommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62C02E001C463FBF0028B936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62C02E051C463FBF0028B936 /* JMUICommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JMUICommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62C02E0A1C463FBF0028B936 /* JMUICommonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMUICommonTests.m; sourceTree = "<group>"; };
+		62C02E0C1C463FBF0028B936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62C02E161C4640180028B936 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
+		62C02E171C4640180028B936 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
+		62C02E181C4640180028B936 /* NSString+JMUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JMUI.h"; sourceTree = "<group>"; };
+		62C02E191C4640180028B936 /* NSString+JMUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JMUI.m"; sourceTree = "<group>"; };
+		62C02E1A1C4640180028B936 /* UIImage+JMUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JMUI.h"; sourceTree = "<group>"; };
+		62C02E1B1C4640180028B936 /* UIImage+JMUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JMUI.m"; sourceTree = "<group>"; };
+		62C02E1C1C4640180028B936 /* UIView+JMUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JMUI.h"; sourceTree = "<group>"; };
+		62C02E1D1C4640180028B936 /* UIView+JMUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JMUI.m"; sourceTree = "<group>"; };
+		62C02E201C4640180028B936 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		62C02E211C4640180028B936 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		62C02E221C4640180028B936 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		62C02E231C4640180028B936 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		62C02E241C4640180028B936 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		62C02E271C4640180028B936 /* XHFoundationMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHFoundationMacro.h; sourceTree = "<group>"; };
+		62C02E281C4640180028B936 /* XHMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHMacro.h; sourceTree = "<group>"; };
+		62C02E291C4640180028B936 /* XHUIKitMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHUIKitMacro.h; sourceTree = "<group>"; };
+		62C02E2A1C4640180028B936 /* RecordViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RecordViewResources.bundle; sourceTree = "<group>"; };
+		62C02E2B1C4640180028B936 /* UIImage+XHRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XHRecord.h"; sourceTree = "<group>"; };
+		62C02E2C1C4640180028B936 /* UIImage+XHRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XHRecord.m"; sourceTree = "<group>"; };
+		62C02E2D1C4640180028B936 /* XHVoiceCommonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHVoiceCommonHelper.h; sourceTree = "<group>"; };
+		62C02E2E1C4640180028B936 /* XHVoiceCommonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHVoiceCommonHelper.m; sourceTree = "<group>"; };
+		62C02E2F1C4640180028B936 /* XHVoiceRecordHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHVoiceRecordHelper.h; sourceTree = "<group>"; };
+		62C02E301C4640180028B936 /* XHVoiceRecordHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHVoiceRecordHelper.m; sourceTree = "<group>"; };
+		62C02E311C4640180028B936 /* XHVoiceRecordHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHVoiceRecordHUD.h; sourceTree = "<group>"; };
+		62C02E321C4640180028B936 /* XHVoiceRecordHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHVoiceRecordHUD.m; sourceTree = "<group>"; };
+		62C02E331C4640180028B936 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62C02E341C4640180028B936 /* JMUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUICommon.h; sourceTree = "<group>"; };
+		62C02E351C4640180028B936 /* JMUIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIConstants.h; sourceTree = "<group>"; };
+		62C02E361C4640180028B936 /* JMUIFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIFileManager.h; sourceTree = "<group>"; };
+		62C02E371C4640180028B936 /* JMUIFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIFileManager.m; sourceTree = "<group>"; };
+		62C02E381C4640180028B936 /* JMUIViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIViewUtil.h; sourceTree = "<group>"; };
+		62C02E391C4640180028B936 /* JMUIViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIViewUtil.m; sourceTree = "<group>"; };
+		62C02E3B1C4640180028B936 /* JMUIStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIStringUtils.h; sourceTree = "<group>"; };
+		62C02E3C1C4640180028B936 /* JMUIStringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIStringUtils.m; sourceTree = "<group>"; };
+		62C02E5F1C4640460028B936 /* JMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMessage.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62C02DF71C463FBF0028B936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C02E601C4640460028B936 /* JMessage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62C02E021C463FBF0028B936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C02E061C463FBF0028B936 /* JMUICommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62C02DF11C463FBF0028B936 = {
+			isa = PBXGroup;
+			children = (
+				62C02DFD1C463FBF0028B936 /* JMUICommon */,
+				62C02E091C463FBF0028B936 /* JMUICommonTests */,
+				62C02DFC1C463FBF0028B936 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		62C02DFC1C463FBF0028B936 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62C02DFB1C463FBF0028B936 /* JMUICommon.framework */,
+				62C02E051C463FBF0028B936 /* JMUICommonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62C02DFD1C463FBF0028B936 /* JMUICommon */ = {
+			isa = PBXGroup;
+			children = (
+				62C02E5F1C4640460028B936 /* JMessage.framework */,
+				62C02E151C4640180028B936 /* Category */,
+				62C02E1E1C4640180028B936 /* Externals */,
+				62C02E331C4640180028B936 /* Info.plist */,
+				62C02E341C4640180028B936 /* JMUICommon.h */,
+				62C02E351C4640180028B936 /* JMUIConstants.h */,
+				62C02E361C4640180028B936 /* JMUIFileManager.h */,
+				62C02E371C4640180028B936 /* JMUIFileManager.m */,
+				62C02E381C4640180028B936 /* JMUIViewUtil.h */,
+				62C02E391C4640180028B936 /* JMUIViewUtil.m */,
+				62C02E3A1C4640180028B936 /* Utils */,
+				62C02E001C463FBF0028B936 /* Info.plist */,
+			);
+			path = JMUICommon;
+			sourceTree = "<group>";
+		};
+		62C02E091C463FBF0028B936 /* JMUICommonTests */ = {
+			isa = PBXGroup;
+			children = (
+				62C02E0A1C463FBF0028B936 /* JMUICommonTests.m */,
+				62C02E0C1C463FBF0028B936 /* Info.plist */,
+			);
+			path = JMUICommonTests;
+			sourceTree = "<group>";
+		};
+		62C02E151C4640180028B936 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				62C02E161C4640180028B936 /* NSDate+Utilities.h */,
+				62C02E171C4640180028B936 /* NSDate+Utilities.m */,
+				62C02E181C4640180028B936 /* NSString+JMUI.h */,
+				62C02E191C4640180028B936 /* NSString+JMUI.m */,
+				62C02E1A1C4640180028B936 /* UIImage+JMUI.h */,
+				62C02E1B1C4640180028B936 /* UIImage+JMUI.m */,
+				62C02E1C1C4640180028B936 /* UIView+JMUI.h */,
+				62C02E1D1C4640180028B936 /* UIView+JMUI.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		62C02E1E1C4640180028B936 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				62C02E1F1C4640180028B936 /* MBProgressHUD */,
+				62C02E251C4640180028B936 /* RecordView */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		62C02E1F1C4640180028B936 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				62C02E201C4640180028B936 /* MBProgressHUD+Add.h */,
+				62C02E211C4640180028B936 /* MBProgressHUD+Add.m */,
+				62C02E221C4640180028B936 /* MBProgressHUD.bundle */,
+				62C02E231C4640180028B936 /* MBProgressHUD.h */,
+				62C02E241C4640180028B936 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		62C02E251C4640180028B936 /* RecordView */ = {
+			isa = PBXGroup;
+			children = (
+				62C02E261C4640180028B936 /* Macro */,
+				62C02E2A1C4640180028B936 /* RecordViewResources.bundle */,
+				62C02E2B1C4640180028B936 /* UIImage+XHRecord.h */,
+				62C02E2C1C4640180028B936 /* UIImage+XHRecord.m */,
+				62C02E2D1C4640180028B936 /* XHVoiceCommonHelper.h */,
+				62C02E2E1C4640180028B936 /* XHVoiceCommonHelper.m */,
+				62C02E2F1C4640180028B936 /* XHVoiceRecordHelper.h */,
+				62C02E301C4640180028B936 /* XHVoiceRecordHelper.m */,
+				62C02E311C4640180028B936 /* XHVoiceRecordHUD.h */,
+				62C02E321C4640180028B936 /* XHVoiceRecordHUD.m */,
+			);
+			path = RecordView;
+			sourceTree = "<group>";
+		};
+		62C02E261C4640180028B936 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				62C02E271C4640180028B936 /* XHFoundationMacro.h */,
+				62C02E281C4640180028B936 /* XHMacro.h */,
+				62C02E291C4640180028B936 /* XHUIKitMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		62C02E3A1C4640180028B936 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				62C02E3B1C4640180028B936 /* JMUIStringUtils.h */,
+				62C02E3C1C4640180028B936 /* JMUIStringUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		62C02DF81C463FBF0028B936 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C02E521C4640180028B936 /* XHVoiceRecordHelper.h in Headers */,
+				62C02E431C4640180028B936 /* UIView+JMUI.h in Headers */,
+				62C02E571C4640180028B936 /* JMUICommon.h in Headers */,
+				62C02E4E1C4640180028B936 /* UIImage+XHRecord.h in Headers */,
+				62C02E4B1C4640180028B936 /* XHMacro.h in Headers */,
+				62C02E541C4640180028B936 /* XHVoiceRecordHUD.h in Headers */,
+				62C02E3D1C4640180028B936 /* NSDate+Utilities.h in Headers */,
+				62C02E591C4640180028B936 /* JMUIFileManager.h in Headers */,
+				62C02E501C4640180028B936 /* XHVoiceCommonHelper.h in Headers */,
+				62C02E5B1C4640180028B936 /* JMUIViewUtil.h in Headers */,
+				62C02E451C4640180028B936 /* MBProgressHUD+Add.h in Headers */,
+				62C02E4C1C4640180028B936 /* XHUIKitMacro.h in Headers */,
+				62C02E4A1C4640180028B936 /* XHFoundationMacro.h in Headers */,
+				62C02E3F1C4640180028B936 /* NSString+JMUI.h in Headers */,
+				62C02E5D1C4640180028B936 /* JMUIStringUtils.h in Headers */,
+				62C02E481C4640180028B936 /* MBProgressHUD.h in Headers */,
+				62C02E581C4640180028B936 /* JMUIConstants.h in Headers */,
+				62C02E411C4640180028B936 /* UIImage+JMUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		62C02DFA1C463FBF0028B936 /* JMUICommon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62C02E0F1C463FBF0028B936 /* Build configuration list for PBXNativeTarget "JMUICommon" */;
+			buildPhases = (
+				62C02DF61C463FBF0028B936 /* Sources */,
+				62C02DF71C463FBF0028B936 /* Frameworks */,
+				62C02DF81C463FBF0028B936 /* Headers */,
+				62C02DF91C463FBF0028B936 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JMUICommon;
+			productName = JMUICommon;
+			productReference = 62C02DFB1C463FBF0028B936 /* JMUICommon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		62C02E041C463FBF0028B936 /* JMUICommonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62C02E121C463FBF0028B936 /* Build configuration list for PBXNativeTarget "JMUICommonTests" */;
+			buildPhases = (
+				62C02E011C463FBF0028B936 /* Sources */,
+				62C02E021C463FBF0028B936 /* Frameworks */,
+				62C02E031C463FBF0028B936 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62C02E081C463FBF0028B936 /* PBXTargetDependency */,
+			);
+			name = JMUICommonTests;
+			productName = JMUICommonTests;
+			productReference = 62C02E051C463FBF0028B936 /* JMUICommonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62C02DF21C463FBF0028B936 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = HuminiOS;
+				TargetAttributes = {
+					62C02DFA1C463FBF0028B936 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					62C02E041C463FBF0028B936 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 62C02DF51C463FBF0028B936 /* Build configuration list for PBXProject "JMUICommon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 62C02DF11C463FBF0028B936;
+			productRefGroup = 62C02DFC1C463FBF0028B936 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62C02DFA1C463FBF0028B936 /* JMUICommon */,
+				62C02E041C463FBF0028B936 /* JMUICommonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62C02DF91C463FBF0028B936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C02E471C4640180028B936 /* MBProgressHUD.bundle in Resources */,
+				62C02E4D1C4640180028B936 /* RecordViewResources.bundle in Resources */,
+				62C02E561C4640180028B936 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62C02E031C463FBF0028B936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62C02DF61C463FBF0028B936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C02E421C4640180028B936 /* UIImage+JMUI.m in Sources */,
+				62C02E491C4640180028B936 /* MBProgressHUD.m in Sources */,
+				62C02E441C4640180028B936 /* UIView+JMUI.m in Sources */,
+				62C02E5C1C4640180028B936 /* JMUIViewUtil.m in Sources */,
+				62C02E461C4640180028B936 /* MBProgressHUD+Add.m in Sources */,
+				62C02E5A1C4640180028B936 /* JMUIFileManager.m in Sources */,
+				62C02E401C4640180028B936 /* NSString+JMUI.m in Sources */,
+				62C02E551C4640180028B936 /* XHVoiceRecordHUD.m in Sources */,
+				62C02E4F1C4640180028B936 /* UIImage+XHRecord.m in Sources */,
+				62C02E531C4640180028B936 /* XHVoiceRecordHelper.m in Sources */,
+				62C02E5E1C4640180028B936 /* JMUIStringUtils.m in Sources */,
+				62C02E3E1C4640180028B936 /* NSDate+Utilities.m in Sources */,
+				62C02E511C4640180028B936 /* XHVoiceCommonHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62C02E011C463FBF0028B936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C02E0B1C463FBF0028B936 /* JMUICommonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62C02E081C463FBF0028B936 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62C02DFA1C463FBF0028B936 /* JMUICommon */;
+			targetProxy = 62C02E071C463FBF0028B936 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		62C02E0D1C463FBF0028B936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		62C02E0E1C463FBF0028B936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		62C02E101C463FBF0028B936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JMUICommon",
+				);
+				INFOPLIST_FILE = JMUICommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HuminiOS.JMUICommon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		62C02E111C463FBF0028B936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JMUICommon",
+				);
+				INFOPLIST_FILE = JMUICommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HuminiOS.JMUICommon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		62C02E131C463FBF0028B936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JMUICommonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HuminiOS.JMUICommonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		62C02E141C463FBF0028B936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JMUICommonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HuminiOS.JMUICommonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62C02DF51C463FBF0028B936 /* Build configuration list for PBXProject "JMUICommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62C02E0D1C463FBF0028B936 /* Debug */,
+				62C02E0E1C463FBF0028B936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62C02E0F1C463FBF0028B936 /* Build configuration list for PBXNativeTarget "JMUICommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62C02E101C463FBF0028B936 /* Debug */,
+				62C02E111C463FBF0028B936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		62C02E121C463FBF0028B936 /* Build configuration list for PBXNativeTarget "JMUICommonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62C02E131C463FBF0028B936 /* Debug */,
+				62C02E141C463FBF0028B936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62C02DF21C463FBF0028B936 /* Project object */;
+}
