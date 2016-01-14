@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "JMUIRecordAnimationView.h"
 #import "JMUIMessageTextView.h"
-//#import "JMUIConstants.h"
 #import <JMUICommon/JMUIConstants.h>
 
 
@@ -77,7 +76,6 @@
  *  表情button
  */
 @property (weak, nonatomic) IBOutlet UIButton *voiceButton;
-//@property (weak, nonatomic) IBOutlet UIButton *faceButton;
 
 /**
  *  更多功能button
