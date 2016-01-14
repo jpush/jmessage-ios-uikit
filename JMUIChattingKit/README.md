@@ -21,10 +21,13 @@ IM SDK UI 组件
 5.复制JMUICommon.framework 到自己工程中
 ![image](https://github.com/jpush/jmessage-ios-uikit/blob/master/JMUIChattingKit/README_JMUIChatting集成说明图/5.拷贝JMUIChatting库到自己工程中.gif)
 
-6.添加framework 资源到自己工程
+6.添加JMUIChatting.framework 资源到自己工程
 ![image](https://github.com/jpush/jmessage-ios-uikit/blob/master/JMUIChattingKit/README_JMUIChatting集成说明图/6.在自己的工程中使用framework的资源.gif)
 
-7.添加JMessage SDK 到自己工程 并且根据官网的集成文档集成该framework [JMessage 集成教程](http://docs.jpush.io/guideline/jmessage_ios_guide/)
+7.JMUICommon.framework 资源到自己工程
+![image](https://github.com/jpush/jmessage-ios-uikit/blob/master/JMUIChattingKit/README_JMUIChatting集成说明图/拷贝JMUICommon库资源.gif)
+
+8.添加JMessage SDK 到自己工程 并且根据官网的集成文档集成该framework [JMessage 集成教程](http://docs.jpush.io/guideline/jmessage_ios_guide/)
 
 ##JMUIChatting 使用
 一下是以[JMUIChattingDemo](/JMUIChattingDemo) 为例子
