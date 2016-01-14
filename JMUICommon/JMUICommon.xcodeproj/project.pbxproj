@@ -9,39 +9,39 @@
 /* Begin PBXBuildFile section */
 		62C02E061C463FBF0028B936 /* JMUICommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C02DFB1C463FBF0028B936 /* JMUICommon.framework */; };
 		62C02E0B1C463FBF0028B936 /* JMUICommonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E0A1C463FBF0028B936 /* JMUICommonTests.m */; };
-		62C02E3D1C4640180028B936 /* NSDate+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E161C4640180028B936 /* NSDate+Utilities.h */; };
+		62C02E3D1C4640180028B936 /* NSDate+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E161C4640180028B936 /* NSDate+Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02E3E1C4640180028B936 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E171C4640180028B936 /* NSDate+Utilities.m */; };
-		62C02E3F1C4640180028B936 /* NSString+JMUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E181C4640180028B936 /* NSString+JMUI.h */; };
+		62C02E3F1C4640180028B936 /* NSString+JMUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E181C4640180028B936 /* NSString+JMUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02E401C4640180028B936 /* NSString+JMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E191C4640180028B936 /* NSString+JMUI.m */; };
-		62C02E411C4640180028B936 /* UIImage+JMUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E1A1C4640180028B936 /* UIImage+JMUI.h */; };
+		62C02E411C4640180028B936 /* UIImage+JMUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E1A1C4640180028B936 /* UIImage+JMUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02E421C4640180028B936 /* UIImage+JMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E1B1C4640180028B936 /* UIImage+JMUI.m */; };
-		62C02E431C4640180028B936 /* UIView+JMUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E1C1C4640180028B936 /* UIView+JMUI.h */; };
+		62C02E431C4640180028B936 /* UIView+JMUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E1C1C4640180028B936 /* UIView+JMUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02E441C4640180028B936 /* UIView+JMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E1D1C4640180028B936 /* UIView+JMUI.m */; };
-		62C02E451C4640180028B936 /* MBProgressHUD+Add.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E201C4640180028B936 /* MBProgressHUD+Add.h */; };
+		62C02E451C4640180028B936 /* MBProgressHUD+Add.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E201C4640180028B936 /* MBProgressHUD+Add.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02E461C4640180028B936 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E211C4640180028B936 /* MBProgressHUD+Add.m */; };
 		62C02E471C4640180028B936 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62C02E221C4640180028B936 /* MBProgressHUD.bundle */; };
-		62C02E481C4640180028B936 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E231C4640180028B936 /* MBProgressHUD.h */; };
+		62C02E481C4640180028B936 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E231C4640180028B936 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02E491C4640180028B936 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E241C4640180028B936 /* MBProgressHUD.m */; };
-		62C02E4A1C4640180028B936 /* XHFoundationMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E271C4640180028B936 /* XHFoundationMacro.h */; };
-		62C02E4B1C4640180028B936 /* XHMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E281C4640180028B936 /* XHMacro.h */; };
-		62C02E4C1C4640180028B936 /* XHUIKitMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E291C4640180028B936 /* XHUIKitMacro.h */; };
+		62C02E4A1C4640180028B936 /* XHFoundationMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E271C4640180028B936 /* XHFoundationMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62C02E4B1C4640180028B936 /* XHMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E281C4640180028B936 /* XHMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62C02E4C1C4640180028B936 /* XHUIKitMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E291C4640180028B936 /* XHUIKitMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02E4D1C4640180028B936 /* RecordViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62C02E2A1C4640180028B936 /* RecordViewResources.bundle */; };
-		62C02E4E1C4640180028B936 /* UIImage+XHRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E2B1C4640180028B936 /* UIImage+XHRecord.h */; };
+		62C02E4E1C4640180028B936 /* UIImage+XHRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E2B1C4640180028B936 /* UIImage+XHRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02E4F1C4640180028B936 /* UIImage+XHRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E2C1C4640180028B936 /* UIImage+XHRecord.m */; };
-		62C02E501C4640180028B936 /* XHVoiceCommonHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E2D1C4640180028B936 /* XHVoiceCommonHelper.h */; };
+		62C02E501C4640180028B936 /* XHVoiceCommonHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E2D1C4640180028B936 /* XHVoiceCommonHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02E511C4640180028B936 /* XHVoiceCommonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E2E1C4640180028B936 /* XHVoiceCommonHelper.m */; };
-		62C02E521C4640180028B936 /* XHVoiceRecordHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E2F1C4640180028B936 /* XHVoiceRecordHelper.h */; };
+		62C02E521C4640180028B936 /* XHVoiceRecordHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E2F1C4640180028B936 /* XHVoiceRecordHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02E531C4640180028B936 /* XHVoiceRecordHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E301C4640180028B936 /* XHVoiceRecordHelper.m */; };
-		62C02E541C4640180028B936 /* XHVoiceRecordHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E311C4640180028B936 /* XHVoiceRecordHUD.h */; };
+		62C02E541C4640180028B936 /* XHVoiceRecordHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E311C4640180028B936 /* XHVoiceRecordHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02E551C4640180028B936 /* XHVoiceRecordHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E321C4640180028B936 /* XHVoiceRecordHUD.m */; };
 		62C02E561C4640180028B936 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62C02E331C4640180028B936 /* Info.plist */; };
-		62C02E571C4640180028B936 /* JMUICommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E341C4640180028B936 /* JMUICommon.h */; };
-		62C02E581C4640180028B936 /* JMUIConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E351C4640180028B936 /* JMUIConstants.h */; };
-		62C02E591C4640180028B936 /* JMUIFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E361C4640180028B936 /* JMUIFileManager.h */; };
+		62C02E571C4640180028B936 /* JMUICommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E341C4640180028B936 /* JMUICommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62C02E581C4640180028B936 /* JMUIConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E351C4640180028B936 /* JMUIConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62C02E591C4640180028B936 /* JMUIFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E361C4640180028B936 /* JMUIFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02E5A1C4640180028B936 /* JMUIFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E371C4640180028B936 /* JMUIFileManager.m */; };
-		62C02E5B1C4640180028B936 /* JMUIViewUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E381C4640180028B936 /* JMUIViewUtil.h */; };
+		62C02E5B1C4640180028B936 /* JMUIViewUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E381C4640180028B936 /* JMUIViewUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02E5C1C4640180028B936 /* JMUIViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E391C4640180028B936 /* JMUIViewUtil.m */; };
-		62C02E5D1C4640180028B936 /* JMUIStringUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E3B1C4640180028B936 /* JMUIStringUtils.h */; };
+		62C02E5D1C4640180028B936 /* JMUIStringUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E3B1C4640180028B936 /* JMUIStringUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02E5E1C4640180028B936 /* JMUIStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E3C1C4640180028B936 /* JMUIStringUtils.m */; };
 		62C02E601C4640460028B936 /* JMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C02E5F1C4640460028B936 /* JMessage.framework */; };
 /* End PBXBuildFile section */
@@ -501,6 +501,7 @@
 				INFOPLIST_FILE = JMUICommon/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = HuminiOS.JMUICommon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -521,6 +522,7 @@
 				INFOPLIST_FILE = JMUICommon/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = HuminiOS.JMUICommon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -566,6 +568,7 @@
 				62C02E111C463FBF0028B936 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62C02E121C463FBF0028B936 /* Build configuration list for PBXNativeTarget "JMUICommonTests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +577,7 @@
 				62C02E141C463FBF0028B936 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
