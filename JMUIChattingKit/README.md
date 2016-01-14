@@ -10,7 +10,7 @@ IM SDK UI 组件
 ![image](https://github.com/jpush/jmessage-ios-uikit/blob/master/JMUIChattingKit/README_JMUIChatting集成说明图/1.打开工程.gif)
 
 2.编译JMUICommon
-![image](https://github.com/jpush/jmessage-ios-uikit/blob/master/JMUIChattingKit/README_JMUIChatting集成说明图/2.编译JMUICommon.gif
+![image](https://github.com/jpush/jmessage-ios-uikit/blob/master/JMUIChattingKit/README_JMUIChatting集成说明图/2.编译JMUICommon.gif)
 
 3.编译JMUIChattingKit
 ![image](https://github.com/jpush/jmessage-ios-uikit/blob/master/JMUIChattingKit/README_JMUIChatting集成说明图/3.编译JMUIChatting库.gif)
