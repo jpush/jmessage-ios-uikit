@@ -67,7 +67,6 @@
 		62C0240C1C3E374C0028B936 /* MyConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyConversationViewController.h; sourceTree = "<group>"; };
 		62C0240D1C3E374C0028B936 /* MyConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyConversationViewController.m; sourceTree = "<group>"; };
 		62C024101C3E3BE40028B936 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		62C029371C3FB7910028B936 /* JMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMessage.framework; sourceTree = "<group>"; };
 		62C029C91C42B3E30028B936 /* JMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMessage.framework; sourceTree = SOURCE_ROOT; };
 		62C02BC11C44C81B0028B936 /* JMUIChattingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMUIChattingKit.framework; sourceTree = SOURCE_ROOT; };
 		62C02CC51C4613C80028B936 /* JMUICommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMUICommon.framework; sourceTree = "<group>"; };
@@ -171,7 +170,6 @@
 			children = (
 				62C02CC51C4613C80028B936 /* JMUICommon.framework */,
 				62C02BC11C44C81B0028B936 /* JMUIChattingKit.framework */,
-				62C029371C3FB7910028B936 /* JMessage.framework */,
 				62C0227E1C3E34990028B936 /* Photos.framework */,
 				62C0227C1C3E34920028B936 /* Accelerate.framework */,
 				62C0227A1C3E34820028B936 /* CoreTelephony.framework */,

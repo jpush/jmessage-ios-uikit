@@ -41,7 +41,7 @@
 #define JMESSAGE_VERSION @"2.0.0"
 
 /*! JMessage SDK 构建ID. 每次构建都会增加 */
-#define JMESSAGE_BUILD 1045
+#define JMESSAGE_BUILD 1052
 
 /*! API Version - int for program logic. SDK API 有变更时会增加 */
 extern NSInteger const JMESSAGE_API_VERSION;

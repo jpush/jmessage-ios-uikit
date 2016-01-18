@@ -7,7 +7,6 @@
 //
 
 #import "JMUIChattingLayout.h"
-//#import "UIView+JMUI.h"
 #import <JMUICommon/UIView+JMUI.h>
 
 

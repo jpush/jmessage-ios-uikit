@@ -142,8 +142,9 @@ static NSInteger const messagefristPageNumber = 20;
     NSLog(@"Send response error - %@", error);
     [_conversation clearUnreadCount];
     NSString *alert = [JMUIStringUtils errorAlert:error];
+    
     [MBProgressHUD hideHUDForView:self.view animated:YES];
-    [MBProgressHUD showMessage:alert view:self.view];
+    [MBProgressHUD showMessage:alert?:[error description] view:self.view];
     return;
   }
 }
@@ -193,6 +194,15 @@ static NSInteger const messagefristPageNumber = 20;
         [self appendMessageShowTimeData:message.timestamp];
         [self appendMessage:model];
       });
+}
+
+- (void)onLoginUserKicked {
+  UIAlertView *alertView =[[UIAlertView alloc] initWithTitle:@"登录状态出错"
+                                                     message:@"你已在别的设备上登录!"
+                                                    delegate:self
+                                           cancelButtonTitle:nil
+                                           otherButtonTitles:@"确定", nil];
+  [alertView show];
 }
 
 #pragma -mark UITableViewDelegate

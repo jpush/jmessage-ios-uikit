@@ -171,7 +171,7 @@ static NSString * const FORMAT_TODAY = @"ahh:mm";
       errorAlert = @"密码错误";
       break;
     default:
-      errorAlert = @"未知错误";
+      errorAlert = nil;
       break;
   }
   return errorAlert;

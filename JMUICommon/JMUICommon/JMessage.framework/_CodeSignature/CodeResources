@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/JMSGAbstractContent.h</key>
 		<data>
-		l+WJyEDDYoTfxj/75yFAkHsDMKE=
+		sWnb8XrpWeNz1xrAQ6lK50IKXf0=
 		</data>
 		<key>Headers/JMSGConstants.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/JMSGConversation.h</key>
 		<data>
-		rPTg+ibwgb8En8nv3BGcHBGUFwc=
+		LdRyTgGP+tS+bi4SnzUtALGc5ZU=
 		</data>
 		<key>Headers/JMSGConversationDelegate.h</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Headers/JMessage.h</key>
 		<data>
-		2ZiqROJT7zpW/y4zWUw8Tq7jhgc=
+		Q8ecjB20IxafntDrtRodGzkzHgY=
 		</data>
 		<key>Headers/JMessageDelegate.h</key>
 		<data>
@@ -97,7 +97,7 @@
 	<dict>
 		<key>Headers/JMSGAbstractContent.h</key>
 		<data>
-		l+WJyEDDYoTfxj/75yFAkHsDMKE=
+		sWnb8XrpWeNz1xrAQ6lK50IKXf0=
 		</data>
 		<key>Headers/JMSGConstants.h</key>
 		<data>
@@ -105,7 +105,7 @@
 		</data>
 		<key>Headers/JMSGConversation.h</key>
 		<data>
-		rPTg+ibwgb8En8nv3BGcHBGUFwc=
+		LdRyTgGP+tS+bi4SnzUtALGc5ZU=
 		</data>
 		<key>Headers/JMSGConversationDelegate.h</key>
 		<data>
@@ -165,7 +165,7 @@
 		</data>
 		<key>Headers/JMessage.h</key>
 		<data>
-		2ZiqROJT7zpW/y4zWUw8Tq7jhgc=
+		Q8ecjB20IxafntDrtRodGzkzHgY=
 		</data>
 		<key>Headers/JMessageDelegate.h</key>
 		<data>
