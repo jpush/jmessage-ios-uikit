@@ -39,6 +39,5 @@ IM SDK UI 组件
 1.添加创建会话类 MyGroupDetailViewController
 
 2.添加头文件 #import <JMUIGroupChatDetailKit/JMUIGroupChatDetailViewController.h>
-
 3. MyGroupDetailViewController 继承 JMUIGroupChatDetailViewController 类
 
