@@ -21,8 +21,11 @@ IM SDK UI 组件
 
 ##JMUIMultiSelectPhotosDemo 的使用
 一下是以[JMUIMultiSelectPhotosDemo](/JMUIMultiSelectPhotosDemo) 为例子
+
 1.创建RootViewController类 该类是需要用到选图的类。 
-2.在RootViewController 添加头文件#import <JMUIMultiSelectPhotosKit/JMUIMultiSelectPhotosViewController.h>
+
+2.在RootViewController 添加头文件#import \<JMUIMultiSelectPhotosKit/JMUIMultiSelectPhotosViewController.h>
+
 3. RootViewController 遵守 JMUIMultiSelectPhotosDelegate 协议
 ```
 @interface RootViewController ()<JMUIMultiSelectPhotosDelegate> {
