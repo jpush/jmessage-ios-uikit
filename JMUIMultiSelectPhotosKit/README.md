@@ -19,13 +19,12 @@ IM SDK UI 组件
 4.添加JMUIMultiSelectPhotosKit.framework 库资源到自己工程
 ![image](https://github.com/jpush/jmessage-ios-uikit/blob/master/JMUIMultiSelectPhotosKit/README_JMUIMultiSelectPhotosKit说明图/添加JMUIMultiSelectPhotosKit库资源到自己工程.gif)
 
-##JMUIMultiSelectPhotosDemo 的使用
+##JMUIMultiSelectPhotosKit 的使用
 一下是以[JMUIMultiSelectPhotosDemo](/JMUIMultiSelectPhotosDemo) 为例子
 
 1.创建RootViewController类 该类是需要用到选图的类。 
 
 2.在RootViewController 添加头文件#import \<JMUIMultiSelectPhotosKit/JMUIMultiSelectPhotosViewController.h>
-
 3. RootViewController 遵守 JMUIMultiSelectPhotosDelegate 协议
 ```
 @interface RootViewController ()<JMUIMultiSelectPhotosDelegate> {
