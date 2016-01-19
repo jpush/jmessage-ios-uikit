@@ -22,8 +22,8 @@
                             <constraint firstAttribute="height" constant="23" id="J9r-Rn-rEY"/>
                             <constraint firstAttribute="width" constant="23" id="PRN-Uo-Pto"/>
                         </constraints>
-                        <state key="normal" image="image_no_picked.png"/>
-                        <state key="selected" image="image_picked.png"/>
+                        <state key="normal" image="JMUIMultiSelectPhotosKit.framework/JMUIKitResoures.bundle/image_no_picked.png"/>
+                        <state key="selected" image="JMUIMultiSelectPhotosKit.framework/JMUIKitResoures.bundle/image_picked.png"/>
                         <state key="highlighted" image="image_picked.png"/>
                         <connections>
                             <action selector="selectedStatusChange:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Rhl-dZ-h2O"/>
@@ -47,7 +47,8 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="image_no_picked.png" width="23" height="23"/>
+        <image name="JMUIMultiSelectPhotosKit.framework/JMUIKitResoures.bundle/image_no_picked.png" width="23" height="23"/>
+        <image name="JMUIMultiSelectPhotosKit.framework/JMUIKitResoures.bundle/image_picked.png" width="23" height="23"/>
         <image name="image_picked.png" width="23" height="23"/>
     </resources>
 </document>

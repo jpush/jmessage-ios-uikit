@@ -38,8 +38,8 @@
                                 <constraint firstAttribute="width" constant="35" id="FGK-Ty-IYm"/>
                                 <constraint firstAttribute="height" constant="35" id="JuF-Nq-bqm"/>
                             </constraints>
-                            <state key="normal" image="JMUIKitResoures.bundle/image_no_picked@3x.png"/>
-                            <state key="selected" image="image_picked@3x.png"/>
+                            <state key="normal" image="JMUIMultiSelectPhotosKit.framework/JMUIKitResoures.bundle/image_no_picked@3x.png"/>
+                            <state key="selected" image="JMUIMultiSelectPhotosKit.framework/JMUIKitResoures.bundle/image_picked@3x.png"/>
                             <connections>
                                 <action selector="ClickToSelectImage:" destination="-1" eventType="touchUpInside" id="cXP-99-eev"/>
                             </connections>
@@ -120,7 +120,7 @@
         </view>
     </objects>
     <resources>
-        <image name="JMUIKitResoures.bundle/image_no_picked@3x.png" width="27" height="27"/>
-        <image name="image_picked@3x.png" width="23" height="23"/>
+        <image name="JMUIMultiSelectPhotosKit.framework/JMUIKitResoures.bundle/image_no_picked@3x.png" width="27" height="27"/>
+        <image name="JMUIMultiSelectPhotosKit.framework/JMUIKitResoures.bundle/image_picked@3x.png" width="27" height="27"/>
     </resources>
 </document>
