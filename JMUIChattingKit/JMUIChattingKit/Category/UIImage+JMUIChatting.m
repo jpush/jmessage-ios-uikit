@@ -10,7 +10,7 @@
 
 @implementation UIImage (JMUIChatting)
 + (UIImage *)jmuiChatting_imageInResource:(NSString *)imageName {
-  UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"JMUIChattingKit.framework/JMUIChattingKitResource.bundle/%@@2x.png",imageName]];
+  UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"JMUIChattingKitResource.bundle/%@@2x.png",imageName]];
   return image;
 }
 @end

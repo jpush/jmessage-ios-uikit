@@ -15,6 +15,7 @@
 #import <JMUICommon/JMUIViewUtil.h>
 #import <JMUICommon/NSString+JMUI.h>
 #import <JMUICommon/UIImage+JMUI.h>
+#import "UIImage+JMUIChatting.h"
 
 @implementation JMUIInputToolbar
 
@@ -60,8 +61,8 @@
 
 - (void)switchToVoiceInputMode {
   self.voiceButton.selected = YES;
-  [self.voiceButton setImage:[UIImage jmui_imageInResource:@"keyboard_toolbar"] forState:UIControlStateNormal];
-  [self.voiceButton setImage:[UIImage jmui_imageInResource:@"keyboard_toolbar_pre"] forState:UIControlStateHighlighted];
+  [self.voiceButton setImage:[UIImage jmuiChatting_imageInResource:@"keyboard_toolbar"] forState:UIControlStateNormal];
+  [self.voiceButton setImage:[UIImage jmuiChatting_imageInResource:@"keyboard_toolbar_pre"] forState:UIControlStateHighlighted];
   [self.textView setHidden:YES];
   [self.startRecordButton setHidden:NO];
   if (self.delegate && [self.delegate respondsToSelector:@selector(pressVoiceBtnToHideKeyBoard)]) {
@@ -72,8 +73,8 @@
 - (void)switchToTextInputMode {
   self.voiceButton.selected=NO;
   self.voiceButton.contentMode = UIViewContentModeCenter;
-  [self.voiceButton setImage:[UIImage jmui_imageInResource:@"voice_toolbar"] forState:UIControlStateNormal];
-  [self.voiceButton setImage:[UIImage jmui_imageInResource:@"voice_toolbar_pre"] forState:UIControlStateHighlighted];
+  [self.voiceButton setImage:[UIImage jmuiChatting_imageInResource:@"voice_toolbar"] forState:UIControlStateNormal];
+  [self.voiceButton setImage:[UIImage jmuiChatting_imageInResource:@"voice_toolbar_pre"] forState:UIControlStateHighlighted];
   [self.startRecordButton setHidden:YES];
   [self.textView setHidden:NO];
 }
@@ -81,18 +82,18 @@
 - (void)layoutSubviews {
   [super layoutSubviews];
   if (self.voiceButton.selected == NO) {
-    [self.voiceButton setImage:[UIImage jmui_imageInResource:@"voice_toolbar"] forState:UIControlStateNormal];
-    [self.voiceButton setImage:[UIImage jmui_imageInResource:@"voice_toolbar_pre"] forState:UIControlStateHighlighted];
+    [self.voiceButton setImage:[UIImage jmuiChatting_imageInResource:@"voice_toolbar"] forState:UIControlStateNormal];
+    [self.voiceButton setImage:[UIImage jmuiChatting_imageInResource:@"voice_toolbar_pre"] forState:UIControlStateHighlighted];
   } else{
-    [self.voiceButton setImage:[UIImage jmui_imageInResource:@"keyboard_toolbar"] forState:UIControlStateNormal];
-    [self.voiceButton setImage:[UIImage jmui_imageInResource:@"keyboard_toolbar_pre"] forState:UIControlStateHighlighted];
+    [self.voiceButton setImage:[UIImage jmuiChatting_imageInResource:@"keyboard_toolbar"] forState:UIControlStateNormal];
+    [self.voiceButton setImage:[UIImage jmuiChatting_imageInResource:@"keyboard_toolbar_pre"] forState:UIControlStateHighlighted];
   }
   [self setBackgroundColor:[UIColor colorWithRed:223/255.0 green:223/255.0 blue:223/255.0 alpha:1]];
 }
 
 - (void)drawRect:(CGRect)rect {
   self.voiceButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleTopMargin;
-  [self.voiceButton setImage:[UIImage jmui_imageInResource:@"voice_toolbar"] forState:UIControlStateNormal];
+  [self.voiceButton setImage:[UIImage jmuiChatting_imageInResource:@"voice_toolbar"] forState:UIControlStateNormal];
   self.textView.delegate = self;
   
   self.textView.returnKeyType = UIReturnKeySend;

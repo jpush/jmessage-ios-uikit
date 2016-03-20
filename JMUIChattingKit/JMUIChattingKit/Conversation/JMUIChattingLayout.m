@@ -32,7 +32,6 @@ static CGFloat const animationDuration = 0.25;
     _inputView.jmui_top = [_inputView superview].jmui_height - 45;
     
     _messageListTable = tableview;
-    NSLog(@"huangmin   superview height %f",[_messageListTable superview].jmui_height);
     _messageListTable.jmui_height = [_messageListTable superview].jmui_height - 45;
     _inputView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleTopMargin;
   }
@@ -92,7 +91,6 @@ static CGFloat const animationDuration = 0.25;
 }
 
 - (void)showMoreView {
-  NSLog(@"huangmin superview  height  %f",[_messageListTable superview].jmui_height);
   _inputView.jmui_top = kApplicationHeight - _inputView.jmui_height - 64;
   _messageListTable.jmui_height = [_messageListTable superview].jmui_height - _inputView.jmui_height;
   [self messageTableScrollToBottom:YES];

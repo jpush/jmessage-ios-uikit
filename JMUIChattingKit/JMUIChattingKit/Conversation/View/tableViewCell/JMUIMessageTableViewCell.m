@@ -209,7 +209,7 @@ static NSInteger const readViewRadius = 4;
       if ([strongSelfUpload.model.message.msgId isEqualToString:msgId]) {
         NSString *percentString = [NSString stringWithFormat:@"%d%%", (int)(percent * 100)];
         strongSelfUpload.percentLabel.text = percentString;
-        NSLog(@"huangmin the percentlabel %@ cell %@", strongSelfUpload.percentLabel , strongSelfUpload);
+
       }
     });
   };

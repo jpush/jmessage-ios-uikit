@@ -24,7 +24,7 @@ static NSString *identify = nil;
 }
 
 + (JMUILoadMessageTableViewCell *)LoadingCellInTable:(UITableView *)tableView {
-  identify = @"JMUIChattingKit.framework/JMUILoadMessageTableViewCell";
+  identify = @"JMUILoadMessageTableViewCell";
   JMUILoadMessageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identify];
   if (!cell) {
     
@@ -36,10 +36,12 @@ static NSString *identify = nil;
 }
 
 + (JMUIShowTimeCell *)timeCellInTable:(UITableView *)tableView {
-  identify = @"JMUIChattingKit.framework/JMUIShowTimeCell";
+  identify = @"JMUIShowTimeCell";
   JMUIShowTimeCell *cell = [tableView dequeueReusableCellWithIdentifier:identify];
   if (!cell) {
-    [tableView registerNib:[UINib nibWithNibName:identify bundle:nil] forCellReuseIdentifier:identify];
+//    [tableView registerNib:[UINib nibWithNibName:identify bundle:nil] forCellReuseIdentifier:identify];
+//    cell = [tableView dequeueReusableCellWithIdentifier:identify];
+    [tableView registerNib:[UINib nibWithNibName:identify bundle:[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"JMUIChattingKitResource" withExtension:@"bundle"]]] forCellReuseIdentifier:identify];
     cell = [tableView dequeueReusableCellWithIdentifier:identify];
   }
   NSLog(@"message tableview show time cell is %@",cell);

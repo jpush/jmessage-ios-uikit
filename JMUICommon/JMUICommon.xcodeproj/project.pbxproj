@@ -13,8 +13,6 @@
 		62C02E3E1C4640180028B936 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E171C4640180028B936 /* NSDate+Utilities.m */; };
 		62C02E3F1C4640180028B936 /* NSString+JMUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E181C4640180028B936 /* NSString+JMUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02E401C4640180028B936 /* NSString+JMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E191C4640180028B936 /* NSString+JMUI.m */; };
-		62C02E411C4640180028B936 /* UIImage+JMUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E1A1C4640180028B936 /* UIImage+JMUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62C02E421C4640180028B936 /* UIImage+JMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E1B1C4640180028B936 /* UIImage+JMUI.m */; };
 		62C02E431C4640180028B936 /* UIView+JMUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E1C1C4640180028B936 /* UIView+JMUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02E441C4640180028B936 /* UIView+JMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E1D1C4640180028B936 /* UIView+JMUI.m */; };
 		62C02E451C4640180028B936 /* MBProgressHUD+Add.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E201C4640180028B936 /* MBProgressHUD+Add.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -66,8 +64,6 @@
 		62C02E171C4640180028B936 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
 		62C02E181C4640180028B936 /* NSString+JMUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JMUI.h"; sourceTree = "<group>"; };
 		62C02E191C4640180028B936 /* NSString+JMUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JMUI.m"; sourceTree = "<group>"; };
-		62C02E1A1C4640180028B936 /* UIImage+JMUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JMUI.h"; sourceTree = "<group>"; };
-		62C02E1B1C4640180028B936 /* UIImage+JMUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JMUI.m"; sourceTree = "<group>"; };
 		62C02E1C1C4640180028B936 /* UIView+JMUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JMUI.h"; sourceTree = "<group>"; };
 		62C02E1D1C4640180028B936 /* UIView+JMUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JMUI.m"; sourceTree = "<group>"; };
 		62C02E201C4640180028B936 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
@@ -172,8 +168,6 @@
 				62C02E171C4640180028B936 /* NSDate+Utilities.m */,
 				62C02E181C4640180028B936 /* NSString+JMUI.h */,
 				62C02E191C4640180028B936 /* NSString+JMUI.m */,
-				62C02E1A1C4640180028B936 /* UIImage+JMUI.h */,
-				62C02E1B1C4640180028B936 /* UIImage+JMUI.m */,
 				62C02E1C1C4640180028B936 /* UIView+JMUI.h */,
 				62C02E1D1C4640180028B936 /* UIView+JMUI.m */,
 			);
@@ -261,7 +255,6 @@
 				62C02E5D1C4640180028B936 /* JMUIStringUtils.h in Headers */,
 				62C02E481C4640180028B936 /* MBProgressHUD.h in Headers */,
 				62C02E581C4640180028B936 /* JMUIConstants.h in Headers */,
-				62C02E411C4640180028B936 /* UIImage+JMUI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +357,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62C02E421C4640180028B936 /* UIImage+JMUI.m in Sources */,
 				62C02E491C4640180028B936 /* MBProgressHUD.m in Sources */,
 				62C02E441C4640180028B936 /* UIView+JMUI.m in Sources */,
 				62C02E5C1C4640180028B936 /* JMUIViewUtil.m in Sources */,

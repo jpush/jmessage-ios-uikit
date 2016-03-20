@@ -359,7 +359,6 @@ static NSString * const FORMAT_TODAY = @"ahh:mm";
 }
 
 + (CGSize)stringSizeWithWidthString:(NSString *)string withWidthLimit:(CGFloat)width withFont:(UIFont *)font {
-  NSLog(@"huangmin  the string %@",string);
   CGSize maxSize = CGSizeMake(width, 2000);
 //  UIFont *font =[UIFont systemFontOfSize:18];
   NSMutableParagraphStyle *paragraphStyle= [[NSMutableParagraphStyle alloc] init];

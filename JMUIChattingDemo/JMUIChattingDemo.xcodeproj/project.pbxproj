@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62317F461C9EFE590028FA22 /* JMUIChattingKitResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62317F451C9EFE590028FA22 /* JMUIChattingKitResource.bundle */; };
 		62C020F21C3E2C980028B936 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C020F11C3E2C980028B936 /* main.m */; };
 		62C020F51C3E2C980028B936 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C020F41C3E2C980028B936 /* AppDelegate.m */; };
 		62C020FD1C3E2C980028B936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62C020FC1C3E2C980028B936 /* Assets.xcassets */; };
@@ -31,11 +32,11 @@
 		62C0240E1C3E374C0028B936 /* MyConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C0240D1C3E374C0028B936 /* MyConversationViewController.m */; };
 		62C029CA1C42B3E30028B936 /* JMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C029C91C42B3E30028B936 /* JMessage.framework */; };
 		62C02BC21C44C81B0028B936 /* JMUIChattingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C02BC11C44C81B0028B936 /* JMUIChattingKit.framework */; };
-		62C02BC31C44C8D40028B936 /* JMUIChattingKit.framework in Resources */ = {isa = PBXBuildFile; fileRef = 62C02BC11C44C81B0028B936 /* JMUIChattingKit.framework */; };
 		62C02CC61C4613C80028B936 /* JMUICommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C02CC51C4613C80028B936 /* JMUICommon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62317F451C9EFE590028FA22 /* JMUIChattingKitResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JMUIChattingKitResource.bundle; sourceTree = "<group>"; };
 		62C020ED1C3E2C980028B936 /* JMUIChattingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMUIChattingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C020F11C3E2C980028B936 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		62C020F31C3E2C980028B936 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -168,6 +169,7 @@
 		62C022801C3E34B90028B936 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				62317F451C9EFE590028FA22 /* JMUIChattingKitResource.bundle */,
 				62C02CC51C4613C80028B936 /* JMUICommon.framework */,
 				62C02BC11C44C81B0028B936 /* JMUIChattingKit.framework */,
 				62C0227E1C3E34990028B936 /* Photos.framework */,
@@ -246,7 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62C02BC31C44C8D40028B936 /* JMUIChattingKit.framework in Resources */,
+				62317F461C9EFE590028FA22 /* JMUIChattingKitResource.bundle in Resources */,
 				62C021001C3E2C980028B936 /* LaunchScreen.storyboard in Resources */,
 				62C020FD1C3E2C980028B936 /* Assets.xcassets in Resources */,
 				62C022611C3E33CA0028B936 /* RootViewController.xib in Resources */,

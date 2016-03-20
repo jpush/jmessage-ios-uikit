@@ -17,13 +17,13 @@
   self = [super initWithCoder:aDecoder];
   if (self) {
 //    _toolBar = NIB("JMUIChattingKit.framework/JMUIInputToolbar");
-    NSArray *toolbars=[[NSBundle mainBundle] loadNibNamed:@"JMUIChattingKit.framework/JMUIInputToolbar.nib"
+    NSArray *toolbars=[[NSBundle mainBundle] loadNibNamed:@"JMUIChattingKitResource.bundle/JMUIInputToolbar.nib"
                                                 owner:self
                                               options:nil];
     _toolBar = [toolbars objectAtIndex:0];
     _toolBar.delegate = _delegate;
 //    _moreView = NIB("JMUIChattingKit.framework/JMUIMoreView");
-    NSArray *moreViews=[[NSBundle mainBundle] loadNibNamed:@"JMUIChattingKit.framework/JMUIMoreView.nib"
+    NSArray *moreViews=[[NSBundle mainBundle] loadNibNamed:@"JMUIChattingKitResource.bundle/JMUIMoreView.nib"
                                                 owner:self
                                               options:nil];
     _toolBar = [moreViews objectAtIndex:0];
@@ -37,12 +37,12 @@
 - (id)init {
   self = [super init];
   if (self) {
-    NSArray *toolbars=[[NSBundle mainBundle] loadNibNamed:@"JMUIChattingKit.framework/JMUIInputToolbar"
+    NSArray *toolbars=[[NSBundle mainBundle] loadNibNamed:@"JMUIChattingKitResource.bundle/JMUIInputToolbar"
                                                     owner:self
                                                   options:nil];
     _toolBar = [toolbars objectAtIndex:0];
     _toolBar.delegate = _delegate;
-    NSArray *moreViews=[[NSBundle mainBundle] loadNibNamed:@"JMUIChattingKit.framework/JMUIMoreView"
+    NSArray *moreViews=[[NSBundle mainBundle] loadNibNamed:@"JMUIChattingKitResource.bundle/JMUIMoreView"
                                                      owner:self
                                                    options:nil];
     _moreView = [moreViews objectAtIndex:0];
