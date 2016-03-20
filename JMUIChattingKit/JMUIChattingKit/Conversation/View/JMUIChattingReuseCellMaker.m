@@ -39,8 +39,6 @@ static NSString *identify = nil;
   identify = @"JMUIShowTimeCell";
   JMUIShowTimeCell *cell = [tableView dequeueReusableCellWithIdentifier:identify];
   if (!cell) {
-//    [tableView registerNib:[UINib nibWithNibName:identify bundle:nil] forCellReuseIdentifier:identify];
-//    cell = [tableView dequeueReusableCellWithIdentifier:identify];
     [tableView registerNib:[UINib nibWithNibName:identify bundle:[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"JMUIChattingKitResource" withExtension:@"bundle"]]] forCellReuseIdentifier:identify];
     cell = [tableView dequeueReusableCellWithIdentifier:identify];
   }

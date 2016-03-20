@@ -10,7 +10,7 @@
 
 @implementation UIImage (JMUIGroupChatDetail)
 + (UIImage *)jmuiGroupChatDetail_imageInResource:(NSString *)imageName {
-  UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"JMUIGroupChatDetailKit.framework/JMUIKitResource.bundle/%@@2x.png",imageName]];
+  UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"JMUIGroupChatDetailKitResource.bundle/%@@2x.png",imageName]];
   return image;
 }
 @end

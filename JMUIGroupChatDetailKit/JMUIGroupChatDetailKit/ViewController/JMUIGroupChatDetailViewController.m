@@ -63,12 +63,13 @@ UITableViewDelegate> {
   _groupMemberGrip.minimumZoomScale = 0;
   _groupMemberGrip.backgroundColor = [UIColor whiteColor];
   [_groupMemberGrip registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"gradientCell"];
-  [_groupMemberGrip registerNib:[UINib nibWithNibName:@"JMUIGroupChatDetailKit.framework/JMUIGroupMemberCollectionViewCell" bundle:nil]
-     forCellWithReuseIdentifier:@"JMUIGroupChatDetailKit.framework/JMUIGroupMemberCollectionViewCell"];
   
-  [_groupMemberGrip registerNib:[UINib nibWithNibName:@"JMUIGroupChatDetailKit.framework/JMUIFootTableCollectionReusableView" bundle:nil]
+  [_groupMemberGrip registerNib:[UINib nibWithNibName:@"JMUIGroupMemberCollectionViewCell" bundle:[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"JMUIGroupChatDetailKitResource" withExtension:@"bundle"]]]
+     forCellWithReuseIdentifier:@"JMUIGroupMemberCollectionViewCell"];
+  
+  [_groupMemberGrip registerNib:[UINib nibWithNibName:@"JMUIFootTableCollectionReusableView" bundle:[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"JMUIGroupChatDetailKitResource" withExtension:@"bundle"]]]
      forSupplementaryViewOfKind:UICollectionElementKindSectionFooter
-            withReuseIdentifier:@"JMUIGroupChatDetailKit.framework/JMUIFootTableCollectionReusableView"];
+            withReuseIdentifier:@"JMUIFootTableCollectionReusableView"];
   _groupMemberGrip.backgroundColor = [UIColor clearColor];
   _groupMemberGrip.backgroundView = [UIView new];
   UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGripMember:)];
@@ -120,7 +121,7 @@ UITableViewDelegate> {
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-  static NSString *CellIdentifier = @"JMUIGroupChatDetailKit.framework/JMUIGroupMemberCollectionViewCell";
+  static NSString *CellIdentifier = @"JMUIGroupMemberCollectionViewCell";
   JMUIGroupMemberCollectionViewCell *cell = (JMUIGroupMemberCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
   if (indexPath.item == _memberArr.count) {
     [cell setAddMember];
@@ -144,7 +145,7 @@ UITableViewDelegate> {
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
   JMUIFootTableCollectionReusableView *footTable = nil;
-  static NSString *footerIdentifier = @"JMUIGroupChatDetailKit.framework/JMUIFootTableCollectionReusableView";
+  static NSString *footerIdentifier = @"JMUIFootTableCollectionReusableView";
   footTable = [_groupMemberGrip dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter
                                                                                     withReuseIdentifier:footerIdentifier
                                                                                            forIndexPath:indexPath];
