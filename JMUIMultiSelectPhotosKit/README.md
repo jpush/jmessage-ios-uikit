@@ -11,13 +11,11 @@ IM SDK UI 组件
 ![image](https://github.com/jpush/jmessage-ios-uikit/blob/master/JMUIChattingKit/README_JMUIChatting集成说明图/1.打开工程.gif)
 
 2.编译JMUIMultiSelectPhotosKit 库
-![image](https://github.com/jpush/jmessage-ios-uikit/blob/master/JMUIMultiSelectPhotosKit/README_JMUIMultiSelectPhotosKit说明图/编译JMUIMultiSelectPhotosKit库.gif)
+![image](https://github.com/jpush/jmessage-ios-uikit/blob/master/JMUIMultiSelectPhotosKit/README_JMUIMultiSelectPhotosKit说明图/编译JMUIMultiSelectPhotosKit.gif)
 
-3.添加JMUIMultiSelectPhotosKit.framework 库到自己工程
-![image](https://github.com/jpush/jmessage-ios-uikit/blob/master/JMUIMultiSelectPhotosKit/README_JMUIMultiSelectPhotosKit说明图/添加JMUIMultiSelectPhotosKit库到自己工程.gif)
+3.添加JMUIMultiSelectPhotosKit.framework 和 JMUIMultiSelectPhotosKitResource.bundle 到自己工程
+![image](https://github.com/jpush/jmessage-ios-uikit/blob/master/JMUIMultiSelectPhotosKit/README_JMUIMultiSelectPhotosKit说明图/ADDSelectPhotosKitAndResouceToMyproject.gif)
 
-4.添加JMUIMultiSelectPhotosKit.framework 库资源到自己工程
-![image](https://github.com/jpush/jmessage-ios-uikit/blob/master/JMUIMultiSelectPhotosKit/README_JMUIMultiSelectPhotosKit说明图/添加JMUIMultiSelectPhotosKit库资源到自己工程.gif)
 
 ##JMUIMultiSelectPhotosKit 的使用
 一下是以[JMUIMultiSelectPhotosDemo](/JMUIMultiSelectPhotosDemo) 为例子
