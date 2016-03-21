@@ -7,8 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		62C029E21C4370750028B936 /* JMUIMultiSelectPhotosKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C029D71C4370750028B936 /* JMUIMultiSelectPhotosKit.framework */; };
-		62C029E71C4370750028B936 /* JMUIMultiSelectPhotosKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C029E61C4370750028B936 /* JMUIMultiSelectPhotosKitTests.m */; };
+		62317FCB1C9F8CD10028FA22 /* JMUIAlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C029F41C4370A10028B936 /* JMUIAlbumViewController.xib */; };
+		62317FCC1C9F8CD10028FA22 /* JMUIMultiSelectPhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C029F71C4370A10028B936 /* JMUIMultiSelectPhotosViewController.xib */; };
+		62317FCD1C9F8CD10028FA22 /* JMUIPhotoBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C029FA1C4370A10028B936 /* JMUIPhotoBrowserViewController.xib */; };
+		62317FCE1C9F8CD10028FA22 /* JMUIPhotoSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C029FD1C4370A10028B936 /* JMUIPhotoSelectViewController.xib */; };
+		62317FCF1C9F8CD10028FA22 /* JMUIAlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C02A151C4370A10028B936 /* JMUIAlbumTableViewCell.xib */; };
+		62317FD01C9F8CD10028FA22 /* JMUIPhotoBrowserCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C02A181C4370A10028B936 /* JMUIPhotoBrowserCollectionViewCell.xib */; };
+		62317FD11C9F8CD10028FA22 /* JMUIThumbImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C02A1D1C4370A10028B936 /* JMUIThumbImageCollectionViewCell.xib */; };
+		62317FDA1C9F8D2A0028FA22 /* image_no_picked.png in Resources */ = {isa = PBXBuildFile; fileRef = 62317FD41C9F8D2A0028FA22 /* image_no_picked.png */; };
+		62317FDB1C9F8D2A0028FA22 /* image_no_picked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62317FD51C9F8D2A0028FA22 /* image_no_picked@2x.png */; };
+		62317FDC1C9F8D2A0028FA22 /* image_no_picked@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62317FD61C9F8D2A0028FA22 /* image_no_picked@3x.png */; };
+		62317FDD1C9F8D2A0028FA22 /* image_picked.png in Resources */ = {isa = PBXBuildFile; fileRef = 62317FD71C9F8D2A0028FA22 /* image_picked.png */; };
+		62317FDE1C9F8D2A0028FA22 /* image_picked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62317FD81C9F8D2A0028FA22 /* image_picked@2x.png */; };
+		62317FDF1C9F8D2A0028FA22 /* image_picked@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62317FD91C9F8D2A0028FA22 /* image_picked@3x.png */; };
+		62317FEA1C9F988A0028FA22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62317FE91C9F988A0028FA22 /* Foundation.framework */; };
+		62317FEC1C9F99770028FA22 /* JMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62317FEB1C9F99770028FA22 /* JMessage.framework */; };
+		62317FF01C9F998D0028FA22 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62317FEF1C9F998D0028FA22 /* Security.framework */; };
+		62317FF21C9F99970028FA22 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62317FF11C9F99970028FA22 /* CoreAudio.framework */; };
+		62317FF61C9F99A80028FA22 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62317FF51C9F99A80028FA22 /* AVFoundation.framework */; };
+		62317FF81C9F99B40028FA22 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62317FF71C9F99B40028FA22 /* CFNetwork.framework */; };
+		62317FFA1C9F99BB0028FA22 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62317FF91C9F99BB0028FA22 /* CoreFoundation.framework */; };
+		62317FFC1C9F99C20028FA22 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62317FFB1C9F99C20028FA22 /* CoreLocation.framework */; };
+		62317FFE1C9F99CE0028FA22 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62317FFD1C9F99CE0028FA22 /* SystemConfiguration.framework */; };
+		623180001C9F99D70028FA22 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62317FFF1C9F99D70028FA22 /* AudioToolbox.framework */; };
+		623180021C9F99E20028FA22 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623180011C9F99E20028FA22 /* CoreTelephony.framework */; };
+		623180041C9F99EB0028FA22 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623180031C9F99EB0028FA22 /* Accelerate.framework */; };
+		623180061C9F99F30028FA22 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623180051C9F99F30028FA22 /* Photos.framework */; };
+		623180081C9F9ACF0028FA22 /* JMUICommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623180071C9F9ACF0028FA22 /* JMUICommon.framework */; };
 		62C02A1E1C4370A10028B936 /* JMUIAlbumViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C029F21C4370A10028B936 /* JMUIAlbumViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02A1F1C4370A10028B936 /* JMUIAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C029F31C4370A10028B936 /* JMUIAlbumViewController.m */; };
 		62C02A201C4370A10028B936 /* JMUIAlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C029F41C4370A10028B936 /* JMUIAlbumViewController.xib */; };
@@ -21,11 +46,6 @@
 		62C02A271C4370A10028B936 /* JMUIPhotoSelectViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C029FB1C4370A10028B936 /* JMUIPhotoSelectViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02A281C4370A10028B936 /* JMUIPhotoSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C029FC1C4370A10028B936 /* JMUIPhotoSelectViewController.m */; };
 		62C02A291C4370A10028B936 /* JMUIPhotoSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C029FD1C4370A10028B936 /* JMUIPhotoSelectViewController.xib */; };
-		62C02A2A1C4370A10028B936 /* MBProgressHUD+Add.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02A001C4370A10028B936 /* MBProgressHUD+Add.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62C02A2B1C4370A10028B936 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02A011C4370A10028B936 /* MBProgressHUD+Add.m */; };
-		62C02A2C1C4370A10028B936 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62C02A021C4370A10028B936 /* MBProgressHUD.bundle */; };
-		62C02A2D1C4370A10028B936 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02A031C4370A10028B936 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62C02A2E1C4370A10028B936 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02A041C4370A10028B936 /* MBProgressHUD.m */; };
 		62C02A2F1C4370A10028B936 /* JMUIAlbumModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02A061C4370A10028B936 /* JMUIAlbumModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02A301C4370A10028B936 /* JMUIAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02A071C4370A10028B936 /* JMUIAlbumModel.m */; };
 		62C02A311C4370A10028B936 /* JMUIPhotoModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02A081C4370A10028B936 /* JMUIPhotoModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -53,19 +73,42 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		62C029E31C4370750028B936 /* PBXContainerItemProxy */ = {
+		62317FD21C9F8CF60028FA22 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 62C029CE1C4370750028B936 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 62C029D61C4370750028B936;
-			remoteInfo = JMUIMultiSelectPhotosKit;
+			remoteGlobalIDString = 62317FC41C9F8CBF0028FA22;
+			remoteInfo = JMUIMultiSelectPhotosKitResource;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62317FC51C9F8CBF0028FA22 /* JMUIMultiSelectPhotosKitResource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JMUIMultiSelectPhotosKitResource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		62317FC71C9F8CBF0028FA22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62317FD41C9F8D2A0028FA22 /* image_no_picked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_no_picked.png; sourceTree = "<group>"; };
+		62317FD51C9F8D2A0028FA22 /* image_no_picked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_no_picked@2x.png"; sourceTree = "<group>"; };
+		62317FD61C9F8D2A0028FA22 /* image_no_picked@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_no_picked@3x.png"; sourceTree = "<group>"; };
+		62317FD71C9F8D2A0028FA22 /* image_picked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_picked.png; sourceTree = "<group>"; };
+		62317FD81C9F8D2A0028FA22 /* image_picked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_picked@2x.png"; sourceTree = "<group>"; };
+		62317FD91C9F8D2A0028FA22 /* image_picked@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_picked@3x.png"; sourceTree = "<group>"; };
+		62317FE91C9F988A0028FA22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		62317FEB1C9F99770028FA22 /* JMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMessage.framework; sourceTree = "<group>"; };
+		62317FED1C9F99860028FA22 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		62317FEF1C9F998D0028FA22 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		62317FF11C9F99970028FA22 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		62317FF31C9F999E0028FA22 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		62317FF51C9F99A80028FA22 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		62317FF71C9F99B40028FA22 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		62317FF91C9F99BB0028FA22 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		62317FFB1C9F99C20028FA22 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		62317FFD1C9F99CE0028FA22 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		62317FFF1C9F99D70028FA22 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		623180011C9F99E20028FA22 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		623180031C9F99EB0028FA22 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		623180051C9F99F30028FA22 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		623180071C9F9ACF0028FA22 /* JMUICommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JMUICommon.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/JMUIKit-ecjjjfrhuypskmexfdqjzfjwzsse/Build/Products/Debug-iphoneos/JMUICommon.framework"; sourceTree = "<group>"; };
 		62C029D71C4370750028B936 /* JMUIMultiSelectPhotosKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JMUIMultiSelectPhotosKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C029DC1C4370750028B936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62C029E11C4370750028B936 /* JMUIMultiSelectPhotosKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JMUIMultiSelectPhotosKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C029E61C4370750028B936 /* JMUIMultiSelectPhotosKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMUIMultiSelectPhotosKitTests.m; sourceTree = "<group>"; };
 		62C029E81C4370750028B936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62C029F21C4370A10028B936 /* JMUIAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIAlbumViewController.h; sourceTree = "<group>"; };
@@ -80,11 +123,6 @@
 		62C029FB1C4370A10028B936 /* JMUIPhotoSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIPhotoSelectViewController.h; sourceTree = "<group>"; };
 		62C029FC1C4370A10028B936 /* JMUIPhotoSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIPhotoSelectViewController.m; sourceTree = "<group>"; };
 		62C029FD1C4370A10028B936 /* JMUIPhotoSelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMUIPhotoSelectViewController.xib; sourceTree = "<group>"; };
-		62C02A001C4370A10028B936 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
-		62C02A011C4370A10028B936 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
-		62C02A021C4370A10028B936 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
-		62C02A031C4370A10028B936 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		62C02A041C4370A10028B936 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		62C02A061C4370A10028B936 /* JMUIAlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIAlbumModel.h; sourceTree = "<group>"; };
 		62C02A071C4370A10028B936 /* JMUIAlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIAlbumModel.m; sourceTree = "<group>"; };
 		62C02A081C4370A10028B936 /* JMUIPhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIPhotoModel.h; sourceTree = "<group>"; };
@@ -105,29 +143,66 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		62C029D31C4370750028B936 /* Frameworks */ = {
+		62317FC21C9F8CBF0028FA22 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62C029DE1C4370750028B936 /* Frameworks */ = {
+		62C029D31C4370750028B936 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62C029E21C4370750028B936 /* JMUIMultiSelectPhotosKit.framework in Frameworks */,
+				623180081C9F9ACF0028FA22 /* JMUICommon.framework in Frameworks */,
+				623180061C9F99F30028FA22 /* Photos.framework in Frameworks */,
+				623180041C9F99EB0028FA22 /* Accelerate.framework in Frameworks */,
+				623180021C9F99E20028FA22 /* CoreTelephony.framework in Frameworks */,
+				623180001C9F99D70028FA22 /* AudioToolbox.framework in Frameworks */,
+				62317FFE1C9F99CE0028FA22 /* SystemConfiguration.framework in Frameworks */,
+				62317FFC1C9F99C20028FA22 /* CoreLocation.framework in Frameworks */,
+				62317FFA1C9F99BB0028FA22 /* CoreFoundation.framework in Frameworks */,
+				62317FF81C9F99B40028FA22 /* CFNetwork.framework in Frameworks */,
+				62317FF61C9F99A80028FA22 /* AVFoundation.framework in Frameworks */,
+				62317FF21C9F99970028FA22 /* CoreAudio.framework in Frameworks */,
+				62317FF01C9F998D0028FA22 /* Security.framework in Frameworks */,
+				62317FEA1C9F988A0028FA22 /* Foundation.framework in Frameworks */,
+				62317FEC1C9F99770028FA22 /* JMessage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		620FF6CD1C9FBCAD008D5FE3 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				62C02A4A1C43735D0028B936 /* JMUIKitResoures.bundle */,
+				62317FEB1C9F99770028FA22 /* JMessage.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		62317FC61C9F8CBF0028FA22 /* JMUIMultiSelectPhotosKitResource */ = {
+			isa = PBXGroup;
+			children = (
+				62317FD41C9F8D2A0028FA22 /* image_no_picked.png */,
+				62317FD51C9F8D2A0028FA22 /* image_no_picked@2x.png */,
+				62317FD61C9F8D2A0028FA22 /* image_no_picked@3x.png */,
+				62317FD71C9F8D2A0028FA22 /* image_picked.png */,
+				62317FD81C9F8D2A0028FA22 /* image_picked@2x.png */,
+				62317FD91C9F8D2A0028FA22 /* image_picked@3x.png */,
+				62317FC71C9F8CBF0028FA22 /* Info.plist */,
+			);
+			path = JMUIMultiSelectPhotosKitResource;
+			sourceTree = "<group>";
+		};
 		62C029CD1C4370750028B936 = {
 			isa = PBXGroup;
 			children = (
 				62C029D91C4370750028B936 /* JMUIMultiSelectPhotosKit */,
 				62C029E51C4370750028B936 /* JMUIMultiSelectPhotosKitTests */,
+				62317FC61C9F8CBF0028FA22 /* JMUIMultiSelectPhotosKitResource */,
 				62C029D81C4370750028B936 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -136,7 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				62C029D71C4370750028B936 /* JMUIMultiSelectPhotosKit.framework */,
-				62C029E11C4370750028B936 /* JMUIMultiSelectPhotosKitTests.xctest */,
+				62317FC51C9F8CBF0028FA22 /* JMUIMultiSelectPhotosKitResource.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,7 +219,22 @@
 		62C029D91C4370750028B936 /* JMUIMultiSelectPhotosKit */ = {
 			isa = PBXGroup;
 			children = (
-				62C02A4A1C43735D0028B936 /* JMUIKitResoures.bundle */,
+				620FF6CD1C9FBCAD008D5FE3 /* Framework */,
+				623180071C9F9ACF0028FA22 /* JMUICommon.framework */,
+				623180051C9F99F30028FA22 /* Photos.framework */,
+				623180031C9F99EB0028FA22 /* Accelerate.framework */,
+				623180011C9F99E20028FA22 /* CoreTelephony.framework */,
+				62317FFF1C9F99D70028FA22 /* AudioToolbox.framework */,
+				62317FFD1C9F99CE0028FA22 /* SystemConfiguration.framework */,
+				62317FFB1C9F99C20028FA22 /* CoreLocation.framework */,
+				62317FF91C9F99BB0028FA22 /* CoreFoundation.framework */,
+				62317FF71C9F99B40028FA22 /* CFNetwork.framework */,
+				62317FF51C9F99A80028FA22 /* AVFoundation.framework */,
+				62317FF31C9F999E0028FA22 /* libsqlite3.0.tbd */,
+				62317FF11C9F99970028FA22 /* CoreAudio.framework */,
+				62317FEF1C9F998D0028FA22 /* Security.framework */,
+				62317FED1C9F99860028FA22 /* libz.tbd */,
+				62317FE91C9F988A0028FA22 /* Foundation.framework */,
 				62C029F11C4370A10028B936 /* Controller */,
 				62C02A051C4370A10028B936 /* Model */,
 				62C02A121C4370A10028B936 /* View */,
@@ -186,21 +276,8 @@
 		62C029FE1C4370A10028B936 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
-				62C029FF1C4370A10028B936 /* MBProgressHUD */,
 			);
 			path = Externals;
-			sourceTree = "<group>";
-		};
-		62C029FF1C4370A10028B936 /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				62C02A001C4370A10028B936 /* MBProgressHUD+Add.h */,
-				62C02A011C4370A10028B936 /* MBProgressHUD+Add.m */,
-				62C02A021C4370A10028B936 /* MBProgressHUD.bundle */,
-				62C02A031C4370A10028B936 /* MBProgressHUD.h */,
-				62C02A041C4370A10028B936 /* MBProgressHUD.m */,
-			);
-			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		62C02A051C4370A10028B936 /* Model */ = {
@@ -259,9 +336,7 @@
 				62C02A521C43755B0028B936 /* JMUIThumbImageCollectionViewCell.xib in Headers */,
 				62C02A3D1C4370A10028B936 /* JMUIPhotoBrowserCollectionViewCell.h in Headers */,
 				62C02A241C4370A10028B936 /* JMUIPhotoBrowserViewController.h in Headers */,
-				62C02A2A1C4370A10028B936 /* MBProgressHUD+Add.h in Headers */,
 				62C02A3A1C4370A10028B936 /* JMUIAlbumTableViewCell.h in Headers */,
-				62C02A2D1C4370A10028B936 /* MBProgressHUD.h in Headers */,
 				62C02A401C4370A10028B936 /* JMUISelectImgCollectionView.h in Headers */,
 				62C02A421C4370A10028B936 /* JMUIThumbImageCollectionViewCell.h in Headers */,
 				62C02A331C4370A10028B936 /* JMUIPhotoPickerConstants.h in Headers */,
@@ -273,6 +348,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		62317FC41C9F8CBF0028FA22 /* JMUIMultiSelectPhotosKitResource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62317FCA1C9F8CBF0028FA22 /* Build configuration list for PBXNativeTarget "JMUIMultiSelectPhotosKitResource" */;
+			buildPhases = (
+				62317FC11C9F8CBF0028FA22 /* Sources */,
+				62317FC21C9F8CBF0028FA22 /* Frameworks */,
+				62317FC31C9F8CBF0028FA22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JMUIMultiSelectPhotosKitResource;
+			productName = JMUIMultiSelectPhotosKitResource;
+			productReference = 62317FC51C9F8CBF0028FA22 /* JMUIMultiSelectPhotosKitResource.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		62C029D61C4370750028B936 /* JMUIMultiSelectPhotosKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62C029EB1C4370750028B936 /* Build configuration list for PBXNativeTarget "JMUIMultiSelectPhotosKit" */;
@@ -285,29 +377,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				62317FD31C9F8CF60028FA22 /* PBXTargetDependency */,
 			);
 			name = JMUIMultiSelectPhotosKit;
 			productName = JMUIMultiSelectPhotosKit;
 			productReference = 62C029D71C4370750028B936 /* JMUIMultiSelectPhotosKit.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		62C029E01C4370750028B936 /* JMUIMultiSelectPhotosKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 62C029EE1C4370750028B936 /* Build configuration list for PBXNativeTarget "JMUIMultiSelectPhotosKitTests" */;
-			buildPhases = (
-				62C029DD1C4370750028B936 /* Sources */,
-				62C029DE1C4370750028B936 /* Frameworks */,
-				62C029DF1C4370750028B936 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				62C029E41C4370750028B936 /* PBXTargetDependency */,
-			);
-			name = JMUIMultiSelectPhotosKitTests;
-			productName = JMUIMultiSelectPhotosKitTests;
-			productReference = 62C029E11C4370750028B936 /* JMUIMultiSelectPhotosKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -318,10 +393,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = HuminiOS;
 				TargetAttributes = {
-					62C029D61C4370750028B936 = {
-						CreatedOnToolsVersion = 7.2;
+					62317FC41C9F8CBF0028FA22 = {
+						CreatedOnToolsVersion = 7.2.1;
 					};
-					62C029E01C4370750028B936 = {
+					62C029D61C4370750028B936 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -339,12 +414,32 @@
 			projectRoot = "";
 			targets = (
 				62C029D61C4370750028B936 /* JMUIMultiSelectPhotosKit */,
-				62C029E01C4370750028B936 /* JMUIMultiSelectPhotosKitTests */,
+				62317FC41C9F8CBF0028FA22 /* JMUIMultiSelectPhotosKitResource */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		62317FC31C9F8CBF0028FA22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62317FDC1C9F8D2A0028FA22 /* image_no_picked@3x.png in Resources */,
+				62317FCB1C9F8CD10028FA22 /* JMUIAlbumViewController.xib in Resources */,
+				62317FDE1C9F8D2A0028FA22 /* image_picked@2x.png in Resources */,
+				62317FCC1C9F8CD10028FA22 /* JMUIMultiSelectPhotosViewController.xib in Resources */,
+				62317FCD1C9F8CD10028FA22 /* JMUIPhotoBrowserViewController.xib in Resources */,
+				62317FCE1C9F8CD10028FA22 /* JMUIPhotoSelectViewController.xib in Resources */,
+				62317FDA1C9F8D2A0028FA22 /* image_no_picked.png in Resources */,
+				62317FCF1C9F8CD10028FA22 /* JMUIAlbumTableViewCell.xib in Resources */,
+				62317FD01C9F8CD10028FA22 /* JMUIPhotoBrowserCollectionViewCell.xib in Resources */,
+				62317FD11C9F8CD10028FA22 /* JMUIThumbImageCollectionViewCell.xib in Resources */,
+				62317FDD1C9F8D2A0028FA22 /* image_picked.png in Resources */,
+				62317FDF1C9F8D2A0028FA22 /* image_picked@3x.png in Resources */,
+				62317FDB1C9F8D2A0028FA22 /* image_no_picked@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62C029D51C4370750028B936 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -355,22 +450,21 @@
 				62C02A441C4370A10028B936 /* JMUIThumbImageCollectionViewCell.xib in Resources */,
 				62C02A3C1C4370A10028B936 /* JMUIAlbumTableViewCell.xib in Resources */,
 				62C02A231C4370A10028B936 /* JMUIMultiSelectPhotosViewController.xib in Resources */,
-				62C02A2C1C4370A10028B936 /* MBProgressHUD.bundle in Resources */,
 				62C02A261C4370A10028B936 /* JMUIPhotoBrowserViewController.xib in Resources */,
 				62C02A201C4370A10028B936 /* JMUIAlbumViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		62C029DF1C4370750028B936 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		62317FC11C9F8CBF0028FA22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62C029D21C4370750028B936 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -380,35 +474,59 @@
 				62C02A301C4370A10028B936 /* JMUIAlbumModel.m in Sources */,
 				62C02A3B1C4370A10028B936 /* JMUIAlbumTableViewCell.m in Sources */,
 				62C02A431C4370A10028B936 /* JMUIThumbImageCollectionViewCell.m in Sources */,
-				62C02A2E1C4370A10028B936 /* MBProgressHUD.m in Sources */,
 				62C02A321C4370A10028B936 /* JMUIPhotoModel.m in Sources */,
 				62C02A221C4370A10028B936 /* JMUIMultiSelectPhotosViewController.m in Sources */,
-				62C02A2B1C4370A10028B936 /* MBProgressHUD+Add.m in Sources */,
 				62C02A251C4370A10028B936 /* JMUIPhotoBrowserViewController.m in Sources */,
 				62C02A1F1C4370A10028B936 /* JMUIAlbumViewController.m in Sources */,
 				62C02A3E1C4370A10028B936 /* JMUIPhotoBrowserCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62C029DD1C4370750028B936 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				62C029E71C4370750028B936 /* JMUIMultiSelectPhotosKitTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		62C029E41C4370750028B936 /* PBXTargetDependency */ = {
+		62317FD31C9F8CF60028FA22 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 62C029D61C4370750028B936 /* JMUIMultiSelectPhotosKit */;
-			targetProxy = 62C029E31C4370750028B936 /* PBXContainerItemProxy */;
+			target = 62317FC41C9F8CBF0028FA22 /* JMUIMultiSelectPhotosKitResource */;
+			targetProxy = 62317FD21C9F8CF60028FA22 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		62317FC81C9F8CBF0028FA22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = JMUIMultiSelectPhotosKitResource/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = HXHG.JMUIMultiSelectPhotosKitResource;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		62317FC91C9F8CBF0028FA22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = JMUIMultiSelectPhotosKitResource/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = HXHG.JMUIMultiSelectPhotosKitResource;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		62C029E91C4370750028B936 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -504,6 +622,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JMUIMultiSelectPhotosKit",
+				);
 				INFOPLIST_FILE = JMUIMultiSelectPhotosKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -521,6 +643,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JMUIMultiSelectPhotosKit",
+				);
 				INFOPLIST_FILE = JMUIMultiSelectPhotosKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -531,29 +657,18 @@
 			};
 			name = Release;
 		};
-		62C029EF1C4370750028B936 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = JMUIMultiSelectPhotosKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = HuminiOS.JMUIMultiSelectPhotosKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		62C029F01C4370750028B936 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = JMUIMultiSelectPhotosKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = HuminiOS.JMUIMultiSelectPhotosKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		62317FCA1C9F8CBF0028FA22 /* Build configuration list for PBXNativeTarget "JMUIMultiSelectPhotosKitResource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62317FC81C9F8CBF0028FA22 /* Debug */,
+				62317FC91C9F8CBF0028FA22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		62C029D11C4370750028B936 /* Build configuration list for PBXProject "JMUIMultiSelectPhotosKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -568,15 +683,6 @@
 			buildConfigurations = (
 				62C029EC1C4370750028B936 /* Debug */,
 				62C029ED1C4370750028B936 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		62C029EE1C4370750028B936 /* Build configuration list for PBXNativeTarget "JMUIMultiSelectPhotosKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				62C029EF1C4370750028B936 /* Debug */,
-				62C029F01C4370750028B936 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

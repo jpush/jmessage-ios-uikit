@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6231800F1C9F9B2A0028FA22 /* MBProgressHUD+Add.h in Headers */ = {isa = PBXBuildFile; fileRef = 6231800A1C9F9B2A0028FA22 /* MBProgressHUD+Add.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		623180101C9F9B2A0028FA22 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 6231800B1C9F9B2A0028FA22 /* MBProgressHUD+Add.m */; };
+		623180111C9F9B2A0028FA22 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6231800C1C9F9B2A0028FA22 /* MBProgressHUD.bundle */; };
+		623180121C9F9B2A0028FA22 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 6231800D1C9F9B2A0028FA22 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		623180131C9F9B2A0028FA22 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6231800E1C9F9B2A0028FA22 /* MBProgressHUD.m */; };
 		62C02E061C463FBF0028B936 /* JMUICommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C02DFB1C463FBF0028B936 /* JMUICommon.framework */; };
 		62C02E0B1C463FBF0028B936 /* JMUICommonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E0A1C463FBF0028B936 /* JMUICommonTests.m */; };
 		62C02E3D1C4640180028B936 /* NSDate+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E161C4640180028B936 /* NSDate+Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -15,11 +20,6 @@
 		62C02E401C4640180028B936 /* NSString+JMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E191C4640180028B936 /* NSString+JMUI.m */; };
 		62C02E431C4640180028B936 /* UIView+JMUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E1C1C4640180028B936 /* UIView+JMUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02E441C4640180028B936 /* UIView+JMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E1D1C4640180028B936 /* UIView+JMUI.m */; };
-		62C02E451C4640180028B936 /* MBProgressHUD+Add.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E201C4640180028B936 /* MBProgressHUD+Add.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62C02E461C4640180028B936 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E211C4640180028B936 /* MBProgressHUD+Add.m */; };
-		62C02E471C4640180028B936 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62C02E221C4640180028B936 /* MBProgressHUD.bundle */; };
-		62C02E481C4640180028B936 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E231C4640180028B936 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62C02E491C4640180028B936 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E241C4640180028B936 /* MBProgressHUD.m */; };
 		62C02E4A1C4640180028B936 /* XHFoundationMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E271C4640180028B936 /* XHFoundationMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02E4B1C4640180028B936 /* XHMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E281C4640180028B936 /* XHMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02E4C1C4640180028B936 /* XHUIKitMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E291C4640180028B936 /* XHUIKitMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -55,6 +55,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6231800A1C9F9B2A0028FA22 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		6231800B1C9F9B2A0028FA22 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		6231800C1C9F9B2A0028FA22 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		6231800D1C9F9B2A0028FA22 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		6231800E1C9F9B2A0028FA22 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		62C02DFB1C463FBF0028B936 /* JMUICommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JMUICommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C02E001C463FBF0028B936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62C02E051C463FBF0028B936 /* JMUICommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JMUICommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,11 +71,6 @@
 		62C02E191C4640180028B936 /* NSString+JMUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JMUI.m"; sourceTree = "<group>"; };
 		62C02E1C1C4640180028B936 /* UIView+JMUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JMUI.h"; sourceTree = "<group>"; };
 		62C02E1D1C4640180028B936 /* UIView+JMUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JMUI.m"; sourceTree = "<group>"; };
-		62C02E201C4640180028B936 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
-		62C02E211C4640180028B936 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
-		62C02E221C4640180028B936 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
-		62C02E231C4640180028B936 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		62C02E241C4640180028B936 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		62C02E271C4640180028B936 /* XHFoundationMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHFoundationMacro.h; sourceTree = "<group>"; };
 		62C02E281C4640180028B936 /* XHMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHMacro.h; sourceTree = "<group>"; };
 		62C02E291C4640180028B936 /* XHUIKitMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHUIKitMacro.h; sourceTree = "<group>"; };
@@ -115,6 +115,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		623180091C9F9B2A0028FA22 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				6231800A1C9F9B2A0028FA22 /* MBProgressHUD+Add.h */,
+				6231800B1C9F9B2A0028FA22 /* MBProgressHUD+Add.m */,
+				6231800C1C9F9B2A0028FA22 /* MBProgressHUD.bundle */,
+				6231800D1C9F9B2A0028FA22 /* MBProgressHUD.h */,
+				6231800E1C9F9B2A0028FA22 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		62C02DF11C463FBF0028B936 = {
 			isa = PBXGroup;
 			children = (
@@ -177,22 +189,10 @@
 		62C02E1E1C4640180028B936 /* Externals */ = {
 			isa = PBXGroup;
 			children = (
-				62C02E1F1C4640180028B936 /* MBProgressHUD */,
+				623180091C9F9B2A0028FA22 /* MBProgressHUD */,
 				62C02E251C4640180028B936 /* RecordView */,
 			);
 			path = Externals;
-			sourceTree = "<group>";
-		};
-		62C02E1F1C4640180028B936 /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				62C02E201C4640180028B936 /* MBProgressHUD+Add.h */,
-				62C02E211C4640180028B936 /* MBProgressHUD+Add.m */,
-				62C02E221C4640180028B936 /* MBProgressHUD.bundle */,
-				62C02E231C4640180028B936 /* MBProgressHUD.h */,
-				62C02E241C4640180028B936 /* MBProgressHUD.m */,
-			);
-			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		62C02E251C4640180028B936 /* RecordView */ = {
@@ -248,12 +248,12 @@
 				62C02E591C4640180028B936 /* JMUIFileManager.h in Headers */,
 				62C02E501C4640180028B936 /* XHVoiceCommonHelper.h in Headers */,
 				62C02E5B1C4640180028B936 /* JMUIViewUtil.h in Headers */,
-				62C02E451C4640180028B936 /* MBProgressHUD+Add.h in Headers */,
 				62C02E4C1C4640180028B936 /* XHUIKitMacro.h in Headers */,
 				62C02E4A1C4640180028B936 /* XHFoundationMacro.h in Headers */,
 				62C02E3F1C4640180028B936 /* NSString+JMUI.h in Headers */,
+				6231800F1C9F9B2A0028FA22 /* MBProgressHUD+Add.h in Headers */,
+				623180121C9F9B2A0028FA22 /* MBProgressHUD.h in Headers */,
 				62C02E5D1C4640180028B936 /* JMUIStringUtils.h in Headers */,
-				62C02E481C4640180028B936 /* MBProgressHUD.h in Headers */,
 				62C02E581C4640180028B936 /* JMUIConstants.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,9 +337,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62C02E471C4640180028B936 /* MBProgressHUD.bundle in Resources */,
 				62C02E4D1C4640180028B936 /* RecordViewResources.bundle in Resources */,
 				62C02E561C4640180028B936 /* Info.plist in Resources */,
+				623180111C9F9B2A0028FA22 /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,14 +357,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62C02E491C4640180028B936 /* MBProgressHUD.m in Sources */,
 				62C02E441C4640180028B936 /* UIView+JMUI.m in Sources */,
 				62C02E5C1C4640180028B936 /* JMUIViewUtil.m in Sources */,
-				62C02E461C4640180028B936 /* MBProgressHUD+Add.m in Sources */,
 				62C02E5A1C4640180028B936 /* JMUIFileManager.m in Sources */,
 				62C02E401C4640180028B936 /* NSString+JMUI.m in Sources */,
 				62C02E551C4640180028B936 /* XHVoiceRecordHUD.m in Sources */,
 				62C02E4F1C4640180028B936 /* UIImage+XHRecord.m in Sources */,
+				623180101C9F9B2A0028FA22 /* MBProgressHUD+Add.m in Sources */,
+				623180131C9F9B2A0028FA22 /* MBProgressHUD.m in Sources */,
 				62C02E531C4640180028B936 /* XHVoiceRecordHelper.m in Sources */,
 				62C02E5E1C4640180028B936 /* JMUIStringUtils.m in Sources */,
 				62C02E3E1C4640180028B936 /* NSDate+Utilities.m in Sources */,

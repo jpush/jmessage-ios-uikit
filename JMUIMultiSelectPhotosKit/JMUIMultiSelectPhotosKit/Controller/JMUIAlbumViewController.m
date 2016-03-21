@@ -36,8 +36,8 @@
     [self prepareAlbumArrWithAssert];
   }
 
-  [_albumTable registerNib:[UINib nibWithNibName:FrameworkNibResourcesWithName(@"JMUIAlbumTableViewCell") bundle:nil]
-    forCellReuseIdentifier:FrameworkNibResourcesWithName(@"JMUIAlbumTableViewCell")];
+  [_albumTable registerNib:[UINib nibWithNibName:@"JMUIAlbumTableViewCell" bundle:[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"JMUIMultiSelectPhotosKitResource" withExtension:@"bundle"]]]
+    forCellReuseIdentifier:@"JMUIAlbumTableViewCell"];
   
   _albumTable.delegate = self;
   _albumTable.dataSource = self;
@@ -156,7 +156,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-  static NSString *albumCellIdentify = @"JMUIMultiSelectPhotosKit.framework/JMUIAlbumTableViewCell";
+  static NSString *albumCellIdentify = @"JMUIAlbumTableViewCell";
   JMUIAlbumTableViewCell *cell = (JMUIAlbumTableViewCell *)[_albumTable dequeueReusableCellWithIdentifier:albumCellIdentify];
   [cell layoutWithAlbumModel:_albumArr[indexPath.row]];
   return cell;
@@ -167,9 +167,10 @@
 }
 
 - (void)pushToSelectPhotoVCWithIndex:(NSInteger)index {
-//  JMUIPhotoSelectViewController *selectPhotoVC = [[JMUIPhotoSelectViewController alloc] init];
-    JMUIPhotoSelectViewController *selectPhotoVC = [[JMUIPhotoSelectViewController alloc] initWithNibName:FrameworkNibResourcesWithName(@"JMUIPhotoSelectViewController") bundle:nil];
 
+
+    JMUIPhotoSelectViewController *selectPhotoVC = [[JMUIPhotoSelectViewController alloc] initWithNibName:@"JMUIPhotoSelectViewController" bundle:[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"JMUIMultiSelectPhotosKitResource" withExtension:@"bundle"]]];
+  
   JMUIAlbumModel *model = _albumArr[index];
   
   if ([[[UIDevice currentDevice]systemVersion] floatValue] >= 8) {

@@ -64,8 +64,9 @@ UIScrollViewDelegate> {
   [aFlowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
   collectionView.pagingEnabled = YES;
   [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"gradientCell"];
-  [collectionView registerNib:[UINib nibWithNibName:FrameworkNibResourcesWithName(@"JMUIPhotoBrowserCollectionViewCell") bundle:nil]
-   forCellWithReuseIdentifier:FrameworkNibResourcesWithName(@"JMUIPhotoBrowserCollectionViewCell")];
+  
+  [collectionView registerNib:[UINib nibWithNibName:@"JMUIPhotoBrowserCollectionViewCell" bundle:[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"JMUIMultiSelectPhotosKitResource" withExtension:@"bundle"]]]
+   forCellWithReuseIdentifier:@"JMUIPhotoBrowserCollectionViewCell"];
   collectionView.delegate = self;
   collectionView.dataSource = self;
   collectionView.userInteractionEnabled = YES;
@@ -117,7 +118,7 @@ UIScrollViewDelegate> {
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-  static NSString *CellIdentifier = @"JMUIMultiSelectPhotosKit.framework/JMUIPhotoBrowserCollectionViewCell";
+  static NSString *CellIdentifier = @"JMUIPhotoBrowserCollectionViewCell";
   JMUIPhotoBrowserCollectionViewCell *cell = (JMUIPhotoBrowserCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
   JMUIPhotoModel *currentPhotoModel = _allPhotoArr[indexPath.item];
   [cell setDataWithModel:currentPhotoModel];

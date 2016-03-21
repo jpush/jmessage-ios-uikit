@@ -14,7 +14,6 @@
 #import <JMUICommon/JMUIStringUtils.h>
 #import <JMUICommon/JMUIViewUtil.h>
 #import <JMUICommon/NSString+JMUI.h>
-#import <JMUICommon/UIImage+JMUI.h>
 #import "UIImage+JMUIChatting.h"
 
 @implementation JMUIInputToolbar

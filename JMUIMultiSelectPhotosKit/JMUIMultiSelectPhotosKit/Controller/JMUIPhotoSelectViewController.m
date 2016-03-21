@@ -12,8 +12,10 @@
 #import "JMUIPhotoModel.h"
 #import "JMUIPhotoPickerConstants.h"
 #import "JMUISelectImgCollectionView.h"
-#import "MBProgressHUD.h"
-#import "MBProgressHUD+Add.h"
+#import <JMUICommon/JMUICommon.h>
+#import <JMUICommon/MBProgressHUD.h>
+#import <JMUICommon/MBProgressHUD+Add.h>
+
 #import "JMUIPhotoPickerConstants.h"
 
 #define kPhotoGridViewFrame CGRectMake(0, 0, screenWidth,screenHeight - 45)
@@ -119,7 +121,7 @@
   photoGridView.minimumZoomScale = 0;
   photoGridView.contentOffset = CGPointMake(0, 64);
   [photoGridView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"gradientCell"];
-  [photoGridView registerNib:[UINib nibWithNibName:FrameworkNibResourcesWithName(@"JMUIThumbImageCollectionViewCell") bundle:nil] forCellWithReuseIdentifier:FrameworkNibResourcesWithName(@"JMUIThumbImageCollectionViewCell")];
+  [photoGridView registerNib:[UINib nibWithNibName:@"JMUIThumbImageCollectionViewCell" bundle:[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"JMUIMultiSelectPhotosKitResource" withExtension:@"bundle"]]] forCellWithReuseIdentifier:@"JMUIThumbImageCollectionViewCell"];
   [self.view addSubview:photoGridView];
   UICollectionViewFlowLayout *collectLayout = (UICollectionViewFlowLayout *)photoGridView.collectionViewLayout;
   NSLog(@"translucent %@",[UINavigationBar appearance].translucent?@"yes":@"no");
@@ -134,8 +136,7 @@
 }
 
 - (IBAction)clickToBrowserSelectedPhotos:(id)sender {
-//  JMUIPhotoBrowserViewController *photoBrowserVC = [[JMUIPhotoBrowserViewController alloc] init];
-  JMUIPhotoBrowserViewController *photoBrowserVC = [[JMUIPhotoBrowserViewController alloc] initWithNibName:FrameworkNibResourcesWithName(@"JMUIPhotoBrowserViewController") bundle:nil];
+  JMUIPhotoBrowserViewController *photoBrowserVC = [[JMUIPhotoBrowserViewController alloc] initWithNibName:@"JMUIPhotoBrowserViewController" bundle:[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"JMUIMultiSelectPhotosKitResource" withExtension:@"bundle"]]];
   photoBrowserVC.photoCollection = _photoCollection;
   photoBrowserVC.imageManager = imageManager;
   photoBrowserVC.allFetchResult = _allFetchResult;
@@ -245,7 +246,7 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-  static NSString *CellIdentifier = @"JMUIMultiSelectPhotosKit.framework/JMUIThumbImageCollectionViewCell";
+  static NSString *CellIdentifier = @"JMUIThumbImageCollectionViewCell";
   JMUIThumbImageCollectionViewCell *cell = (JMUIThumbImageCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
   [cell setDataWithModel:allPhotoArr[indexPath.item] withDelegate:self];
   return cell;
@@ -253,7 +254,7 @@
 
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView
 didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath {
-  JMUIPhotoBrowserViewController *photoBrowserVC = [[JMUIPhotoBrowserViewController alloc] initWithNibName:FrameworkNibResourcesWithName(@"JMUIPhotoBrowserViewController") bundle:nil];
+  JMUIPhotoBrowserViewController *photoBrowserVC = [[JMUIPhotoBrowserViewController alloc] initWithNibName:@"JMUIPhotoBrowserViewController" bundle:[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"JMUIMultiSelectPhotosKitResource" withExtension:@"bundle"]]];
   photoBrowserVC.photoCollection = _photoCollection;
   photoBrowserVC.imageManager = imageManager;
   photoBrowserVC.allFetchResult = _allFetchResult;

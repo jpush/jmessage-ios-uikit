@@ -19,8 +19,10 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   self.navigationController.navigationBar.translucent = NO;
-//  _albumVC = [[JMUIAlbumViewController alloc] init];
-  _albumVC = [[JMUIAlbumViewController alloc] initWithNibName:FrameworkNibResourcesWithName(@"JMUIAlbumViewController") bundle:nil];
+
+  _albumVC = [[JMUIAlbumViewController alloc] initWithNibName:@"JMUIAlbumViewController" bundle:[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"JMUIMultiSelectPhotosKitResource" withExtension:@"bundle"]]];
+  
+  
   _albumVC.photoDelegate = _photoDelegate;
   [self pushViewController:_albumVC animated:NO];
 }

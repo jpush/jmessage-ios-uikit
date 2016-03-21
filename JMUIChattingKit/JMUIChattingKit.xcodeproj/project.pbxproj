@@ -344,8 +344,8 @@
 				62C028481C3F979C0028B936 /* JMUIChattingKit.h */,
 				62C028781C3F97B40028B936 /* Conversation */,
 				62C0288F1C3F97B40028B936 /* Externals */,
-				62C028A11C3F97B40028B936 /* Framework */,
 				62C028A31C3F97B40028B936 /* Input */,
+				62C028A11C3F97B40028B936 /* Framework */,
 				62C02CD71C4627D10028B936 /* Category */,
 				62C028B21C3F97B40028B936 /* JMUIChattingKitResource.bundle */,
 				62C0284A1C3F979C0028B936 /* Info.plist */,
@@ -891,6 +891,7 @@
 				62317EE01C9EFBC90028FA22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62C0283F1C3F979C0028B936 /* Build configuration list for PBXProject "JMUIChattingKit" */ = {
 			isa = XCConfigurationList;
