@@ -14,7 +14,7 @@ IM SDK UI 组件
 ![image](https://github.com/jpush/jmessage-ios-uikit/blob/master/JMUIChattingKit/README_JMUIChatting集成说明图/2.编译JMUICommon.gif)
 
 3.编译JMUIGroupChatDetail 库
-![image]https://github.com/jpush/jmessage-ios-uikit/blob/master/JMUIGroupChatDetailKit/README_JMUIGroupChatDetailKit说明图/编译JMUIGroupChatDetailKit.gif)
+![image](https://github.com/jpush/jmessage-ios-uikit/blob/master/JMUIGroupChatDetailKit/README_JMUIGroupChatDetailKit说明图/编译JMUIGroupChatDetailKit.gif)
 
 4.添加 JMUIGroupChatDetailKit.framework 和 JMUIGroupChatDetailKitResource.bundle 到自己工程
 ![image](https://github.com/jpush/jmessage-ios-uikit/blob/master/JMUIGroupChatDetailKit/README_JMUIGroupChatDetailKit说明图/ADDGroupDetailKitAndResouceToMyproject.gif)
