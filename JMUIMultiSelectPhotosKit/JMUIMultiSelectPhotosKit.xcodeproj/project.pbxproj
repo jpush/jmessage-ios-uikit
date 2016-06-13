@@ -21,7 +21,6 @@
 		62317FDE1C9F8D2A0028FA22 /* image_picked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62317FD81C9F8D2A0028FA22 /* image_picked@2x.png */; };
 		62317FDF1C9F8D2A0028FA22 /* image_picked@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62317FD91C9F8D2A0028FA22 /* image_picked@3x.png */; };
 		62317FEA1C9F988A0028FA22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62317FE91C9F988A0028FA22 /* Foundation.framework */; };
-		62317FEC1C9F99770028FA22 /* JMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62317FEB1C9F99770028FA22 /* JMessage.framework */; };
 		62317FF01C9F998D0028FA22 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62317FEF1C9F998D0028FA22 /* Security.framework */; };
 		62317FF21C9F99970028FA22 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62317FF11C9F99970028FA22 /* CoreAudio.framework */; };
 		62317FF61C9F99A80028FA22 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62317FF51C9F99A80028FA22 /* AVFoundation.framework */; };
@@ -33,7 +32,6 @@
 		623180021C9F99E20028FA22 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623180011C9F99E20028FA22 /* CoreTelephony.framework */; };
 		623180041C9F99EB0028FA22 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623180031C9F99EB0028FA22 /* Accelerate.framework */; };
 		623180061C9F99F30028FA22 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623180051C9F99F30028FA22 /* Photos.framework */; };
-		623180081C9F9ACF0028FA22 /* JMUICommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623180071C9F9ACF0028FA22 /* JMUICommon.framework */; };
 		62C02A1E1C4370A10028B936 /* JMUIAlbumViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C029F21C4370A10028B936 /* JMUIAlbumViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02A1F1C4370A10028B936 /* JMUIAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C029F31C4370A10028B936 /* JMUIAlbumViewController.m */; };
 		62C02A201C4370A10028B936 /* JMUIAlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C029F41C4370A10028B936 /* JMUIAlbumViewController.xib */; };
@@ -70,6 +68,7 @@
 		62C02A511C43755B0028B936 /* JMUIPhotoBrowserCollectionViewCell.xib in Headers */ = {isa = PBXBuildFile; fileRef = 62C02A181C4370A10028B936 /* JMUIPhotoBrowserCollectionViewCell.xib */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02A521C43755B0028B936 /* JMUIThumbImageCollectionViewCell.xib in Headers */ = {isa = PBXBuildFile; fileRef = 62C02A1D1C4370A10028B936 /* JMUIThumbImageCollectionViewCell.xib */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02A551C4387FC0028B936 /* JMUIKitResoures.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62C02A4A1C43735D0028B936 /* JMUIKitResoures.bundle */; };
+		62EA7F161D0E814000175A12 /* JMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EA7F151D0E814000175A12 /* JMessage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,7 +91,6 @@
 		62317FD81C9F8D2A0028FA22 /* image_picked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_picked@2x.png"; sourceTree = "<group>"; };
 		62317FD91C9F8D2A0028FA22 /* image_picked@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_picked@3x.png"; sourceTree = "<group>"; };
 		62317FE91C9F988A0028FA22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		62317FEB1C9F99770028FA22 /* JMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMessage.framework; sourceTree = "<group>"; };
 		62317FED1C9F99860028FA22 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		62317FEF1C9F998D0028FA22 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		62317FF11C9F99970028FA22 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -106,7 +104,6 @@
 		623180011C9F99E20028FA22 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		623180031C9F99EB0028FA22 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		623180051C9F99F30028FA22 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
-		623180071C9F9ACF0028FA22 /* JMUICommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JMUICommon.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/JMUIKit-ecjjjfrhuypskmexfdqjzfjwzsse/Build/Products/Debug-iphoneos/JMUICommon.framework"; sourceTree = "<group>"; };
 		62C029D71C4370750028B936 /* JMUIMultiSelectPhotosKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JMUIMultiSelectPhotosKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C029DC1C4370750028B936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62C029E61C4370750028B936 /* JMUIMultiSelectPhotosKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMUIMultiSelectPhotosKitTests.m; sourceTree = "<group>"; };
@@ -140,6 +137,7 @@
 		62C02A1C1C4370A10028B936 /* JMUIThumbImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIThumbImageCollectionViewCell.m; sourceTree = "<group>"; };
 		62C02A1D1C4370A10028B936 /* JMUIThumbImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMUIThumbImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		62C02A4A1C43735D0028B936 /* JMUIKitResoures.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JMUIKitResoures.bundle; sourceTree = "<group>"; };
+		62EA7F151D0E814000175A12 /* JMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JMessage.framework; path = ../../JMessage.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,9 +152,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				623180081C9F9ACF0028FA22 /* JMUICommon.framework in Frameworks */,
 				623180061C9F99F30028FA22 /* Photos.framework in Frameworks */,
 				623180041C9F99EB0028FA22 /* Accelerate.framework in Frameworks */,
+				62EA7F161D0E814000175A12 /* JMessage.framework in Frameworks */,
 				623180021C9F99E20028FA22 /* CoreTelephony.framework in Frameworks */,
 				623180001C9F99D70028FA22 /* AudioToolbox.framework in Frameworks */,
 				62317FFE1C9F99CE0028FA22 /* SystemConfiguration.framework in Frameworks */,
@@ -167,7 +165,6 @@
 				62317FF21C9F99970028FA22 /* CoreAudio.framework in Frameworks */,
 				62317FF01C9F998D0028FA22 /* Security.framework in Frameworks */,
 				62317FEA1C9F988A0028FA22 /* Foundation.framework in Frameworks */,
-				62317FEC1C9F99770028FA22 /* JMessage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,8 +174,22 @@
 		620FF6CD1C9FBCAD008D5FE3 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				623180051C9F99F30028FA22 /* Photos.framework */,
+				623180031C9F99EB0028FA22 /* Accelerate.framework */,
+				623180011C9F99E20028FA22 /* CoreTelephony.framework */,
+				62317FFF1C9F99D70028FA22 /* AudioToolbox.framework */,
+				62317FFD1C9F99CE0028FA22 /* SystemConfiguration.framework */,
+				62317FFB1C9F99C20028FA22 /* CoreLocation.framework */,
+				62317FF91C9F99BB0028FA22 /* CoreFoundation.framework */,
+				62317FF71C9F99B40028FA22 /* CFNetwork.framework */,
+				62317FF51C9F99A80028FA22 /* AVFoundation.framework */,
+				62317FF31C9F999E0028FA22 /* libsqlite3.0.tbd */,
+				62317FF11C9F99970028FA22 /* CoreAudio.framework */,
+				62317FEF1C9F998D0028FA22 /* Security.framework */,
+				62317FED1C9F99860028FA22 /* libz.tbd */,
+				62317FE91C9F988A0028FA22 /* Foundation.framework */,
+				62EA7F151D0E814000175A12 /* JMessage.framework */,
 				62C02A4A1C43735D0028B936 /* JMUIKitResoures.bundle */,
-				62317FEB1C9F99770028FA22 /* JMessage.framework */,
 			);
 			name = Framework;
 			sourceTree = "<group>";
@@ -220,21 +231,6 @@
 			isa = PBXGroup;
 			children = (
 				620FF6CD1C9FBCAD008D5FE3 /* Framework */,
-				623180071C9F9ACF0028FA22 /* JMUICommon.framework */,
-				623180051C9F99F30028FA22 /* Photos.framework */,
-				623180031C9F99EB0028FA22 /* Accelerate.framework */,
-				623180011C9F99E20028FA22 /* CoreTelephony.framework */,
-				62317FFF1C9F99D70028FA22 /* AudioToolbox.framework */,
-				62317FFD1C9F99CE0028FA22 /* SystemConfiguration.framework */,
-				62317FFB1C9F99C20028FA22 /* CoreLocation.framework */,
-				62317FF91C9F99BB0028FA22 /* CoreFoundation.framework */,
-				62317FF71C9F99B40028FA22 /* CFNetwork.framework */,
-				62317FF51C9F99A80028FA22 /* AVFoundation.framework */,
-				62317FF31C9F999E0028FA22 /* libsqlite3.0.tbd */,
-				62317FF11C9F99970028FA22 /* CoreAudio.framework */,
-				62317FEF1C9F998D0028FA22 /* Security.framework */,
-				62317FED1C9F99860028FA22 /* libz.tbd */,
-				62317FE91C9F988A0028FA22 /* Foundation.framework */,
 				62C029F11C4370A10028B936 /* Controller */,
 				62C02A051C4370A10028B936 /* Model */,
 				62C02A121C4370A10028B936 /* View */,
@@ -625,6 +621,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JMUIMultiSelectPhotosKit",
+					"$(PROJECT_DIR)/../",
 				);
 				INFOPLIST_FILE = JMUIMultiSelectPhotosKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -646,6 +643,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JMUIMultiSelectPhotosKit",
+					"$(PROJECT_DIR)/../",
 				);
 				INFOPLIST_FILE = JMUIMultiSelectPhotosKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";

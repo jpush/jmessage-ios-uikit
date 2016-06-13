@@ -38,7 +38,6 @@
 
   [_albumTable registerNib:[UINib nibWithNibName:@"JMUIAlbumTableViewCell" bundle:[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"JMUIMultiSelectPhotosKitResource" withExtension:@"bundle"]]]
     forCellReuseIdentifier:@"JMUIAlbumTableViewCell"];
-  
   _albumTable.delegate = self;
   _albumTable.dataSource = self;
 

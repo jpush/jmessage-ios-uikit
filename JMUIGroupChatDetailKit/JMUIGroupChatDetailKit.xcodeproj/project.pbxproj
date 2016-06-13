@@ -57,7 +57,6 @@
 		62317FB21C9F1A320028FA22 /* voice_toolbar_pre@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62317F841C9F1A320028FA22 /* voice_toolbar_pre@3x.png */; };
 		62317FB31C9F1A320028FA22 /* voice_toolbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62317F851C9F1A320028FA22 /* voice_toolbar@2x.png */; };
 		62317FB41C9F1A320028FA22 /* voice_toolbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62317F861C9F1A320028FA22 /* voice_toolbar@3x.png */; };
-		62C02B8D1C43A78D0028B936 /* JMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C02B741C43A78D0028B936 /* JMessage.framework */; };
 		62C02B8E1C43A78D0028B936 /* JMUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02B751C43A78D0028B936 /* JMUIKit.h */; };
 		62C02B8F1C43A78D0028B936 /* JMUIKitResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62C02B761C43A78D0028B936 /* JMUIKitResource.bundle */; };
 		62C02B901C43A78D0028B936 /* JMUIFootTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02B791C43A78D0028B936 /* JMUIFootTableViewCell.h */; };
@@ -94,6 +93,7 @@
 		62C02CCF1C461CF30028B936 /* JMUIGroupChatDetailReuseCellMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02CCD1C461CF30028B936 /* JMUIGroupChatDetailReuseCellMaker.m */; };
 		62C02CD51C4622300028B936 /* UIImage+JMUIGroupChatDetail.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02CD31C4622300028B936 /* UIImage+JMUIGroupChatDetail.h */; };
 		62C02CD61C4622300028B936 /* UIImage+JMUIGroupChatDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02CD41C4622300028B936 /* UIImage+JMUIGroupChatDetail.m */; };
+		62EA7F141D0E811D00175A12 /* JMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EA7F131D0E811D00175A12 /* JMessage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,7 +159,6 @@
 		62C02B2B1C43A73E0028B936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62C02B351C43A73E0028B936 /* JMUIGroupChatDetailKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMUIGroupChatDetailKitTests.m; sourceTree = "<group>"; };
 		62C02B371C43A73E0028B936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62C02B741C43A78D0028B936 /* JMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMessage.framework; sourceTree = "<group>"; };
 		62C02B751C43A78D0028B936 /* JMUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIKit.h; sourceTree = "<group>"; };
 		62C02B761C43A78D0028B936 /* JMUIKitResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JMUIKitResource.bundle; sourceTree = "<group>"; };
 		62C02B791C43A78D0028B936 /* JMUIFootTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIFootTableViewCell.h; sourceTree = "<group>"; };
@@ -194,6 +193,7 @@
 		62C02CCD1C461CF30028B936 /* JMUIGroupChatDetailReuseCellMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIGroupChatDetailReuseCellMaker.m; sourceTree = "<group>"; };
 		62C02CD31C4622300028B936 /* UIImage+JMUIGroupChatDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JMUIGroupChatDetail.h"; sourceTree = "<group>"; };
 		62C02CD41C4622300028B936 /* UIImage+JMUIGroupChatDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JMUIGroupChatDetail.m"; sourceTree = "<group>"; };
+		62EA7F131D0E811D00175A12 /* JMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JMessage.framework; path = ../../JMessage.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +210,7 @@
 			files = (
 				62C02BB51C43A8930028B936 /* CoreGraphics.framework in Frameworks */,
 				62C02BB31C43A8830028B936 /* CFNetwork.framework in Frameworks */,
+				62EA7F141D0E811D00175A12 /* JMessage.framework in Frameworks */,
 				62C02BB11C43A8780028B936 /* SystemConfiguration.framework in Frameworks */,
 				62C02BAF1C43A8640028B936 /* AudioToolbox.framework in Frameworks */,
 				62C02BAD1C43A8590028B936 /* CoreLocation.framework in Frameworks */,
@@ -220,7 +221,6 @@
 				62C02BA11C43A8240028B936 /* AVFoundation.framework in Frameworks */,
 				62C02BA21C43A8240028B936 /* CoreFoundation.framework in Frameworks */,
 				62C02BA31C43A8240028B936 /* Foundation.framework in Frameworks */,
-				62C02B8D1C43A78D0028B936 /* JMessage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,8 +364,8 @@
 		62C02BB81C43AB3B0028B936 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				62EA7F131D0E811D00175A12 /* JMessage.framework */,
 				62C02CC91C461B7A0028B936 /* JMUICommon.framework */,
-				62C02B741C43A78D0028B936 /* JMessage.framework */,
 				62C02BB61C43A8A50028B936 /* libsqlite3.0.tbd */,
 				62C02BB41C43A8930028B936 /* CoreGraphics.framework */,
 				62C02BB21C43A8830028B936 /* CFNetwork.framework */,
@@ -599,6 +599,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = NO;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../";
 				INFOPLIST_FILE = JMUIGroupChatDetailKitResource/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -616,6 +617,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = NO;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../";
 				INFOPLIST_FILE = JMUIGroupChatDetailKitResource/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -650,6 +652,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -697,6 +700,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -725,6 +729,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JMUIGroupChatDetailKit",
+					"$(PROJECT_DIR)/../",
 				);
 				INFOPLIST_FILE = JMUIGroupChatDetailKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -750,6 +755,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JMUIGroupChatDetailKit",
+					"$(PROJECT_DIR)/../",
 				);
 				INFOPLIST_FILE = JMUIGroupChatDetailKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -775,6 +781,7 @@
 				62317F511C9F18020028FA22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62C02B201C43A73E0028B936 /* Build configuration list for PBXProject "JMUIGroupChatDetailKit" */ = {
 			isa = XCConfigurationList;

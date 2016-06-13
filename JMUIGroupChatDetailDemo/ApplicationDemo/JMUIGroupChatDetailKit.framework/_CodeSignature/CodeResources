@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		uO1McQQA1ViAC0UbxQuPjogxqIw=
-		</data>
 		<key>Headers/JMUIFootTableCollectionReusableView.xib</key>
 		<data>
 		31POPDkjt2wM+Ez5Als05F5ziFA=
@@ -30,23 +26,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		eIcow5R9wfAbidkHXr3XntBBcUo=
+		Oht4KVhDGBlu0Cn22as6szEIfE4=
 		</data>
 		<key>JMUIFootTableCollectionReusableView.nib</key>
 		<data>
-		Y/xb0NXZJq3/7rrDAXpo8CViZCc=
+		KobxXX+k3lOUg0DAAzbLjUM5Udc=
 		</data>
 		<key>JMUIFootTableViewCell.nib</key>
 		<data>
-		bZVcVUhQVv89Bzprt0ItmBI7BFI=
+		o6YaVE9YNrjiofGWGyuzlDTxZug=
 		</data>
 		<key>JMUIGroupInfoFooterReusableView.nib</key>
 		<data>
-		VZANw1ZEM/GafSe/cp1NqUAakDk=
+		3W94PiqP/XembCPLaD/kCUfAvCY=
 		</data>
 		<key>JMUIGroupMemberCollectionViewCell.nib</key>
 		<data>
-		1D9ALbw/ugPFHx5V7NGEhPCRK4U=
+		XDFo8RaeKOfByIk8omcvIgWlJ9Y=
 		</data>
 		<key>JMUIKitResource.bundle/ReceiverVoiceNodePlaying001@2x.png</key>
 		<data>
@@ -257,19 +253,19 @@
 		</data>
 		<key>JMUIFootTableCollectionReusableView.nib</key>
 		<data>
-		Y/xb0NXZJq3/7rrDAXpo8CViZCc=
+		KobxXX+k3lOUg0DAAzbLjUM5Udc=
 		</data>
 		<key>JMUIFootTableViewCell.nib</key>
 		<data>
-		bZVcVUhQVv89Bzprt0ItmBI7BFI=
+		o6YaVE9YNrjiofGWGyuzlDTxZug=
 		</data>
 		<key>JMUIGroupInfoFooterReusableView.nib</key>
 		<data>
-		VZANw1ZEM/GafSe/cp1NqUAakDk=
+		3W94PiqP/XembCPLaD/kCUfAvCY=
 		</data>
 		<key>JMUIGroupMemberCollectionViewCell.nib</key>
 		<data>
-		1D9ALbw/ugPFHx5V7NGEhPCRK4U=
+		XDFo8RaeKOfByIk8omcvIgWlJ9Y=
 		</data>
 		<key>JMUIKitResource.bundle/ReceiverVoiceNodePlaying001@2x.png</key>
 		<data>

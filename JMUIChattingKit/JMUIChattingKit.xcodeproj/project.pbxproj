@@ -94,7 +94,6 @@
 		62C029351C3FB5290028B936 /* JMUIMoreView.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C028AD1C3F97B40028B936 /* JMUIMoreView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C029361C3FB53E0028B936 /* JMUIInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C028A91C3F97B40028B936 /* JMUIInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C0293B1C3FB7CA0028B936 /* JMUIChattingDatasource.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C0287D1C3F97B40028B936 /* JMUIChattingDatasource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62C029511C3FBE560028B936 /* JMessage.framework in Sources */ = {isa = PBXBuildFile; fileRef = 62C028A21C3F97B40028B936 /* JMessage.framework */; };
 		62C0295A1C4298110028B936 /* JMUIShowTimeCell.xib in Headers */ = {isa = PBXBuildFile; fileRef = 62C0288E1C3F97B40028B936 /* JMUIShowTimeCell.xib */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C0295B1C4298250028B936 /* JMUIInputToolbar.xib in Headers */ = {isa = PBXBuildFile; fileRef = 62C028A81C3F97B40028B936 /* JMUIInputToolbar.xib */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C0295C1C4298250028B936 /* JMUIMoreView.xib in Headers */ = {isa = PBXBuildFile; fileRef = 62C028AF1C3F97B40028B936 /* JMUIMoreView.xib */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -108,6 +107,7 @@
 		62C02CE41C46293C0028B936 /* JMUISendMsgManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02CE01C46293C0028B936 /* JMUISendMsgManager.m */; };
 		62C02CE71C4629950028B936 /* JMUIChattingReuseCellMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02CE51C4629950028B936 /* JMUIChattingReuseCellMaker.h */; };
 		62C02CE81C4629950028B936 /* JMUIChattingReuseCellMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02CE61C4629950028B936 /* JMUIChattingReuseCellMaker.m */; };
+		62EA7F101D0E80F000175A12 /* JMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EA7F0F1D0E80F000175A12 /* JMessage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,7 +191,6 @@
 		62C0288C1C3F97B40028B936 /* JMUIShowTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIShowTimeCell.h; sourceTree = "<group>"; };
 		62C0288D1C3F97B40028B936 /* JMUIShowTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIShowTimeCell.m; sourceTree = "<group>"; };
 		62C0288E1C3F97B40028B936 /* JMUIShowTimeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMUIShowTimeCell.xib; sourceTree = "<group>"; };
-		62C028A21C3F97B40028B936 /* JMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMessage.framework; sourceTree = "<group>"; };
 		62C028A41C3F97B40028B936 /* JMUIAudioPlayerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIAudioPlayerHelper.h; sourceTree = "<group>"; };
 		62C028A51C3F97B40028B936 /* JMUIAudioPlayerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIAudioPlayerHelper.m; sourceTree = "<group>"; };
 		62C028A61C3F97B40028B936 /* JMUIInputToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIInputToolbar.h; sourceTree = "<group>"; };
@@ -231,6 +230,7 @@
 		62C02CE01C46293C0028B936 /* JMUISendMsgManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUISendMsgManager.m; sourceTree = "<group>"; };
 		62C02CE51C4629950028B936 /* JMUIChattingReuseCellMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIChattingReuseCellMaker.h; sourceTree = "<group>"; };
 		62C02CE61C4629950028B936 /* JMUIChattingReuseCellMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIChattingReuseCellMaker.m; sourceTree = "<group>"; };
+		62EA7F0F1D0E80F000175A12 /* JMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JMessage.framework; path = ../../../JMessage.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +258,7 @@
 				62C029031C3F9ACE0028B936 /* AVFoundation.framework in Frameworks */,
 				62C028FF1C3F9AAC0028B936 /* CoreAudio.framework in Frameworks */,
 				62C028FD1C3F9AA00028B936 /* Security.framework in Frameworks */,
+				62EA7F101D0E80F000175A12 /* JMessage.framework in Frameworks */,
 				62C028F91C3F9A910028B936 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +443,7 @@
 		62C028A11C3F97B40028B936 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				62EA7F0F1D0E80F000175A12 /* JMessage.framework */,
 				62C02CC11C45F7CE0028B936 /* JMUICommon.framework */,
 				62C029141C3F9B430028B936 /* Photos.framework */,
 				62C029121C3F9B3C0028B936 /* Accelerate.framework */,
@@ -458,7 +460,6 @@
 				62C028FC1C3F9AA00028B936 /* Security.framework */,
 				62C028FA1C3F9A9B0028B936 /* libz.tbd */,
 				62C028F81C3F9A910028B936 /* Foundation.framework */,
-				62C028A21C3F97B40028B936 /* JMessage.framework */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
@@ -675,7 +676,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				62C02CE81C4629950028B936 /* JMUIChattingReuseCellMaker.m in Sources */,
-				62C029511C3FBE560028B936 /* JMessage.framework in Sources */,
 				62C028D01C3F97B40028B936 /* JMUIChatModel.m in Sources */,
 				62C028D21C3F97B40028B936 /* JMUIMessageContentView.m in Sources */,
 				62C02CE41C46293C0028B936 /* JMUISendMsgManager.m in Sources */,
@@ -764,6 +764,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -811,6 +812,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -840,6 +842,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JMUIChattingKit/Framework",
+					"$(PROJECT_DIR)/..",
+					"$(PROJECT_DIR)/../",
 				);
 				INFOPLIST_FILE = JMUIChattingKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -866,6 +870,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JMUIChattingKit/Framework",
+					"$(PROJECT_DIR)/..",
+					"$(PROJECT_DIR)/../",
 				);
 				INFOPLIST_FILE = JMUIChattingKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";

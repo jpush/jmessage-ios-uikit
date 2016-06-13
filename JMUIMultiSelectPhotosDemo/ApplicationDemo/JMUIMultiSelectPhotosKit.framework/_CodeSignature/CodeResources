@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		fmmbbyJcq/JhZUkYOpfWgfwr3Xg=
-		</data>
 		<key>Headers/JMUIAlbumModel.h</key>
 		<data>
 		XcPGO4TkIGiAMk1hFEudemVyqFo=
@@ -18,7 +14,7 @@
 		</data>
 		<key>Headers/JMUIAlbumTableViewCell.xib</key>
 		<data>
-		zY74kIxaLFyQNeXMfh9y57iqzgw=
+		DxXk7ZCApk183+haxo8GMIhF99I=
 		</data>
 		<key>Headers/JMUIAlbumViewController.h</key>
 		<data>
@@ -26,7 +22,7 @@
 		</data>
 		<key>Headers/JMUIAlbumViewController.xib</key>
 		<data>
-		NTfid0oYBSOX4YPHtYQKZRgywuM=
+		EeIFcN/lG4yvOLiM3+tILv5U1Oo=
 		</data>
 		<key>Headers/JMUIMultiSelectPhotosViewController.h</key>
 		<data>
@@ -34,7 +30,7 @@
 		</data>
 		<key>Headers/JMUIMultiSelectPhotosViewController.xib</key>
 		<data>
-		rWN58Yx8EG4F6jM43lNghtHDI4c=
+		0ghTQFODOlBtctTLRRLloPLM0M4=
 		</data>
 		<key>Headers/JMUIPhotoBrowserCollectionViewCell.h</key>
 		<data>
@@ -42,7 +38,7 @@
 		</data>
 		<key>Headers/JMUIPhotoBrowserCollectionViewCell.xib</key>
 		<data>
-		wV1UdIPLK+L8zPJzpm2Du5IotSM=
+		Lfh7htz/afrtNkatWbTpHZka5UM=
 		</data>
 		<key>Headers/JMUIPhotoBrowserViewController.h</key>
 		<data>
@@ -50,7 +46,7 @@
 		</data>
 		<key>Headers/JMUIPhotoBrowserViewController.xib</key>
 		<data>
-		4cVlXWEg0dK2grQZeFihHYzxAAE=
+		bkK84HQ89gFWdRNi3rtLZbZWA3I=
 		</data>
 		<key>Headers/JMUIPhotoModel.h</key>
 		<data>
@@ -58,7 +54,7 @@
 		</data>
 		<key>Headers/JMUIPhotoPickerConstants.h</key>
 		<data>
-		2cbZXNIp4gCOjVSxkUMPDNihCo0=
+		sb4BTDmLFlxpedioazmQvFkXGeg=
 		</data>
 		<key>Headers/JMUIPhotoSelectViewController.h</key>
 		<data>
@@ -66,7 +62,7 @@
 		</data>
 		<key>Headers/JMUIPhotoSelectViewController.xib</key>
 		<data>
-		zGqkDAT5AeXYknMC2krINFmxtQo=
+		lDSls8Hci/zlBYnOHNzKpfK+kRo=
 		</data>
 		<key>Headers/JMUISelectImgCollectionView.h</key>
 		<data>
@@ -78,27 +74,19 @@
 		</data>
 		<key>Headers/JMUIThumbImageCollectionViewCell.xib</key>
 		<data>
-		Fhogh2ULioA/CCQE2bhI3RGKF3M=
-		</data>
-		<key>Headers/MBProgressHUD+Add.h</key>
-		<data>
-		AKk7Ppk+6AxNz9nT7E7qo2TOGpU=
-		</data>
-		<key>Headers/MBProgressHUD.h</key>
-		<data>
-		1iokPyK6H32LsXj2Eh49SrDTOmw=
+		2n8mW1G4wIpz10c3xSv27e9Dm5I=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cMTiSLAADhuW/hDCIQeF5zv75TE=
+		/v1ctL3BH8nAZHFB1q73MTiZ8sE=
 		</data>
 		<key>JMUIAlbumTableViewCell.nib</key>
 		<data>
-		lfPdstqq/Qu3RGzVUI/w4H4nwm8=
+		802CAy/I6OQ0fiyUkpsBnlqpcIY=
 		</data>
 		<key>JMUIAlbumViewController.nib</key>
 		<data>
-		3m8/tmydU7Nwumg/OmnhcUnsWRo=
+		LA8j5ADgKnXgD2tR07RF7zCG9Jw=
 		</data>
 		<key>JMUIKitResoures.bundle/image_no_picked.png</key>
 		<data>
@@ -126,39 +114,23 @@
 		</data>
 		<key>JMUIMultiSelectPhotosViewController.nib</key>
 		<data>
-		83vbSS8T6uqVKUrohBHkDbWYGpU=
+		JRDwMFU9q8rCz1Qj7Z1rT/BjrlA=
 		</data>
 		<key>JMUIPhotoBrowserCollectionViewCell.nib</key>
 		<data>
-		mOfWHfXGd4AwBD6GDiUYMMdOY3E=
+		Ppng9acQAB/Ii7Zn26h/5idBNsM=
 		</data>
 		<key>JMUIPhotoBrowserViewController.nib</key>
 		<data>
-		pPw90BtwW1I20ccwC0tZ9w81jeo=
+		Kolqm2CMtkbzp8sQCpE2BJJM+Ts=
 		</data>
 		<key>JMUIPhotoSelectViewController.nib</key>
 		<data>
-		R7rhzumq66KHxrfXmuA8FINBw4c=
+		7g4LztOe+wwd/dO7jBUb/YO4hp0=
 		</data>
 		<key>JMUIThumbImageCollectionViewCell.nib</key>
 		<data>
-		g4jupdj00QxH/2UTbToLtRW1xAo=
-		</data>
-		<key>MBProgressHUD.bundle/error.png</key>
-		<data>
-		oEtTscjfFoMNIrbyiAdZ/IXg3M0=
-		</data>
-		<key>MBProgressHUD.bundle/error@2x.png</key>
-		<data>
-		gI8qepqBFVmpAP7Hi6FbZmx/Yxg=
-		</data>
-		<key>MBProgressHUD.bundle/success.png</key>
-		<data>
-		1n95bmodBqV2O0sPInuHpqSxAJ8=
-		</data>
-		<key>MBProgressHUD.bundle/success@2x.png</key>
-		<data>
-		bsnH0mTXMKgCiM75bjX4+3ARVAs=
+		OoAYNhQ2MhLDBL3UTdPdQ4VuZ6U=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -173,7 +145,7 @@
 		</data>
 		<key>Headers/JMUIAlbumTableViewCell.xib</key>
 		<data>
-		zY74kIxaLFyQNeXMfh9y57iqzgw=
+		DxXk7ZCApk183+haxo8GMIhF99I=
 		</data>
 		<key>Headers/JMUIAlbumViewController.h</key>
 		<data>
@@ -181,7 +153,7 @@
 		</data>
 		<key>Headers/JMUIAlbumViewController.xib</key>
 		<data>
-		NTfid0oYBSOX4YPHtYQKZRgywuM=
+		EeIFcN/lG4yvOLiM3+tILv5U1Oo=
 		</data>
 		<key>Headers/JMUIMultiSelectPhotosViewController.h</key>
 		<data>
@@ -189,7 +161,7 @@
 		</data>
 		<key>Headers/JMUIMultiSelectPhotosViewController.xib</key>
 		<data>
-		rWN58Yx8EG4F6jM43lNghtHDI4c=
+		0ghTQFODOlBtctTLRRLloPLM0M4=
 		</data>
 		<key>Headers/JMUIPhotoBrowserCollectionViewCell.h</key>
 		<data>
@@ -197,7 +169,7 @@
 		</data>
 		<key>Headers/JMUIPhotoBrowserCollectionViewCell.xib</key>
 		<data>
-		wV1UdIPLK+L8zPJzpm2Du5IotSM=
+		Lfh7htz/afrtNkatWbTpHZka5UM=
 		</data>
 		<key>Headers/JMUIPhotoBrowserViewController.h</key>
 		<data>
@@ -205,7 +177,7 @@
 		</data>
 		<key>Headers/JMUIPhotoBrowserViewController.xib</key>
 		<data>
-		4cVlXWEg0dK2grQZeFihHYzxAAE=
+		bkK84HQ89gFWdRNi3rtLZbZWA3I=
 		</data>
 		<key>Headers/JMUIPhotoModel.h</key>
 		<data>
@@ -213,7 +185,7 @@
 		</data>
 		<key>Headers/JMUIPhotoPickerConstants.h</key>
 		<data>
-		2cbZXNIp4gCOjVSxkUMPDNihCo0=
+		sb4BTDmLFlxpedioazmQvFkXGeg=
 		</data>
 		<key>Headers/JMUIPhotoSelectViewController.h</key>
 		<data>
@@ -221,7 +193,7 @@
 		</data>
 		<key>Headers/JMUIPhotoSelectViewController.xib</key>
 		<data>
-		zGqkDAT5AeXYknMC2krINFmxtQo=
+		lDSls8Hci/zlBYnOHNzKpfK+kRo=
 		</data>
 		<key>Headers/JMUISelectImgCollectionView.h</key>
 		<data>
@@ -233,23 +205,15 @@
 		</data>
 		<key>Headers/JMUIThumbImageCollectionViewCell.xib</key>
 		<data>
-		Fhogh2ULioA/CCQE2bhI3RGKF3M=
-		</data>
-		<key>Headers/MBProgressHUD+Add.h</key>
-		<data>
-		AKk7Ppk+6AxNz9nT7E7qo2TOGpU=
-		</data>
-		<key>Headers/MBProgressHUD.h</key>
-		<data>
-		1iokPyK6H32LsXj2Eh49SrDTOmw=
+		2n8mW1G4wIpz10c3xSv27e9Dm5I=
 		</data>
 		<key>JMUIAlbumTableViewCell.nib</key>
 		<data>
-		lfPdstqq/Qu3RGzVUI/w4H4nwm8=
+		802CAy/I6OQ0fiyUkpsBnlqpcIY=
 		</data>
 		<key>JMUIAlbumViewController.nib</key>
 		<data>
-		3m8/tmydU7Nwumg/OmnhcUnsWRo=
+		LA8j5ADgKnXgD2tR07RF7zCG9Jw=
 		</data>
 		<key>JMUIKitResoures.bundle/image_no_picked.png</key>
 		<data>
@@ -277,39 +241,23 @@
 		</data>
 		<key>JMUIMultiSelectPhotosViewController.nib</key>
 		<data>
-		83vbSS8T6uqVKUrohBHkDbWYGpU=
+		JRDwMFU9q8rCz1Qj7Z1rT/BjrlA=
 		</data>
 		<key>JMUIPhotoBrowserCollectionViewCell.nib</key>
 		<data>
-		mOfWHfXGd4AwBD6GDiUYMMdOY3E=
+		Ppng9acQAB/Ii7Zn26h/5idBNsM=
 		</data>
 		<key>JMUIPhotoBrowserViewController.nib</key>
 		<data>
-		pPw90BtwW1I20ccwC0tZ9w81jeo=
+		Kolqm2CMtkbzp8sQCpE2BJJM+Ts=
 		</data>
 		<key>JMUIPhotoSelectViewController.nib</key>
 		<data>
-		R7rhzumq66KHxrfXmuA8FINBw4c=
+		7g4LztOe+wwd/dO7jBUb/YO4hp0=
 		</data>
 		<key>JMUIThumbImageCollectionViewCell.nib</key>
 		<data>
-		g4jupdj00QxH/2UTbToLtRW1xAo=
-		</data>
-		<key>MBProgressHUD.bundle/error.png</key>
-		<data>
-		oEtTscjfFoMNIrbyiAdZ/IXg3M0=
-		</data>
-		<key>MBProgressHUD.bundle/error@2x.png</key>
-		<data>
-		gI8qepqBFVmpAP7Hi6FbZmx/Yxg=
-		</data>
-		<key>MBProgressHUD.bundle/success.png</key>
-		<data>
-		1n95bmodBqV2O0sPInuHpqSxAJ8=
-		</data>
-		<key>MBProgressHUD.bundle/success@2x.png</key>
-		<data>
-		bsnH0mTXMKgCiM75bjX4+3ARVAs=
+		OoAYNhQ2MhLDBL3UTdPdQ4VuZ6U=
 		</data>
 	</dict>
 	<key>rules</key>

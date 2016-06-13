@@ -41,7 +41,7 @@
 		62C02E5C1C4640180028B936 /* JMUIViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E391C4640180028B936 /* JMUIViewUtil.m */; };
 		62C02E5D1C4640180028B936 /* JMUIStringUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C02E3B1C4640180028B936 /* JMUIStringUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02E5E1C4640180028B936 /* JMUIStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C02E3C1C4640180028B936 /* JMUIStringUtils.m */; };
-		62C02E601C4640460028B936 /* JMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C02E5F1C4640460028B936 /* JMessage.framework */; };
+		62EA7F1C1D0E86FF00175A12 /* JMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EA7F1B1D0E86FF00175A12 /* JMessage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,7 +92,7 @@
 		62C02E391C4640180028B936 /* JMUIViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIViewUtil.m; sourceTree = "<group>"; };
 		62C02E3B1C4640180028B936 /* JMUIStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIStringUtils.h; sourceTree = "<group>"; };
 		62C02E3C1C4640180028B936 /* JMUIStringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIStringUtils.m; sourceTree = "<group>"; };
-		62C02E5F1C4640460028B936 /* JMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMessage.framework; sourceTree = "<group>"; };
+		62EA7F1B1D0E86FF00175A12 /* JMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JMessage.framework; path = ../../JMessage.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62C02E601C4640460028B936 /* JMessage.framework in Frameworks */,
+				62EA7F1C1D0E86FF00175A12 /* JMessage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +148,7 @@
 		62C02DFD1C463FBF0028B936 /* JMUICommon */ = {
 			isa = PBXGroup;
 			children = (
-				62C02E5F1C4640460028B936 /* JMessage.framework */,
+				62EA7F1B1D0E86FF00175A12 /* JMessage.framework */,
 				62C02E151C4640180028B936 /* Category */,
 				62C02E1E1C4640180028B936 /* Externals */,
 				62C02E331C4640180028B936 /* Info.plist */,
@@ -414,6 +414,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -461,6 +462,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -489,6 +491,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JMUICommon",
+					"$(PROJECT_DIR)/../",
 				);
 				INFOPLIST_FILE = JMUICommon/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -510,6 +513,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JMUICommon",
+					"$(PROJECT_DIR)/../",
 				);
 				INFOPLIST_FILE = JMUICommon/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";

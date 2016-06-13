@@ -30,8 +30,9 @@
 		62C0227B1C3E34820028B936 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C0227A1C3E34820028B936 /* CoreTelephony.framework */; };
 		62C0227D1C3E34920028B936 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C0227C1C3E34920028B936 /* Accelerate.framework */; };
 		62C0227F1C3E34990028B936 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C0227E1C3E34990028B936 /* Photos.framework */; };
-		62C02A841C43928C0028B936 /* JMUIMultiSelectPhotosKit.framework in Resources */ = {isa = PBXBuildFile; fileRef = 62C02A781C438EF00028B936 /* JMUIMultiSelectPhotosKit.framework */; };
-		62C02A851C43929A0028B936 /* JMUIMultiSelectPhotosKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C02A781C438EF00028B936 /* JMUIMultiSelectPhotosKit.framework */; };
+		62EA7F1E1D0E87C600175A12 /* JMUICommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EA7F1D1D0E87C600175A12 /* JMUICommon.framework */; };
+		62EA7F231D0E893D00175A12 /* JMUIMultiSelectPhotosKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EA7F211D0E893D00175A12 /* JMUIMultiSelectPhotosKit.framework */; };
+		62EA7F241D0E893D00175A12 /* JMUIMultiSelectPhotosKitResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62EA7F221D0E893D00175A12 /* JMUIMultiSelectPhotosKitResource.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,20 +49,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 62C020EC1C3E2C980028B936;
 			remoteInfo = ApplicationDemo;
-		};
-		62C02A771C438EF00028B936 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 62C02A721C438EEF0028B936 /* JMUIMultiSelectPhotosKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 62C029D71C4370750028B936;
-			remoteInfo = JMUIMultiSelectPhotosKit;
-		};
-		62C02A791C438EF00028B936 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 62C02A721C438EEF0028B936 /* JMUIMultiSelectPhotosKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 62C029E11C4370750028B936;
-			remoteInfo = JMUIMultiSelectPhotosKitTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -97,8 +84,9 @@
 		62C0227C1C3E34920028B936 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		62C0227E1C3E34990028B936 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		62C024101C3E3BE40028B936 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		62C02A721C438EEF0028B936 /* JMUIMultiSelectPhotosKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JMUIMultiSelectPhotosKit.xcodeproj; path = ../../JMUIMultiSelectPhotosKit/JMUIMultiSelectPhotosKit.xcodeproj; sourceTree = "<group>"; };
-		62C02A821C43917D0028B936 /* JMUIMultiSelectPhotosKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMUIMultiSelectPhotosKit.framework; sourceTree = "<group>"; };
+		62EA7F1D1D0E87C600175A12 /* JMUICommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMUICommon.framework; sourceTree = "<group>"; };
+		62EA7F211D0E893D00175A12 /* JMUIMultiSelectPhotosKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMUIMultiSelectPhotosKit.framework; sourceTree = "<group>"; };
+		62EA7F221D0E893D00175A12 /* JMUIMultiSelectPhotosKitResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JMUIMultiSelectPhotosKitResource.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,17 +94,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62C02A851C43929A0028B936 /* JMUIMultiSelectPhotosKit.framework in Frameworks */,
 				62C0227F1C3E34990028B936 /* Photos.framework in Frameworks */,
 				62C0227D1C3E34920028B936 /* Accelerate.framework in Frameworks */,
 				62C0227B1C3E34820028B936 /* CoreTelephony.framework in Frameworks */,
 				62C022791C3E347C0028B936 /* AudioToolbox.framework in Frameworks */,
 				62C022771C3E34750028B936 /* SystemConfiguration.framework in Frameworks */,
+				62EA7F1E1D0E87C600175A12 /* JMUICommon.framework in Frameworks */,
 				62C022751C3E346B0028B936 /* CoreLocation.framework in Frameworks */,
 				62C022731C3E34650028B936 /* CoreFoundation.framework in Frameworks */,
 				62C022711C3E345E0028B936 /* CoreGraphics.framework in Frameworks */,
 				62C0226F1C3E34570028B936 /* CFNetwork.framework in Frameworks */,
 				62C0226D1C3E34500028B936 /* AVFoundation.framework in Frameworks */,
+				62EA7F231D0E893D00175A12 /* JMUIMultiSelectPhotosKit.framework in Frameworks */,
 				62C0226B1C3E34490028B936 /* libsqlite3.0.tbd in Frameworks */,
 				62C022691C3E343F0028B936 /* CoreAudio.framework in Frameworks */,
 				62C022671C3E34230028B936 /* Security.framework in Frameworks */,
@@ -165,7 +154,6 @@
 		62C020EF1C3E2C980028B936 /* ApplicationDemo */ = {
 			isa = PBXGroup;
 			children = (
-				62C02A721C438EEF0028B936 /* JMUIMultiSelectPhotosKit.xcodeproj */,
 				62C020F31C3E2C980028B936 /* AppDelegate.h */,
 				62C020F41C3E2C980028B936 /* AppDelegate.m */,
 				62C024101C3E3BE40028B936 /* RootViewController.h */,
@@ -209,7 +197,9 @@
 		62C022801C3E34B90028B936 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				62C02A821C43917D0028B936 /* JMUIMultiSelectPhotosKit.framework */,
+				62EA7F211D0E893D00175A12 /* JMUIMultiSelectPhotosKit.framework */,
+				62EA7F221D0E893D00175A12 /* JMUIMultiSelectPhotosKitResource.bundle */,
+				62EA7F1D1D0E87C600175A12 /* JMUICommon.framework */,
 				62C0227E1C3E34990028B936 /* Photos.framework */,
 				62C0227C1C3E34920028B936 /* Accelerate.framework */,
 				62C0227A1C3E34820028B936 /* CoreTelephony.framework */,
@@ -227,15 +217,6 @@
 				62C022621C3E34120028B936 /* Foundation.framework */,
 			);
 			name = Framework;
-			sourceTree = "<group>";
-		};
-		62C02A731C438EEF0028B936 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				62C02A781C438EF00028B936 /* JMUIMultiSelectPhotosKit.framework */,
-				62C02A7A1C438EF00028B936 /* JMUIMultiSelectPhotosKitTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,12 +308,6 @@
 			mainGroup = 62C020E41C3E2C980028B936;
 			productRefGroup = 62C020EE1C3E2C980028B936 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 62C02A731C438EEF0028B936 /* Products */;
-					ProjectRef = 62C02A721C438EEF0028B936 /* JMUIMultiSelectPhotosKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				62C020EC1C3E2C980028B936 /* JMUIMultiSelectPhotosDemo */,
@@ -342,29 +317,12 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		62C02A781C438EF00028B936 /* JMUIMultiSelectPhotosKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = JMUIMultiSelectPhotosKit.framework;
-			remoteRef = 62C02A771C438EF00028B936 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		62C02A7A1C438EF00028B936 /* JMUIMultiSelectPhotosKitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = JMUIMultiSelectPhotosKitTests.xctest;
-			remoteRef = 62C02A791C438EF00028B936 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		62C020EB1C3E2C980028B936 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62C02A841C43928C0028B936 /* JMUIMultiSelectPhotosKit.framework in Resources */,
+				62EA7F241D0E893D00175A12 /* JMUIMultiSelectPhotosKitResource.bundle in Resources */,
 				62C021001C3E2C980028B936 /* LaunchScreen.storyboard in Resources */,
 				62C020FD1C3E2C980028B936 /* Assets.xcassets in Resources */,
 				62C022611C3E33CA0028B936 /* RootViewController.xib in Resources */,
@@ -463,6 +421,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -507,6 +466,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -532,6 +492,7 @@
 					"$(PROJECT_DIR)/ApplicationDemo/UIKit/Framework",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/ApplicationDemo",
+					"$(PROJECT_DIR)/../",
 				);
 				INFOPLIST_FILE = ApplicationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -553,6 +514,7 @@
 					"$(PROJECT_DIR)/ApplicationDemo/UIKit/Framework",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/ApplicationDemo",
+					"$(PROJECT_DIR)/../",
 				);
 				INFOPLIST_FILE = ApplicationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

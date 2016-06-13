@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		62317F461C9EFE590028FA22 /* JMUIChattingKitResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62317F451C9EFE590028FA22 /* JMUIChattingKitResource.bundle */; };
 		62C020F21C3E2C980028B936 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C020F11C3E2C980028B936 /* main.m */; };
 		62C020F51C3E2C980028B936 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C020F41C3E2C980028B936 /* AppDelegate.m */; };
 		62C020FD1C3E2C980028B936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62C020FC1C3E2C980028B936 /* Assets.xcassets */; };
@@ -30,13 +29,13 @@
 		62C0227D1C3E34920028B936 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C0227C1C3E34920028B936 /* Accelerate.framework */; };
 		62C0227F1C3E34990028B936 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C0227E1C3E34990028B936 /* Photos.framework */; };
 		62C0240E1C3E374C0028B936 /* MyConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C0240D1C3E374C0028B936 /* MyConversationViewController.m */; };
-		62C029CA1C42B3E30028B936 /* JMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C029C91C42B3E30028B936 /* JMessage.framework */; };
-		62C02BC21C44C81B0028B936 /* JMUIChattingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C02BC11C44C81B0028B936 /* JMUIChattingKit.framework */; };
 		62C02CC61C4613C80028B936 /* JMUICommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C02CC51C4613C80028B936 /* JMUICommon.framework */; };
+		62EA7F0E1D0E809500175A12 /* JMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EA7F0D1D0E809500175A12 /* JMessage.framework */; };
+		62EA7F2B1D0E8A4800175A12 /* JMUIChattingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EA7F291D0E8A4800175A12 /* JMUIChattingKit.framework */; };
+		62EA7F2C1D0E8A4800175A12 /* JMUIChattingKitResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62EA7F2A1D0E8A4800175A12 /* JMUIChattingKitResource.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		62317F451C9EFE590028FA22 /* JMUIChattingKitResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JMUIChattingKitResource.bundle; sourceTree = "<group>"; };
 		62C020ED1C3E2C980028B936 /* JMUIChattingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMUIChattingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C020F11C3E2C980028B936 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		62C020F31C3E2C980028B936 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,9 +67,10 @@
 		62C0240C1C3E374C0028B936 /* MyConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyConversationViewController.h; sourceTree = "<group>"; };
 		62C0240D1C3E374C0028B936 /* MyConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyConversationViewController.m; sourceTree = "<group>"; };
 		62C024101C3E3BE40028B936 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		62C029C91C42B3E30028B936 /* JMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMessage.framework; sourceTree = SOURCE_ROOT; };
-		62C02BC11C44C81B0028B936 /* JMUIChattingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMUIChattingKit.framework; sourceTree = SOURCE_ROOT; };
 		62C02CC51C4613C80028B936 /* JMUICommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMUICommon.framework; sourceTree = "<group>"; };
+		62EA7F0D1D0E809500175A12 /* JMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JMessage.framework; path = ../../JMessage.framework; sourceTree = "<group>"; };
+		62EA7F291D0E8A4800175A12 /* JMUIChattingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMUIChattingKit.framework; sourceTree = "<group>"; };
+		62EA7F2A1D0E8A4800175A12 /* JMUIChattingKitResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JMUIChattingKitResource.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,20 +80,20 @@
 			files = (
 				62C0227F1C3E34990028B936 /* Photos.framework in Frameworks */,
 				62C0227D1C3E34920028B936 /* Accelerate.framework in Frameworks */,
+				62EA7F2B1D0E8A4800175A12 /* JMUIChattingKit.framework in Frameworks */,
 				62C0227B1C3E34820028B936 /* CoreTelephony.framework in Frameworks */,
 				62C022791C3E347C0028B936 /* AudioToolbox.framework in Frameworks */,
 				62C02CC61C4613C80028B936 /* JMUICommon.framework in Frameworks */,
 				62C022771C3E34750028B936 /* SystemConfiguration.framework in Frameworks */,
 				62C022751C3E346B0028B936 /* CoreLocation.framework in Frameworks */,
+				62EA7F0E1D0E809500175A12 /* JMessage.framework in Frameworks */,
 				62C022731C3E34650028B936 /* CoreFoundation.framework in Frameworks */,
 				62C022711C3E345E0028B936 /* CoreGraphics.framework in Frameworks */,
-				62C02BC21C44C81B0028B936 /* JMUIChattingKit.framework in Frameworks */,
 				62C0226F1C3E34570028B936 /* CFNetwork.framework in Frameworks */,
 				62C0226D1C3E34500028B936 /* AVFoundation.framework in Frameworks */,
 				62C0226B1C3E34490028B936 /* libsqlite3.0.tbd in Frameworks */,
 				62C022691C3E343F0028B936 /* CoreAudio.framework in Frameworks */,
 				62C022671C3E34230028B936 /* Security.framework in Frameworks */,
-				62C029CA1C42B3E30028B936 /* JMessage.framework in Frameworks */,
 				62C022651C3E341C0028B936 /* libz.tbd in Frameworks */,
 				62C022631C3E34120028B936 /* Foundation.framework in Frameworks */,
 			);
@@ -123,7 +123,7 @@
 		62C020EF1C3E2C980028B936 /* ApplicationDemo */ = {
 			isa = PBXGroup;
 			children = (
-				62C029C91C42B3E30028B936 /* JMessage.framework */,
+				62EA7F0D1D0E809500175A12 /* JMessage.framework */,
 				62C020F31C3E2C980028B936 /* AppDelegate.h */,
 				62C020F41C3E2C980028B936 /* AppDelegate.m */,
 				62C024101C3E3BE40028B936 /* RootViewController.h */,
@@ -169,9 +169,9 @@
 		62C022801C3E34B90028B936 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				62317F451C9EFE590028FA22 /* JMUIChattingKitResource.bundle */,
+				62EA7F291D0E8A4800175A12 /* JMUIChattingKit.framework */,
+				62EA7F2A1D0E8A4800175A12 /* JMUIChattingKitResource.bundle */,
 				62C02CC51C4613C80028B936 /* JMUICommon.framework */,
-				62C02BC11C44C81B0028B936 /* JMUIChattingKit.framework */,
 				62C0227E1C3E34990028B936 /* Photos.framework */,
 				62C0227C1C3E34920028B936 /* Accelerate.framework */,
 				62C0227A1C3E34820028B936 /* CoreTelephony.framework */,
@@ -248,8 +248,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62317F461C9EFE590028FA22 /* JMUIChattingKitResource.bundle in Resources */,
 				62C021001C3E2C980028B936 /* LaunchScreen.storyboard in Resources */,
+				62EA7F2C1D0E8A4800175A12 /* JMUIChattingKitResource.bundle in Resources */,
 				62C020FD1C3E2C980028B936 /* Assets.xcassets in Resources */,
 				62C022611C3E33CA0028B936 /* RootViewController.xib in Resources */,
 			);
@@ -305,6 +305,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -349,6 +350,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -369,12 +371,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ApplicationDemo/UIKit/Framework",
 					"$(PROJECT_DIR)/ApplicationDemo/JMUIChattingKit/Framework",
 					"$(PROJECT_DIR)/ApplicationDemo",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../",
 				);
 				INFOPLIST_FILE = ApplicationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -391,12 +395,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ApplicationDemo/UIKit/Framework",
 					"$(PROJECT_DIR)/ApplicationDemo/JMUIChattingKit/Framework",
 					"$(PROJECT_DIR)/ApplicationDemo",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../",
 				);
 				INFOPLIST_FILE = ApplicationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

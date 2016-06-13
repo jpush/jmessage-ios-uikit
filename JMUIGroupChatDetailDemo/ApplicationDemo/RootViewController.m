@@ -41,8 +41,7 @@
     [self getGroupConversation];
   } else {
     
-    [JMSGUser ls
-     loginWithUsername:userName password:@"111111" completionHandler:^(id resultObject, NSError *error) {
+    [JMSGUser loginWithUsername:userName password:@"111111" completionHandler:^(id resultObject, NSError *error) {
       [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
       if (error) {
         NSLog(@" 登录出错");
