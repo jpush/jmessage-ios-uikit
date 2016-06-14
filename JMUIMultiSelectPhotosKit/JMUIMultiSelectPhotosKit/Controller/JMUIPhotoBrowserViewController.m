@@ -96,6 +96,7 @@ UIScrollViewDelegate> {
 
 - (NSIndexPath *)currentIndex {
   NSInteger itemIndex = collectionView.contentOffset.x / collectionView.frame.size.width;
+  NSLog(@"current item index in photobrowser %ld",itemIndex);
   NSInteger sectionIndex = 0;
   _currentIndex = [NSIndexPath indexPathForItem:itemIndex inSection:sectionIndex];
   return _currentIndex;
@@ -127,6 +128,9 @@ UIScrollViewDelegate> {
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
   NSIndexPath *currentIndex = [self currentIndex];
+  if (currentIndex.item > _allPhotoArr.count - 1) {
+    return;
+  }
   JMUIPhotoModel *currentPhotoModel = _allPhotoArr[currentIndex.item];
   selectStatusBtn.selected = currentPhotoModel.isSelected;
 }

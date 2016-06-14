@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		6280E3961D1009C000B7B84A /* JMUICommonAggredate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6280E3991D1009C000B7B84A /* Build configuration list for PBXAggregateTarget "JMUICommonAggredate" */;
+			buildPhases = (
+				6280E39A1D1009CE00B7B84A /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = JMUICommonAggredate;
+			productName = JMUICommonAggredate;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		6231800F1C9F9B2A0028FA22 /* MBProgressHUD+Add.h in Headers */ = {isa = PBXBuildFile; fileRef = 6231800A1C9F9B2A0028FA22 /* MBProgressHUD+Add.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		623180101C9F9B2A0028FA22 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 6231800B1C9F9B2A0028FA22 /* MBProgressHUD+Add.m */; };
@@ -306,6 +320,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = HuminiOS;
 				TargetAttributes = {
+					6280E3961D1009C000B7B84A = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					62C02DFA1C463FBF0028B936 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -328,6 +345,7 @@
 			targets = (
 				62C02DFA1C463FBF0028B936 /* JMUICommon */,
 				62C02E041C463FBF0028B936 /* JMUICommonTests */,
+				6280E3961D1009C000B7B84A /* JMUICommonAggredate */,
 			);
 		};
 /* End PBXProject section */
@@ -351,6 +369,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6280E39A1D1009CE00B7B84A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# 例如: FMK_NAME = \"MyFramework\"\nFMK_NAME=${PROJECT_NAME}\n\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# -configuration ${CONFIGURATION}\n# Clean and Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos clean build\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator clean build\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\nmkdir -p \"${INSTALL_DIR}\"\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"\n\nopen \"${INSTALL_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		62C02DF61C463FBF0028B936 /* Sources */ = {
@@ -391,6 +425,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		6280E3971D1009C000B7B84A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6280E3981D1009C000B7B84A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		62C02E0D1C463FBF0028B936 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -495,6 +543,7 @@
 				);
 				INFOPLIST_FILE = JMUICommon/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = HuminiOS.JMUICommon;
@@ -517,6 +566,7 @@
 				);
 				INFOPLIST_FILE = JMUICommon/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = HuminiOS.JMUICommon;
@@ -548,6 +598,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6280E3991D1009C000B7B84A /* Build configuration list for PBXAggregateTarget "JMUICommonAggredate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6280E3971D1009C000B7B84A /* Debug */,
+				6280E3981D1009C000B7B84A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		62C02DF51C463FBF0028B936 /* Build configuration list for PBXProject "JMUICommon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

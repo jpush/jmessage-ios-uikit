@@ -261,6 +261,7 @@ didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath {
   photoBrowserVC.allPhotoArr = allPhotoArr;
   photoBrowserVC.photoDelegate = _photoDelegate;
   photoBrowserVC.currentIndex = indexPath;
+  NSLog(@"the current index is %ld", indexPath.item);
   photoBrowserVC.selectVCDelegate = self;
   [self.navigationController pushViewController:photoBrowserVC animated:YES];
 }

@@ -6,6 +6,22 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		6280E3831D1006AF00B7B84A /* JMUIMultiSelectPhotoKitAggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6280E3861D1006AF00B7B84A /* Build configuration list for PBXAggregateTarget "JMUIMultiSelectPhotoKitAggregate" */;
+			buildPhases = (
+				6280E3871D1006BF00B7B84A /* ShellScript */,
+			);
+			dependencies = (
+				6280E3891D10083800B7B84A /* PBXTargetDependency */,
+				6280E38B1D10083800B7B84A /* PBXTargetDependency */,
+			);
+			name = JMUIMultiSelectPhotoKitAggregate;
+			productName = JMUIMultiSelectPhotoKitAggregate;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		62317FCB1C9F8CD10028FA22 /* JMUIAlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C029F41C4370A10028B936 /* JMUIAlbumViewController.xib */; };
 		62317FCC1C9F8CD10028FA22 /* JMUIMultiSelectPhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C029F71C4370A10028B936 /* JMUIMultiSelectPhotosViewController.xib */; };
@@ -32,6 +48,7 @@
 		623180021C9F99E20028FA22 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623180011C9F99E20028FA22 /* CoreTelephony.framework */; };
 		623180041C9F99EB0028FA22 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623180031C9F99EB0028FA22 /* Accelerate.framework */; };
 		623180061C9F99F30028FA22 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623180051C9F99F30028FA22 /* Photos.framework */; };
+		6280E39C1D100B2C00B7B84A /* JMUICommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6280E39B1D100B2C00B7B84A /* JMUICommon.framework */; };
 		62C02A1E1C4370A10028B936 /* JMUIAlbumViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C029F21C4370A10028B936 /* JMUIAlbumViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C02A1F1C4370A10028B936 /* JMUIAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C029F31C4370A10028B936 /* JMUIAlbumViewController.m */; };
 		62C02A201C4370A10028B936 /* JMUIAlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C029F41C4370A10028B936 /* JMUIAlbumViewController.xib */; };
@@ -79,6 +96,20 @@
 			remoteGlobalIDString = 62317FC41C9F8CBF0028FA22;
 			remoteInfo = JMUIMultiSelectPhotosKitResource;
 		};
+		6280E3881D10083800B7B84A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62C029CE1C4370750028B936 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62C029D61C4370750028B936;
+			remoteInfo = JMUIMultiSelectPhotosKit;
+		};
+		6280E38A1D10083800B7B84A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62C029CE1C4370750028B936 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62317FC41C9F8CBF0028FA22;
+			remoteInfo = JMUIMultiSelectPhotosKitResource;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +135,7 @@
 		623180011C9F99E20028FA22 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		623180031C9F99EB0028FA22 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		623180051C9F99F30028FA22 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		6280E39B1D100B2C00B7B84A /* JMUICommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMUICommon.framework; sourceTree = "<group>"; };
 		62C029D71C4370750028B936 /* JMUIMultiSelectPhotosKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JMUIMultiSelectPhotosKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C029DC1C4370750028B936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62C029E61C4370750028B936 /* JMUIMultiSelectPhotosKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMUIMultiSelectPhotosKitTests.m; sourceTree = "<group>"; };
@@ -156,6 +188,7 @@
 				623180041C9F99EB0028FA22 /* Accelerate.framework in Frameworks */,
 				62EA7F161D0E814000175A12 /* JMessage.framework in Frameworks */,
 				623180021C9F99E20028FA22 /* CoreTelephony.framework in Frameworks */,
+				6280E39C1D100B2C00B7B84A /* JMUICommon.framework in Frameworks */,
 				623180001C9F99D70028FA22 /* AudioToolbox.framework in Frameworks */,
 				62317FFE1C9F99CE0028FA22 /* SystemConfiguration.framework in Frameworks */,
 				62317FFC1C9F99C20028FA22 /* CoreLocation.framework in Frameworks */,
@@ -174,6 +207,7 @@
 		620FF6CD1C9FBCAD008D5FE3 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				6280E39B1D100B2C00B7B84A /* JMUICommon.framework */,
 				623180051C9F99F30028FA22 /* Photos.framework */,
 				623180031C9F99EB0028FA22 /* Accelerate.framework */,
 				623180011C9F99E20028FA22 /* CoreTelephony.framework */,
@@ -392,6 +426,9 @@
 					62317FC41C9F8CBF0028FA22 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
+					6280E3831D1006AF00B7B84A = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					62C029D61C4370750028B936 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -411,6 +448,7 @@
 			targets = (
 				62C029D61C4370750028B936 /* JMUIMultiSelectPhotosKit */,
 				62317FC41C9F8CBF0028FA22 /* JMUIMultiSelectPhotosKitResource */,
+				6280E3831D1006AF00B7B84A /* JMUIMultiSelectPhotoKitAggregate */,
 			);
 		};
 /* End PBXProject section */
@@ -453,6 +491,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6280E3871D1006BF00B7B84A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FMK_NAME=${PROJECT_NAME}\n\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# -configuration ${CONFIGURATION}\n# Clean and Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos clean build\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator clean build\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\nmkdir -p \"${INSTALL_DIR}\"\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"\n\nopen \"${INSTALL_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		62317FC11C9F8CBF0028FA22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -485,6 +539,16 @@
 			isa = PBXTargetDependency;
 			target = 62317FC41C9F8CBF0028FA22 /* JMUIMultiSelectPhotosKitResource */;
 			targetProxy = 62317FD21C9F8CF60028FA22 /* PBXContainerItemProxy */;
+		};
+		6280E3891D10083800B7B84A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62C029D61C4370750028B936 /* JMUIMultiSelectPhotosKit */;
+			targetProxy = 6280E3881D10083800B7B84A /* PBXContainerItemProxy */;
+		};
+		6280E38B1D10083800B7B84A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62317FC41C9F8CBF0028FA22 /* JMUIMultiSelectPhotosKitResource */;
+			targetProxy = 6280E38A1D10083800B7B84A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -520,6 +584,30 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		6280E3841D1006AF00B7B84A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../",
+					"$(PROJECT_DIR)/JMUIMultiSelectPhotosKit",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6280E3851D1006AF00B7B84A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../",
+					"$(PROJECT_DIR)/JMUIMultiSelectPhotosKit",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -560,7 +648,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -601,7 +689,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -663,6 +751,15 @@
 			buildConfigurations = (
 				62317FC81C9F8CBF0028FA22 /* Debug */,
 				62317FC91C9F8CBF0028FA22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6280E3861D1006AF00B7B84A /* Build configuration list for PBXAggregateTarget "JMUIMultiSelectPhotoKitAggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6280E3841D1006AF00B7B84A /* Debug */,
+				6280E3851D1006AF00B7B84A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
