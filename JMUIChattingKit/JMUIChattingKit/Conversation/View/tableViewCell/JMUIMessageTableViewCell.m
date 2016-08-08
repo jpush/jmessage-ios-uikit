@@ -238,7 +238,11 @@ static NSInteger const readViewRadius = 4;
 
 - (void)tapContent:(UIGestureRecognizer *)gesture {
   if (_model.message.contentType == kJMSGContentTypeVoice) {
-    [self playVoice];
+    if( _isPlaying == YES) {
+      [self stopPlayVoice];
+    } else {
+      [self playVoice];
+    }
   }
   if (_model.message.contentType == kJMSGContentTypeImage) {
     if (self.model.message.status == kJMSGMessageStatusReceiveDownloadFailed) {
@@ -341,6 +345,15 @@ static NSInteger const readViewRadius = 4;
   return;
 }
 
+- (void)stopPlayVoice {
+  if ([_model.message isReceived]) {
+    [_messageContent.voiceConent setImage:[UIImage jmuiChatting_imageInResource:@"ReceiverVoiceNodePlaying"]];
+  } else {
+    [_messageContent.voiceConent setImage:[UIImage jmuiChatting_imageInResource:@"SenderVoiceNodePlaying"]];
+  }
+  [[JMUIAudioPlayerHelper shareInstance] stopAudio];
+}
+
 - (void)AlertInCurrentViewWithString:(NSString *)string {
   UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
   [MBProgressHUD showMessage:string view:keyWindow];
@@ -374,9 +387,9 @@ static NSInteger const readViewRadius = 4;
   _isPlaying = NO;
   self.index = 0;
   if ([_model.message isReceived]) {
-    [_messageContent.voiceConent setImage:[UIImage jmuiChatting_imageInResource:@"ReceiverVoiceNodePlaying.png"]];
+    [_messageContent.voiceConent setImage:[UIImage jmuiChatting_imageInResource:@"ReceiverVoiceNodePlaying"]];
   } else {
-    [_messageContent.voiceConent setImage:[UIImage jmuiChatting_imageInResource:@"SenderVoiceNodePlaying.png"]];
+    [_messageContent.voiceConent setImage:[UIImage jmuiChatting_imageInResource:@"SenderVoiceNodePlaying"]];
   }
   if (self.continuePlayer) {
     self.continuePlayer = NO;
