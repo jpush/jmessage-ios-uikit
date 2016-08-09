@@ -68,7 +68,6 @@ static NSInteger const messagefristPageNumber = 20;
 
 - (void)setupAllViews {
   _messageListTable = [[UITableView alloc] initWithFrame:CGRectZero];
-//  NSLog(@"huangmin the view w: %f   h: %f",self.view.frame.size.width,self.view.frame.size.height);
   _messageListTable.delegate = self;
   _messageListTable.dataSource = self;
   _inputView = [JMUIInputView new];
