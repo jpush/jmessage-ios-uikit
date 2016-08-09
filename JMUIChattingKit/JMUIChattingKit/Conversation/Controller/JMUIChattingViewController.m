@@ -42,6 +42,7 @@ static NSInteger const messagefristPageNumber = 20;
 }
 
 - (void)viewDidLayoutSubviews {
+  _messageListTable.frame = CGRectMake(0, 0, kApplicationWidth, self.view.frame.size.height - 45);
   [_conversationLayout messageTableScrollToBottom:NO];
 }
 
@@ -66,7 +67,8 @@ static NSInteger const messagefristPageNumber = 20;
 }
 
 - (void)setupAllViews {
-  _messageListTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kApplicationWidth, self.view.frame.size.height - 45)];
+  _messageListTable = [[UITableView alloc] initWithFrame:CGRectZero];
+//  NSLog(@"huangmin the view w: %f   h: %f",self.view.frame.size.width,self.view.frame.size.height);
   _messageListTable.delegate = self;
   _messageListTable.dataSource = self;
   _inputView = [JMUIInputView new];
