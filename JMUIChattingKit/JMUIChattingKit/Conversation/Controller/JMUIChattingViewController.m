@@ -436,7 +436,8 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 
 #pragma -mark Notification listener
 - (void)inputKeyboardWillShow:(NSNotification *)notification {
-  [_conversationLayout showMoreView];
+  CGRect keyBoardFrame = [[[notification userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
+  [_conversationLayout showKeyboard: keyBoardFrame.size.height];
 }
 
 - (void)inputKeyboardWillHide:(NSNotification *)notification {

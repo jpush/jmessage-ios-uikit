@@ -90,8 +90,14 @@ static CGFloat const animationDuration = 0.25;
   [_inputView hideKeyboard];
 }
 
-- (void)showMoreView {
+- (void)showMoreView{
   _inputView.jmui_top = kApplicationHeight - _inputView.jmui_height - 64;
+  _messageListTable.jmui_height = [_messageListTable superview].jmui_height - _inputView.jmui_height;
+  [self messageTableScrollToBottom:YES];
+}
+
+- (void)showKeyboard:(CGFloat)keybordHeight {
+  _inputView.jmui_top = kApplicationHeight - keybordHeight - 64 - _inputView.toolBar.jmui_height;
   _messageListTable.jmui_height = [_messageListTable superview].jmui_height - _inputView.jmui_height;
   [self messageTableScrollToBottom:YES];
 }
