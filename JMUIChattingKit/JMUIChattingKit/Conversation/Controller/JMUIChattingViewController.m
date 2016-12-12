@@ -70,14 +70,14 @@ static NSInteger const messagefristPageNumber = 20;
   _messageListTable = [[UITableView alloc] initWithFrame:CGRectZero];
   _messageListTable.delegate = self;
   _messageListTable.dataSource = self;
-  _inputView = [JMUIInputView new];
+  _jmuiInputView = [JMUIInputView new];
   
   [self.view addSubview: _messageListTable];
-  [self.view addSubview:_inputView];
-  _inputView.delegate = self;
+  [self.view addSubview:_jmuiInputView];
+  _jmuiInputView.delegate = self;
   _messageListTable.separatorStyle = UITableViewCellSeparatorStyleNone;
   _messageListTable.backgroundColor = messageTableColor;
-  _conversationLayout = [[JMUIChattingLayout alloc] initWithInputView:_inputView
+  _conversationLayout = [[JMUIChattingLayout alloc] initWithInputView:_jmuiInputView
                                                                 tableView:_messageListTable];
   
   UITapGestureRecognizer *gesture =[[UITapGestureRecognizer alloc] initWithTarget:self

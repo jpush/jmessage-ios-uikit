@@ -24,7 +24,7 @@ JMessageDelegate
 >
 
 @property (strong, nonatomic)JMSGConversation *conversation;
-@property (strong, nonatomic)JMUIInputView *inputView;
+@property (strong, nonatomic)JMUIInputView *jmuiInputView;
 @property (strong, nonatomic)UITableView *messageListTable;
 
 /**

@@ -15,7 +15,7 @@ static CGFloat const animationDuration = 0.25;
 
 @interface JMUIChattingLayout (){
   UITableView *_messageListTable;
-  JMUIInputView *_inputView;
+  JMUIInputView *_jmuiinputView;
 }
 
 @end
@@ -25,15 +25,15 @@ static CGFloat const animationDuration = 0.25;
 -(instancetype)initWithInputView:(JMUIInputView *)inputView tableView:(UITableView *)tableview
 {
   if (self = [self init]) {
-    _inputView = inputView;
-    _inputView.jmui_height = inputViewHeight;
-    _inputView.jmui_width = kApplicationWidth;
-    _inputView.jmui_left = 0;
-    _inputView.jmui_top = [_inputView superview].jmui_height - 45;
+    _jmuiinputView = inputView;
+    _jmuiinputView.jmui_height = inputViewHeight;
+    _jmuiinputView.jmui_width = kApplicationWidth;
+    _jmuiinputView.jmui_left = 0;
+    _jmuiinputView.jmui_top = [_jmuiinputView superview].jmui_height - 45;
     
     _messageListTable = tableview;
     _messageListTable.jmui_height = [_messageListTable superview].jmui_height - 45;
-    _inputView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleTopMargin;
+    _jmuiinputView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleTopMargin;
   }
   return self;
 }
@@ -87,24 +87,24 @@ static CGFloat const animationDuration = 0.25;
 }
 
 - (void)hideKeyboard {
-  [_inputView hideKeyboard];
+  [_jmuiinputView hideKeyboard];
 }
 
 - (void)showMoreView{
-  _inputView.jmui_top = kApplicationHeight - _inputView.jmui_height - 64;
-  _messageListTable.jmui_height = [_messageListTable superview].jmui_height - _inputView.jmui_height;
+  _jmuiinputView.jmui_top = kApplicationHeight - _jmuiinputView.jmui_height - 64;
+  _messageListTable.jmui_height = [_messageListTable superview].jmui_height - _jmuiinputView.jmui_height;
   [self messageTableScrollToBottom:YES];
 }
 
 - (void)showKeyboard:(CGFloat)keybordHeight {
-  _inputView.jmui_top = kApplicationHeight - keybordHeight - 64 - _inputView.toolBar.jmui_height;
-  _messageListTable.jmui_height = [_messageListTable superview].jmui_height - _inputView.jmui_height;
+  _jmuiinputView.jmui_top = kApplicationHeight - keybordHeight - 64 - _jmuiinputView.toolBar.jmui_height;
+  _messageListTable.jmui_height = [_messageListTable superview].jmui_height - _jmuiinputView.jmui_height;
   [self messageTableScrollToBottom:YES];
 }
 
 - (void)hideMoreView {
   [UIView animateWithDuration:animationDuration animations:^{
-    _inputView.jmui_top = [_inputView superview].jmui_height - 45;
+    _jmuiinputView.jmui_top = [_jmuiinputView superview].jmui_height - 45;
     _messageListTable.jmui_height = [_messageListTable superview].jmui_height - 45;
   }];
 }
