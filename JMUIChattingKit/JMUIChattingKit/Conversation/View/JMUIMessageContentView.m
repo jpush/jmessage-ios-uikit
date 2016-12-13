@@ -141,9 +141,20 @@ static NSInteger const textMessageContentRightOffset = 15;
 
 -(BOOL)canPerformAction:(SEL)action withSender:(id)sender {
   if (_message.contentType == kJMSGContentTypeVoice) {
-    return action == @selector(delete:);
+//    return action == @selector(delete:);
+    return false;
   }
-  return (action == @selector(copy:) || action == @selector(delete:));
+//  return (action == @selector(copy:) || action == @selector(delete:));
+  switch (_message.contentType) {
+    case kJMSGContentTypeText:
+        return (action == @selector(copy:));
+      break;
+      
+    default:
+        return false;
+      break;
+  }
+  
 }
 
 -(void)copy:(id)sender {
