@@ -16,4 +16,7 @@
 #import <JMUICommon/NSDate+Utilities.h>
 #import <JMUICommon/NSString+JMUI.h>
 #import <JMUICommon/UIView+JMUI.h>
+#import <JMUICommon/XHVoiceRecordHUD.h>
+#import <JMUICommon/XHVoiceRecordHelper.h>
+#import <JMUICommon/XHVoiceCommonHelper.h>
 #endif /* JMUICommon_h */
