@@ -132,7 +132,11 @@ static NSInteger const textMessageContentRightOffset = 15;
 -(void)handleTap:(UIGestureRecognizer*) recognizer {
   [self becomeFirstResponder];
   [[UIMenuController sharedMenuController] setTargetRect:self.frame inView:self.superview];
-  [[UIMenuController sharedMenuController] setMenuVisible:YES animated: YES];
+  
+  if (![UIMenuController sharedMenuController].menuVisible) {
+      [[UIMenuController sharedMenuController] setMenuVisible:YES animated: YES];
+  }
+  
 }
 
 -(BOOL)canPerformAction:(SEL)action withSender:(id)sender {
