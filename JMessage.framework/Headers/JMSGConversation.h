@@ -55,6 +55,12 @@ JMSG_ASSUME_NONNULL_BEGIN
 + (JMSGConversation * JMSG_NULLABLE)singleConversationWithUsername:(NSString *)username;
 
 /*!
+ * @abstract 获取跨应用单聊会话
+ */
++ (JMSGConversation * JMSG_NULLABLE)singleConversationWithUsername:(NSString *)username
+                                                            appKey:(NSString *)userAppKey;
+
+/*!
  * @abstract 获取群聊会话
  *
  * @param groupId 群聊群组ID。此 ID 由创建群组时返回的。
@@ -74,6 +80,13 @@ JMSG_ASSUME_NONNULL_BEGIN
  * 服务器端如果找不到该 username，或者某种原因查找失败，则创建会话失败。
  */
 + (void)createSingleConversationWithUsername:(NSString *)username
+                           completionHandler:(JMSGCompletionHandler JMSG_NULLABLE)handler;
+
+/*!
+ * @abstract 创建跨应用单聊会话
+ */
++ (void)createSingleConversationWithUsername:(NSString *)username
+                                      appKey:(NSString *)userAppKey
                            completionHandler:(JMSGCompletionHandler JMSG_NULLABLE)handler;
 
 /*!
@@ -99,6 +112,12 @@ JMSG_ASSUME_NONNULL_BEGIN
 + (BOOL)deleteSingleConversationWithUsername:(NSString *)username;
 
 /*!
+ * @abstract 删除跨应用单聊会话
+ */
++ (BOOL)deleteSingleConversationWithUsername:(NSString *)username
+                                      appKey:(NSString *)userAppKey;
+
+/*!
  * @abstract 删除群聊会话
  *
  * @param groupId 群聊群组ID
@@ -108,15 +127,24 @@ JMSG_ASSUME_NONNULL_BEGIN
 + (BOOL)deleteGroupConversationWithGroupId:(NSString *)groupId;
 
 /*!
- * @abstract 返回 conversation 列表（异步）
+ * @abstract 返回 conversation 列表（异步,已排序）
  *
  * @param handler 结果回调。正常返回时 resultObject 的类型为 NSArray，数组里成员的类型为 JMSGConversation
  *
- * @discussion 当前是返回所有的 conversation 列表。
+ * @discussion 当前是返回所有的 conversation 列表，默认是已经排序。
  * 我们设计上充分考虑到性能问题，数据库无关联表查询，性能应该不会差。
  * 但考虑到潜在的性能问题可能，此接口还是异步返回
  */
 + (void)allConversations:(JMSGCompletionHandler)handler;
+
+/*!
+ * @abstract 返回 conversation 列表（异步,没有排序）
+ *
+ * @param handler 结果回调。正常返回时 resultObject 的类型为 NSArray，数组里成员的类型为 JMSGConversation
+ *
+ * @discussion 返回所有的 conversation 列表，返回是没有排序的列表。
+ */
++ (void)allConversationsByDefault:(JMSGCompletionHandler)handler;
 
 
 
@@ -126,7 +154,6 @@ JMSG_ASSUME_NONNULL_BEGIN
 
 /*!
  * @abstract 会话标题
- * @discussion 会话头像没有属性字段, 应通过 avatarData: 方法异步去获取。
  */
 @property(nonatomic, strong, readonly) NSString * JMSG_NULLABLE title;
 
@@ -164,6 +191,16 @@ JMSG_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, strong, readonly) id target;
 
+/*!
+ * @abstract 会话目标用户所在的 appKey
+ *
+ * @discussion 这是为了跨应用聊天而新增的一个字段.
+ * 如果此字段为空, 则表示为默认的主应用.
+ *
+ * 单聊会话时, 如果单聊对象用户不属于主应用, 则此字段会有值.
+ *
+ */
+@property(nonatomic, strong, readonly) NSString *targetAppKey;
 
 
 ///----------------------------------------------------
@@ -303,13 +340,36 @@ JMSG_ASSUME_NONNULL_BEGIN
                 duration:(NSNumber *)duration;
 
 /*!
+ * @abstract 发送文件消息
+ * @param voiceData 文件消息数据
+ * @param fileName 文件名
+ * @discussion 快捷发送消息接口。如果发送文件消息不需要附加 extra，则使用此接口更方便。
+ */
+- (void)sendFileMessage:(NSData *)fileData
+               fileName:(NSString *)fileName;
+
+/*!
+ * @abstract 发送地理位置消息
+ * @param latitude 纬度
+ * @param longitude 经度
+ * @param scale 缩放比例
+ * @param address 详细地址
+ * @discussion 快捷发送消息接口。如果发送文件消息不需要附加 extra，则使用此接口更方便。
+ */
+- (void)sendLocationMessage:(NSNumber *)latitude
+                  longitude:(NSNumber *)longitude
+                      scale:(NSNumber *)scale
+                    address:(NSString *)address;
+
+/*!
  * @abstract 异步获取会话头像
  *
  * @param handler 结果回调。回调参数:
  *
  * - data 头像数据;
  * - objectId 为 targetId_conversationType 的组合, 用下划线隔开.
- *    其中 targetId 单聊时为 username, 群聊时为 groupId
+ *   其中 targetId 单聊时为 username_targetAppKey,
+ *                 群聊时为 groupId
  * - error 不为nil表示出错;
  *
  * 如果 error 为 ni, data 也为 nil, 表示没有数据.
@@ -330,6 +390,13 @@ JMSG_ASSUME_NONNULL_BEGIN
  * @discussion 把未读数设置为 0
  */
 - (void)clearUnreadCount;
+
+/*!
+ * @abstract 获取当前所有会话的未读消息的总数
+ *
+ * @discussion 获取所有会话未读消息总数
+ */
++ (NSNumber *)getAllUnreadCount;
 
 /*!
  * @abstract 获取最后一条消息的内容文本
@@ -361,7 +428,6 @@ JMSG_ASSUME_NONNULL_BEGIN
  * 此接口供暂时使用。JMessage 整体的 Sync 机制生效后，将不需要客户端主动去刷新信息。
  */
 - (void)refreshTargetInfoFromServer:(JMSGCompletionHandler)handler;
-
 
 ///----------------------------------------------------
 /// @name Class Normal 类基本方法

@@ -24,6 +24,12 @@
 #import <JMessage/JMSGTextContent.h>
 #import <JMessage/JMSGVoiceContent.h>
 #import <JMessage/JMessageDelegate.h>
+#import <JMessage/JMSGFileContent.h>
+#import <JMessage/JMSGFriendManager.h>
+#import <JMessage/JMSGNotificationEvent.h>
+#import <JMessage/JMSGFriendNotificationEvent.h>
+#import <JMessage/JMSGLocationContent.h>
+#import <JMessage/JMSGConstants.h>
 
 @protocol JMSGMessageDelegate;
 @protocol JMessageDelegate;
@@ -38,10 +44,10 @@
 @interface JMessage : NSObject
 
 /*! JMessage SDK 版本号。用于展示 SDK 的版本信息 */
-#define JMESSAGE_VERSION @"2.0.0"
+#define JMESSAGE_VERSION @"2.2.4"
 
 /*! JMessage SDK 构建ID. 每次构建都会增加 */
-#define JMESSAGE_BUILD 1056
+#define JMESSAGE_BUILD 29
 
 /*! API Version - int for program logic. SDK API 有变更时会增加 */
 extern NSInteger const JMESSAGE_API_VERSION;
@@ -129,7 +135,7 @@ extern NSInteger const JMESSAGE_API_VERSION;
  *
  * 建议在发布的版本里, 调用此接口, 关闭掉日志打印.
  *
- * 本接口与 [JPUSHService setLogOff] 效果是相同的, 只需要调用一个即可.
+ * 本接口与 [JPUSHService setLogOFF] 效果是相同的, 只需要调用一个即可.
  */
 + (void)setLogOFF;
 
@@ -152,6 +158,70 @@ extern NSInteger const JMESSAGE_API_VERSION;
  * 本接口内部并不会真实地发起数据库升级操作, 而仅用于发出开始与完成的通知, 以方便 App 来测试处理流程. 
  */
 + (void)testDBMigrating;
+
+/*!
+ *  @abstract 验证此 appKey 是否为当前应用 appKey
+ *
+ *  @param appKey
+ *
+ *  @return 是否为当前应用 appKey
+ */
++ (BOOL)isMainAppKey:(NSString *)appKey;
+
+/*!
+ * @abstract 用户免打扰列表
+ *
+ * @param handler 结果回调。回调参数：
+ *
+ * - resultObject 类型为 NSArray，数组里成员的类型为 JMSGUser、JMSGGroup
+ * - error 错误信息
+ *
+ * 如果 error 为 nil, 表示设置成功
+ * 如果 error 不为 nil,表示设置失败
+ *
+ * @discussion 从服务器获取，返回用户的免打扰列表。
+ * 建议开发者在 SDK 完全启动之后，再调用此接口获取数据
+ */
++ (void)noDisturbList:(JMSGCompletionHandler)handler;
+
+/*!
+ * @abstract 设置是否全局免打扰
+ *
+ * @param isNoDisturb 是否全局免打扰 YES:是 NO: 否
+ * @param handler 结果回调。回调参数：
+ *
+ * - resultObject 相应返回对象
+ * - error 错误信息
+ *
+ * 如果 error 为 nil, 表示设置成功
+ * 如果 error 不为 nil,表示设置失败
+ *
+ * @discussion 此函数为设置全局的消息免打扰
+ */
++ (void)setIsGlobalNoDisturb:(BOOL)isNoDisturb handler:(JMSGCompletionHandler)handler;
+
+/*!
+ * @abstract 判断是否设置全局免打扰
+ *
+ * @return YES/NO
+ */
++ (BOOL)isSetGlobalNoDisturb;
+
+/*!
+ * @abstract 黑名单列表
+ *
+ * @param handler 结果回调。回调参数：
+ *
+ * - resultObject 类型为 NSArray，数组里成员的类型为 JMSGUser
+ * - error 错误信息
+ *
+ * 如果 error 为 nil, 表示设置成功
+ * 如果 error 不为 nil,表示设置失败
+ *
+ * @discussion 从服务器获取，返回用户的黑名单列表。
+ * 建议开发者在 SDK 完全启动之后，再调用此接口获取数据
+ */
++ (void)blackList:(JMSGCompletionHandler)handler;
 
 @end
 

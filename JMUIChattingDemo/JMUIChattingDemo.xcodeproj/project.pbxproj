@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		624386A21E08F8A300F69E07 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 624386A11E08F8A300F69E07 /* libresolv.tbd */; };
 		62C020F21C3E2C980028B936 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C020F11C3E2C980028B936 /* main.m */; };
 		62C020F51C3E2C980028B936 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C020F41C3E2C980028B936 /* AppDelegate.m */; };
 		62C020FD1C3E2C980028B936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62C020FC1C3E2C980028B936 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		624386A11E08F8A300F69E07 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		62C020ED1C3E2C980028B936 /* JMUIChattingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMUIChattingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C020F11C3E2C980028B936 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		62C020F31C3E2C980028B936 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				624386A21E08F8A300F69E07 /* libresolv.tbd in Frameworks */,
 				62C0227F1C3E34990028B936 /* Photos.framework in Frameworks */,
 				62C0227D1C3E34920028B936 /* Accelerate.framework in Frameworks */,
 				62EA7F2B1D0E8A4800175A12 /* JMUIChattingKit.framework in Frameworks */,
@@ -102,6 +105,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		624386A01E08F8A300F69E07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				624386A11E08F8A300F69E07 /* libresolv.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		62C020E41C3E2C980028B936 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +120,7 @@
 				62C021091C3E2C980028B936 /* ApplicationDemoTests */,
 				62C021141C3E2C980028B936 /* ApplicationDemoUITests */,
 				62C020EE1C3E2C980028B936 /* Products */,
+				624386A01E08F8A300F69E07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

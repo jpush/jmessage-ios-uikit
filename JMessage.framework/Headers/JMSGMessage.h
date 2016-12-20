@@ -49,7 +49,7 @@
  * 参考 JMessageDelegate 里的说明.
  *
  */
-@interface JMSGMessage : NSObject <NSCopying, NSCoding>
+@interface JMSGMessage : NSObject <NSCopying>
 
 JMSG_ASSUME_NONNULL_BEGIN
 
@@ -100,6 +100,18 @@ JMSG_ASSUME_NONNULL_BEGIN
                        toUser:(NSString *)username;
 
 /*!
+ * @abstract 发送跨应用单聊文本消息
+ *
+ * @param text 文本内容
+ * @param username 单聊对象 username
+ *
+ * @discussion 快捷方法，不需要先创建消息而直接发送。
+ */
++ (void)sendSingleTextMessage:(NSString *)text
+                       toUser:(NSString *)username
+                       appKey:(NSString *)userAppKey;
+
+/*!
  * @abstract 发送单聊图片消息
  *
  * @param imageData 图片数据
@@ -109,6 +121,18 @@ JMSG_ASSUME_NONNULL_BEGIN
  */
 + (void)sendSingleImageMessage:(NSData *)imageData
                         toUser:(NSString *)username;
+
+/*!
+ * @abstract 发送跨应用单聊图片消息
+ *
+ * @param imageData 图片数据
+ * @param username 单聊对象 username
+ *
+ * @discussion 快捷方法，不需要先创建消息而直接发送。
+ */
++ (void)sendSingleImageMessage:(NSData *)imageData
+                        toUser:(NSString *)username
+                        appKey:(NSString *)userAppKey;
 
 /*!
  * @abstract 发送单聊语音消息
@@ -122,6 +146,79 @@ JMSG_ASSUME_NONNULL_BEGIN
 + (void)sendSingleVoiceMessage:(NSData *)voiceData
                  voiceDuration:(NSNumber *)duration
                         toUser:(NSString *)username;
+
+/*!
+ * @abstract 发送跨应用单聊语音消息
+ *
+ * @param voiceData 语音数据
+ * @param duration 语音时长
+ * @param username 单聊对象 username
+ *
+ * @discussion 快捷方法，不需要先创建消息而直接发送。
+ */
++ (void)sendSingleVoiceMessage:(NSData *)voiceData
+                 voiceDuration:(NSNumber *)duration
+                        toUser:(NSString *)username
+                        appKey:(NSString *)userAppKey;
+
+/*!
+ * @abstract 发送单聊文件消息
+ *
+ * @param fileData 文件数据数据
+ * @param fileName 文件名
+ * @param username 单聊对象 username
+ *
+ * @discussion 快捷方法，不需要先创建消息而直接发送。
+ */
++ (void)sendSingleFileMessage:(NSData *)fileData
+                     fileName:(NSString *)fileName
+                        toUser:(NSString *)username;
+
+/*!
+ * @abstract 发送跨应用单聊文件消息
+ *
+ * @param fileData 文件数据数据
+ * @param fileName 文件名
+ * @param username 单聊对象 username
+ *
+ * @discussion 快捷方法，不需要先创建消息而直接发送。
+ */
++ (void)sendSingleFileMessage:(NSData *)fileData
+                     fileName:(NSString *)fileName
+                        toUser:(NSString *)username
+                        appKey:(NSString *)userAppKey;
+
+/*!
+ * @abstract 发送单聊地理位置消息
+ * @param latitude 纬度
+ * @param longitude 经度
+ * @param scale 缩放比例
+ * @param address 详细地址
+ * @param username 单聊对象
+ * @discussion 快捷方法，不需要先创建消息而直接发送。
+ */
++ (void)sendSingleLocationMessage:(NSNumber *)latitude
+                  longitude:(NSNumber *)longitude
+                      scale:(NSNumber *)scale
+                    address:(NSString *)address
+                     toUser:(NSString *)username;
+
+/*!
+ * @abstract 发送跨应用单聊地理位置消息
+ * @param latitude 纬度
+ * @param longitude 经度
+ * @param scale 缩放比例
+ * @param address 详细地址
+ * @param username 单聊对象
+ * @param userAppKey 单聊对象的appKey
+ * @discussion 快捷方法，不需要先创建消息而直接发送。
+ */
++ (void)sendSingleLocationMessage:(NSNumber *)latitude
+                        longitude:(NSNumber *)longitude
+                            scale:(NSNumber *)scale
+                          address:(NSString *)address
+                           toUser:(NSString *)username
+                           appKey:(NSString *)userAppKey;
 
 /*!
  * @abstract 发送群聊文本消息
@@ -158,7 +255,32 @@ JMSG_ASSUME_NONNULL_BEGIN
                 voiceDuration:(NSNumber *)duration
                       toGroup:(NSString *)groupId;
 
+/*!
+ * @abstract 发送群聊文件消息
+ *
+ * @param fileData 文件数据
+ * @param fileName 文件名
+ * @param groupId 群聊目标群组ID
+ *
+ * @discussion 快捷方法，不需要先创建消息而直接发送。
+ */
++ (void)sendGroupFileMessage:(NSData *)fileData
+                fileName:(NSString *)fileName
+                      toGroup:(NSString *)groupId;
 
+/*!
+ * @abstract 发送群聊地理位置消息
+ * @param latitude 纬度
+ * @param longitude 经度
+ * @param scale 缩放比例
+ * @param address 详细地址
+* @param groupId 群聊目标群组ID
+ */
++ (void)sendGroupLocationMessage:(NSNumber *)latitude
+                        longitude:(NSNumber *)longitude
+                            scale:(NSNumber *)scale
+                          address:(NSString *)address
+                           toGroup:(NSString *)groupId;
 
 
 ///----------------------------------------------------
@@ -188,6 +310,29 @@ JMSG_ASSUME_NONNULL_BEGIN
  *      群聊是聊天群组, 也与当前会话的目标一致 [JMSGConversation target]
  */
 @property(nonatomic, strong, readonly) id<JMSGTargetProtocol> target;
+
+/*!
+ * @abstract 消息发送目标应用
+ *
+ * @discussion 这是为了支持跨应用聊天, 而新增的字段.
+ *
+ * 单聊时目标是 username. 当该用户为默认 appKey 时, 则不填此字段.
+ * 群聊时目标是 groupId, 不填写此字段.
+ *
+ * @since 2.1.0
+ */
+@property(nonatomic, strong, readonly) NSString *targetAppKey;
+
+/*!
+ * @abstract 消息来源用户 Appkey
+ *
+ * @discussion 这是为了支持跨应用聊天, 而新增的字段.
+ *
+ * 不管群聊还是单聊, from_id 都是发送消息的 username. 当该用户是默认 appKey 时, 则不填写此字段.
+ *
+ * @since 2.1.0
+ */
+@property(nonatomic, strong, readonly) NSString *fromAppKey;
 
 /*!
  * @abstract 消息来源用户
@@ -220,9 +365,15 @@ JMSG_ASSUME_NONNULL_BEGIN
 
 /*!
  * @abstract 消息发出的时间戳
- * @discussion 这是服务器端下发消息时的真实时间戳
+ * @discussion 这是服务器端下发消息时的真实时间戳，单位为毫秒
  */
 @property(nonatomic, strong, readonly) NSNumber *timestamp;
+
+/*!
+ * @abstract 消息中的fromName
+ * @discussion 消息的发送方展示名称
+ */
+@property(nonatomic, strong, readonly) NSString *fromName;
 
 
 ///----------------------------------------------------
@@ -291,19 +442,23 @@ JMSG_ASSUME_NONNULL_BEGIN
 - (instancetype)init NS_UNAVAILABLE;
 
 /*!
- * @abstract 设置该消息的 fromName
+ * @abstract 设置消息的 fromName(即:通知栏的展示名称)
  *
- * @param displayName 设置本条消息的发送方展示名称
+ * @param fromName 本条消息在接收方通知栏的展示名称
  *
- * @discussion 该信息填充在发出的消息里. 对方收到 Notification 时的提示的消息发送人, 也用此字段.
+ * @discussion fromName填充在发出的消息体里，对方收到该消息通知时,在通知栏显示的消息发送人名称就是该字段的值.
  *
- * JMessage SDK 内部默认从 [JMSGUser displayName] 去获取到 fromName 信息, 不存在时使用 username.
- * 如果集成此 SDK 没有设置用户信息的 nickname, 则对方收到通知时显示的消息发送人就显示的是 username.
- * 这时可以创建 JMSGMessage 对象后, 调用此方法来设置 fromName.
- *
- * 本设置会覆盖默认的 [JMSGUser displayName] 规则.
  */
-- (void)setFromName:(NSString * JMSG_NULLABLE)displayName;
+- (void)setFromName:(NSString * JMSG_NULLABLE)fromName;
+
+/*!
+ * @abstract 更新 message 中的extra
+ *
+ * @param value   待更新的value,不能为null,类型只能为 NSNumber 和 NSString
+ * @param key     待更新value对应的key,不能为null
+ *
+ */
+- (BOOL)updateMessageExtraValue:(id)value forKey:(NSString *)key;
 
 /*!
  * @abstract 更新消息标志
