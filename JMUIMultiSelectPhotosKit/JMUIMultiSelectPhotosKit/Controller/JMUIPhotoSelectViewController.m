@@ -19,8 +19,8 @@
 #import "JMUIPhotoPickerConstants.h"
 
 #define kPhotoGridViewFrame CGRectMake(0, 0, screenWidth,screenHeight - 45)
-#define kBrowserBtnFrame CGRectMake(13, 10, 35, 16)
-#define kSendBtnFrame CGRectMake(screenWidth - 45, 10, 35, 16)
+#define kBrowserBtnFrame CGRectMake(13, 10, 45, 16)
+#define kSendBtnFrame CGRectMake(screenWidth - 45, 10, 45, 30)
 
 @interface JMUIPhotoSelectViewController (){
   PHCachingImageManager *imageManager;

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		625C87C11E3069B2000E42AD /* JMUIMultiSelectPhotosKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625C87C01E3069B2000E42AD /* JMUIMultiSelectPhotosKit.framework */; };
 		62C020F21C3E2C980028B936 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C020F11C3E2C980028B936 /* main.m */; };
 		62C020F51C3E2C980028B936 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C020F41C3E2C980028B936 /* AppDelegate.m */; };
 		62C020FD1C3E2C980028B936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62C020FC1C3E2C980028B936 /* Assets.xcassets */; };
@@ -31,7 +32,6 @@
 		62C0227D1C3E34920028B936 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C0227C1C3E34920028B936 /* Accelerate.framework */; };
 		62C0227F1C3E34990028B936 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C0227E1C3E34990028B936 /* Photos.framework */; };
 		62EA7F1E1D0E87C600175A12 /* JMUICommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EA7F1D1D0E87C600175A12 /* JMUICommon.framework */; };
-		62EA7F231D0E893D00175A12 /* JMUIMultiSelectPhotosKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EA7F211D0E893D00175A12 /* JMUIMultiSelectPhotosKit.framework */; };
 		62EA7F241D0E893D00175A12 /* JMUIMultiSelectPhotosKitResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62EA7F221D0E893D00175A12 /* JMUIMultiSelectPhotosKitResource.bundle */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		625C87C01E3069B2000E42AD /* JMUIMultiSelectPhotosKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMUIMultiSelectPhotosKit.framework; sourceTree = "<group>"; };
 		62C020ED1C3E2C980028B936 /* JMUIMultiSelectPhotosDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMUIMultiSelectPhotosDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C020F11C3E2C980028B936 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		62C020F31C3E2C980028B936 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -85,7 +86,6 @@
 		62C0227E1C3E34990028B936 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		62C024101C3E3BE40028B936 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		62EA7F1D1D0E87C600175A12 /* JMUICommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMUICommon.framework; sourceTree = "<group>"; };
-		62EA7F211D0E893D00175A12 /* JMUIMultiSelectPhotosKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMUIMultiSelectPhotosKit.framework; sourceTree = "<group>"; };
 		62EA7F221D0E893D00175A12 /* JMUIMultiSelectPhotosKitResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JMUIMultiSelectPhotosKitResource.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +105,7 @@
 				62C022711C3E345E0028B936 /* CoreGraphics.framework in Frameworks */,
 				62C0226F1C3E34570028B936 /* CFNetwork.framework in Frameworks */,
 				62C0226D1C3E34500028B936 /* AVFoundation.framework in Frameworks */,
-				62EA7F231D0E893D00175A12 /* JMUIMultiSelectPhotosKit.framework in Frameworks */,
+				625C87C11E3069B2000E42AD /* JMUIMultiSelectPhotosKit.framework in Frameworks */,
 				62C0226B1C3E34490028B936 /* libsqlite3.0.tbd in Frameworks */,
 				62C022691C3E343F0028B936 /* CoreAudio.framework in Frameworks */,
 				62C022671C3E34230028B936 /* Security.framework in Frameworks */,
@@ -154,6 +154,7 @@
 		62C020EF1C3E2C980028B936 /* ApplicationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				625C87C01E3069B2000E42AD /* JMUIMultiSelectPhotosKit.framework */,
 				62C020F31C3E2C980028B936 /* AppDelegate.h */,
 				62C020F41C3E2C980028B936 /* AppDelegate.m */,
 				62C024101C3E3BE40028B936 /* RootViewController.h */,
@@ -197,7 +198,6 @@
 		62C022801C3E34B90028B936 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				62EA7F211D0E893D00175A12 /* JMUIMultiSelectPhotosKit.framework */,
 				62EA7F221D0E893D00175A12 /* JMUIMultiSelectPhotosKitResource.bundle */,
 				62EA7F1D1D0E87C600175A12 /* JMUICommon.framework */,
 				62C0227E1C3E34990028B936 /* Photos.framework */,

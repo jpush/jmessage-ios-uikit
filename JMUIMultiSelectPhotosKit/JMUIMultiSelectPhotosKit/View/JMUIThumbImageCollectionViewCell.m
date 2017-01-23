@@ -12,8 +12,8 @@
 @interface JMUIThumbImageCollectionViewCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *thumbImage;
 @property (weak, nonatomic) IBOutlet UIButton *seletStatusBtn;
-@property (strong, nonatomic)JMUIPhotoModel *thumbImageModel;
-@property (strong, nonatomic)JMUIPhotoSelectViewController *SelectImagedelegate;
+@property (weak, nonatomic)JMUIPhotoModel *thumbImageModel;
+@property (weak, nonatomic)JMUIPhotoSelectViewController *SelectImagedelegate;
 @end
 
 @implementation JMUIThumbImageCollectionViewCell

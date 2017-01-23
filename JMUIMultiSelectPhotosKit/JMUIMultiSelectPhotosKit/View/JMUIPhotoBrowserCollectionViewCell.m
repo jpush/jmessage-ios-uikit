@@ -9,7 +9,7 @@
 #import "JMUIPhotoBrowserCollectionViewCell.h"
 
 @interface JMUIPhotoBrowserCollectionViewCell ()<UIScrollViewDelegate>
-@property (strong, nonatomic)JMUIPhotoModel *photoModel;
+@property (weak, nonatomic)JMUIPhotoModel *photoModel;
 @property (strong, nonatomic)UIImageView *largeImage;
 @end
 
