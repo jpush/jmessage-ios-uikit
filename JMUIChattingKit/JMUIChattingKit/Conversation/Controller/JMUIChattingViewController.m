@@ -99,9 +99,18 @@ static NSInteger const messagefristPageNumber = 20;
 - (void)appendMessageShowTimeData:(NSNumber *)timeNumber {
   JMUIChatModel *lastModel = [_messageDatasource lastMessage];
   NSTimeInterval timeInterVal = [timeNumber longLongValue];
+  if (timeInterVal > 1999999999) {
+    timeInterVal /= 1000;
+  }
   
   if ([_messageDatasource messageCount] > 0 && lastModel.isTime == NO) {
-    NSDate* lastdate = [NSDate dateWithTimeIntervalSince1970:[lastModel.messageTime doubleValue]];
+    NSTimeInterval lastTimeInterVal = [lastModel.messageTime doubleValue];
+    
+    if (lastTimeInterVal > 1999999999) {
+      lastTimeInterVal /= 1000;
+    }
+    
+    NSDate* lastdate = [NSDate dateWithTimeIntervalSince1970:lastTimeInterVal];
     NSDate* currentDate = [NSDate dateWithTimeIntervalSince1970:timeInterVal];
     NSTimeInterval timeBetween = [currentDate timeIntervalSinceDate:lastdate];
     if (fabs(timeBetween) > interval) {
