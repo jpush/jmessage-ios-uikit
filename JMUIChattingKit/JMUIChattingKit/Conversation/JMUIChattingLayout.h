@@ -46,6 +46,8 @@
 - (void)showMoreView;
 
 - (void)showKeyboard:(CGFloat)keybordHeight;
+
+- (void)showKeyboard:(CGFloat)keybordHeight withDuration:(CGFloat)duration;
 /**
  *  隐藏弹出moreView
  */

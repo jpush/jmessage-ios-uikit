@@ -9,6 +9,7 @@
 #import "JMUIMessageContentView.h"
 #import "JMUIAudioPlayerHelper.h"
 #import "JMUIChatModel.h"
+@class JMUIMessageTableViewCell;
 
 @protocol playVoiceDelegate <NSObject>
 @optional
@@ -27,9 +28,11 @@
 @optional
 - (void)tapPicture :(NSIndexPath *)index
            tapView :(UIImageView *)tapView
-      tableViewCell:(UITableViewCell *)tableViewCell;
+      tableViewCell:(JMUIMessageTableViewCell *)tableViewCell;
 
-- (void)selectHeadView:(JMUIChatModel *)model;
+- (void)tapHeadView:(NSIndexPath *)index
+           headView:(UIImageView *)headView
+      tableViewCell:(JMUIMessageTableViewCell *)tableViewCell;
 @end
 
 
@@ -63,3 +66,5 @@ playVoiceDelegate,JMSGMessageDelegate>
 ;
 - (void)layoutAllView;
 @end
+
+

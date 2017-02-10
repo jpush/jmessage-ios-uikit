@@ -82,6 +82,24 @@ static CGFloat const animationDuration = 0.25;
   }
 }
 
+- (void)messageTableScrollToBottom:(BOOL)animation withDuration:(CGFloat)duration {
+  if (_messageListTable.contentSize.height + _messageListTable.contentInset.top > _messageListTable.frame.size.height)
+  {
+    CGPoint offset = CGPointMake(0, _messageListTable.contentSize.height - _messageListTable.frame.size.height);
+    if (animation) {
+      
+      [UIView animateWithDuration:duration animations:^{
+        [_messageListTable setContentOffset:offset];
+      }];
+      
+    } else {
+      [_messageListTable setContentOffset:offset animated:animation];
+      [_messageListTable setContentOffset:offset];
+    }
+  }
+}
+
+
 - (void)messageTableScrollToIndeCell:(NSInteger)index {
   [_messageListTable scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:index-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
 }
@@ -96,10 +114,13 @@ static CGFloat const animationDuration = 0.25;
   [self messageTableScrollToBottom:YES];
 }
 
-- (void)showKeyboard:(CGFloat)keybordHeight {
+- (void)showKeyboard:(CGFloat)keybordHeight withDuration:(CGFloat)duration {
   _jmuiinputView.jmui_top = kApplicationHeight - keybordHeight - 64 - _jmuiinputView.toolBar.jmui_height;
-  _messageListTable.jmui_height = [_messageListTable superview].jmui_height - _jmuiinputView.jmui_height;
-  [self messageTableScrollToBottom:YES];
+  
+  _messageListTable.jmui_height = [_messageListTable superview].jmui_height - keybordHeight - 45;
+  
+//  [self messageTableScrollToBottom:YES];
+  [self messageTableScrollToBottom:YES withDuration:duration];
 }
 
 - (void)hideMoreView {

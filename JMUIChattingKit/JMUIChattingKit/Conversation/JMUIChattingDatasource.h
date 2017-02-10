@@ -18,6 +18,9 @@
 @property (nonatomic, readonly)NSInteger messageLimit;     //每页刷新获取消息的条数
 @property (nonatomic, readonly)NSInteger messagefristPageNumber; //获取消息第一页的消息数量
 
+//NSMutableArray *_imgDataArr;
+@property (strong, nonatomic)NSMutableArray *imgMsgModelArr; //消息列表的所有图片消息
+
 @property (nonatomic, readonly)NSInteger showTimeInterval; //两条消息相隔多久显示一条时间戳
 
 - (instancetype)initWithConversation:(JMSGConversation*)session
@@ -49,6 +52,16 @@
  *  分页获取历史消息
  */
 - (void)getPageMessage;
+
+/**
+ *  分页获取历史消息
+ */
+- (void)getMoreMessage;
+
+/**
+ *  分页获取历史消息
+ */
+- (NSInteger)getImageIndex:(JMUIChatModel *)model;
 
 /**
  *  返回消息数量

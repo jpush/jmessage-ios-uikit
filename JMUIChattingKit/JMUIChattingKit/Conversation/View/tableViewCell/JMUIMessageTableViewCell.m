@@ -84,7 +84,7 @@ static NSInteger const readViewRadius = 4;
   [_messageContent setUserInteractionEnabled:YES];
   
   UITapGestureRecognizer *tapHeadGesture =[[UITapGestureRecognizer alloc] initWithTarget:self
-                                                                                  action:@selector(pushPersonInfoCtlClick)];
+                                                                                  action:@selector(tapHeadImage:)];
   [_headView addGestureRecognizer:tapHeadGesture];
   [_headView setUserInteractionEnabled:YES];
   UITapGestureRecognizer *tapFailViewGesture =[[UITapGestureRecognizer alloc] initWithTarget:self
@@ -101,6 +101,7 @@ static NSInteger const readViewRadius = 4;
   _indexPath = indexPath;
   _delegate = delegate;
   
+  [self.headView setImage:[UIImage jmuiChatting_imageInResource:@"headDefalt"]];
   [model.message.fromUser thumbAvatarData:^(NSData *data, NSString *objectId, NSError *error) {
     if (error == nil) {
       JMSGUser *user = ((JMSGUser *)self.model.message.fromUser);
@@ -258,9 +259,14 @@ static NSInteger const readViewRadius = 4;
 }
 
 #pragma -mark gesture
-- (void)pushPersonInfoCtlClick {
+- (void)tapHeadImage:(UIGestureRecognizer *)gesture {
   if (self.delegate && [self.delegate respondsToSelector:@selector(selectHeadView:)]) {
     [self.delegate selectHeadView:self.model];
+  }
+  
+  if (self.delegate && [(id<PictureDelegate>)self.delegate respondsToSelector:@selector(tapHeadView:headView:tableViewCell:)]) {
+    
+    [(id<PictureDelegate>)self.delegate tapHeadView:_indexPath headView:(UIImageView *)gesture.view tableViewCell:self];
   }
 }
 

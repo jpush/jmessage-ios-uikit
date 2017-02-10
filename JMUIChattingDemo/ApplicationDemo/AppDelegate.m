@@ -25,7 +25,7 @@
                   channel:CHANNEL apsForProduction:NO
                  category:nil];
   if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
-    //可以添加自定义categories
+//    可以添加自定义categories
     [JPUSHService registerForRemoteNotificationTypes:(UIUserNotificationTypeBadge |
                                                       UIUserNotificationTypeSound |
                                                       UIUserNotificationTypeAlert)

@@ -56,6 +56,10 @@
 		62317F3E1C9EFC5C0028FA22 /* voice_toolbar_pre@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62317F101C9EFC5C0028FA22 /* voice_toolbar_pre@3x.png */; };
 		62317F3F1C9EFC5C0028FA22 /* voice_toolbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62317F111C9EFC5C0028FA22 /* voice_toolbar@2x.png */; };
 		62317F401C9EFC5C0028FA22 /* voice_toolbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62317F121C9EFC5C0028FA22 /* voice_toolbar@3x.png */; };
+		623BBAE61E4AC8E400186A4D /* UIImage+ResizeMagick.m in Sources */ = {isa = PBXBuildFile; fileRef = 623BBAE41E4AC8E400186A4D /* UIImage+ResizeMagick.m */; };
+		623BBAE71E4AC8E400186A4D /* UIImage+ResizeMagick.h in Headers */ = {isa = PBXBuildFile; fileRef = 623BBAE51E4AC8E400186A4D /* UIImage+ResizeMagick.h */; };
+		623BBC1D1E4C374900186A4D /* JMUIMessageTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 623BBC1B1E4C374900186A4D /* JMUIMessageTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		623BBC1E1E4C374900186A4D /* JMUIMessageTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 623BBC1C1E4C374900186A4D /* JMUIMessageTableView.m */; };
 		62719C1C1D585CF70078B18D /* JMUIAudioPlayerHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C028A41C3F97B40028B936 /* JMUIAudioPlayerHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C028C91C3F97B40028B936 /* JMUIChattingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C0287B1C3F97B40028B936 /* JMUIChattingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C028CA1C3F97B40028B936 /* JMUIChattingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C0287C1C3F97B40028B936 /* JMUIChattingViewController.m */; };
@@ -170,6 +174,10 @@
 		62317F101C9EFC5C0028FA22 /* voice_toolbar_pre@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voice_toolbar_pre@3x.png"; sourceTree = "<group>"; };
 		62317F111C9EFC5C0028FA22 /* voice_toolbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voice_toolbar@2x.png"; sourceTree = "<group>"; };
 		62317F121C9EFC5C0028FA22 /* voice_toolbar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voice_toolbar@3x.png"; sourceTree = "<group>"; };
+		623BBAE41E4AC8E400186A4D /* UIImage+ResizeMagick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeMagick.m"; sourceTree = "<group>"; };
+		623BBAE51E4AC8E400186A4D /* UIImage+ResizeMagick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeMagick.h"; sourceTree = "<group>"; };
+		623BBC1B1E4C374900186A4D /* JMUIMessageTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMUIMessageTableView.h; sourceTree = "<group>"; };
+		623BBC1C1E4C374900186A4D /* JMUIMessageTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMUIMessageTableView.m; sourceTree = "<group>"; };
 		62C028451C3F979C0028B936 /* JMUIChattingKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JMUIChattingKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C028481C3F979C0028B936 /* JMUIChattingKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMUIChattingKit.h; sourceTree = "<group>"; };
 		62C0284A1C3F979C0028B936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -411,6 +419,8 @@
 		62C028841C3F97B40028B936 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				623BBC1B1E4C374900186A4D /* JMUIMessageTableView.h */,
+				623BBC1C1E4C374900186A4D /* JMUIMessageTableView.m */,
 				62C02CE51C4629950028B936 /* JMUIChattingReuseCellMaker.h */,
 				62C02CE61C4629950028B936 /* JMUIChattingReuseCellMaker.m */,
 				62C028851C3F97B40028B936 /* JMUIMessageContentView.h */,
@@ -491,6 +501,8 @@
 			children = (
 				62C02CD81C4627F70028B936 /* UIImage+JMUIChatting.h */,
 				62C02CD91C4627F70028B936 /* UIImage+JMUIChatting.m */,
+				623BBAE41E4AC8E400186A4D /* UIImage+ResizeMagick.m */,
+				623BBAE51E4AC8E400186A4D /* UIImage+ResizeMagick.h */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -513,7 +525,9 @@
 				62C02CE11C46293C0028B936 /* JMUISendMsgController.h in Headers */,
 				62C02CDA1C4627F70028B936 /* UIImage+JMUIChatting.h in Headers */,
 				62C02CE31C46293C0028B936 /* JMUISendMsgManager.h in Headers */,
+				623BBC1D1E4C374900186A4D /* JMUIMessageTableView.h in Headers */,
 				62719C1C1D585CF70078B18D /* JMUIAudioPlayerHelper.h in Headers */,
+				623BBAE71E4AC8E400186A4D /* UIImage+ResizeMagick.h in Headers */,
 				62C0295B1C4298250028B936 /* JMUIInputToolbar.xib in Headers */,
 				62C0295C1C4298250028B936 /* JMUIMoreView.xib in Headers */,
 				62C0295A1C4298110028B936 /* JMUIShowTimeCell.xib in Headers */,
@@ -684,6 +698,7 @@
 				62C028D61C3F97B40028B936 /* JMUIMessageTableViewCell.m in Sources */,
 				62C028D41C3F97B40028B936 /* JMUILoadMessageTableViewCell.m in Sources */,
 				62C028F11C3F97B40028B936 /* JMUIMessageTextView.m in Sources */,
+				623BBAE61E4AC8E400186A4D /* UIImage+ResizeMagick.m in Sources */,
 				62C028EC1C3F97B40028B936 /* JMUIInputToolbar.m in Sources */,
 				62C028EF1C3F97B40028B936 /* JMUIInputView.m in Sources */,
 				62C028F61C3F97B40028B936 /* JMUIRecordAnimationView.m in Sources */,
@@ -692,6 +707,7 @@
 				62C028CA1C3F97B40028B936 /* JMUIChattingViewController.m in Sources */,
 				62C028CC1C3F97B40028B936 /* JMUIChattingDatasource.m in Sources */,
 				62C02CE21C46293C0028B936 /* JMUISendMsgController.m in Sources */,
+				623BBC1E1E4C374900186A4D /* JMUIMessageTableView.m in Sources */,
 				62C028D81C3F97B40028B936 /* JMUIShowTimeCell.m in Sources */,
 				62C028EA1C3F97B40028B936 /* JMUIAudioPlayerHelper.m in Sources */,
 				62C02CDB1C4627F70028B936 /* UIImage+JMUIChatting.m in Sources */,

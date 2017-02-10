@@ -7,10 +7,12 @@
 //
 
 #import "JMUIChattingDatasource.h"
+#import "JMUIMessageTableViewCell.h"
 
 @interface JMUIChattingDatasource (){
   NSInteger messageOffset;//当前获取消息的指针
   BOOL isNoMoreHistoryMsg;
+  JMUIMessageTableViewCell *messageCell;
 }
 
 @end
@@ -28,6 +30,8 @@
     isNoMoreHistoryMsg = NO;
     _allMessageDic = @{}.mutableCopy;
     _allMessageIdArr = @[].mutableCopy;
+    _imgMsgModelArr = @[].mutableCopy;
+    messageCell = [[JMUIMessageTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ToGetSizeCell"];
   }
   return self;
 }
@@ -47,16 +51,39 @@
     [_allMessageIdArr removeObjectAtIndex:0];
   }
   
-  for (NSInteger i=0; i< [arrList count]; i++) {
-    JMSGMessage *message = [arrList objectAtIndex:i];
+  for (JMSGMessage *message in arrList) {
     JMUIChatModel *model = [[JMUIChatModel alloc] init];
     [model setChatModelWith:message conversationType:_conversation];
     if (message.contentType == kJMSGContentTypeImage) {
+      [self.imgMsgModelArr addObject:model];
     }
     
     [self dataMessageShowTime:message.timestamp];
     [_allMessageDic setObject:model forKey:model.message.msgId];
     [_allMessageIdArr addObject:model.message.msgId];
+  }
+}
+
+- (void)getMoreMessage {
+  NSMutableArray *arrList = @[].mutableCopy;
+  [arrList addObjectsFromArray:[_conversation messageArrayFromNewestWithOffset:@(messageOffset) limit:@(_messageLimit)]];
+  messageOffset = messageOffset + _messageLimit;
+  if ([arrList count] < _messageLimit) {
+    isNoMoreHistoryMsg = YES;
+    [_allMessageIdArr removeObjectAtIndex:0];
+  }
+  
+  for (JMSGMessage *message in arrList) {
+    JMUIChatModel *model = [[JMUIChatModel alloc] init];
+    [model setChatModelWith:message conversationType:_conversation];
+    
+    if (message.contentType == kJMSGContentTypeImage) {
+      [_imgMsgModelArr insertObject:model atIndex:0];
+    }
+    
+    [_allMessageDic setObject:model forKey:model.message.msgId];
+    [_allMessageIdArr insertObject:model.message.msgId atIndex: isNoMoreHistoryMsg?0:1];
+    [self dataMessageShowTimeToTop:message.timestamp];
   }
 }
 
@@ -67,6 +94,9 @@
   } else {
     [_allMessageDic setObject:model forKey:model.message.msgId];
     [_allMessageIdArr addObject:model.message.msgId];
+    if(model.message.contentType == kJMSGContentTypeImage) {
+      [_imgMsgModelArr addObject:model];
+    }
   }
 }
 
@@ -99,7 +129,6 @@
     timeInterVal /= 1000;
   }
   
-  
   if ([_allMessageIdArr count]>0 && lastModel.isTime == NO) {
     NSTimeInterval lastTimeInterVal = [lastModel.messageTime doubleValue];
     
@@ -131,6 +160,51 @@
     NSLog(@"不用显示时间");
   }
 }
+
+- (void)dataMessageShowTimeToTop:(NSNumber *)timeNumber{
+  NSTimeInterval timeInterVal = [timeNumber longLongValue];
+  
+  //     时间为毫秒时，转换成秒
+  if (timeInterVal > 1999999999) {
+    timeInterVal = floor(timeInterVal / 1000);
+  }
+  
+  NSString* fristID = _allMessageIdArr[isNoMoreHistoryMsg?1:2];
+  JMUIChatModel *fristModel = _allMessageDic[fristID];
+  
+  if ([_allMessageIdArr count]>0 && fristModel.isTime == NO) {
+    
+    
+    if ([fristModel.messageTime longLongValue] > 1999999999) {
+      fristModel.messageTime = [NSNumber numberWithLongLong:floor([fristModel.messageTime longLongValue] / 1000)];
+    }
+    
+    NSDate* fristDate = [NSDate dateWithTimeIntervalSince1970:[fristModel.messageTime doubleValue]];
+    
+    NSDate* currentDate = [NSDate dateWithTimeIntervalSince1970:timeInterVal];
+    NSTimeInterval timeBetween = [currentDate timeIntervalSinceDate:fristDate];
+    if (fabs(timeBetween) > _showTimeInterval) {
+      JMUIChatModel *timeModel =[[JMUIChatModel alloc] init];
+      timeModel.timeId = [self getTimeId];
+      timeModel.isTime = YES;
+      timeModel.messageTime = @(timeInterVal);
+      timeModel.contentHeight = [timeModel getTextHeight];
+      [_allMessageDic setObject:timeModel forKey:timeModel.timeId];
+      [_allMessageIdArr insertObject:timeModel.timeId atIndex: isNoMoreHistoryMsg?0:1];
+    }
+  } else if ([_allMessageIdArr count] ==0) {//首条消息显示时间
+    JMUIChatModel *timeModel =[[JMUIChatModel alloc] init];
+    timeModel.timeId = [self getTimeId];
+    timeModel.isTime = YES;
+    timeModel.messageTime = @(timeInterVal);
+    timeModel.contentHeight = [timeModel getTextHeight];
+    [_allMessageDic setObject:timeModel forKey:timeModel.timeId];
+    [_allMessageIdArr insertObject:timeModel.timeId atIndex: isNoMoreHistoryMsg?0:1];
+  } else {
+    NSLog(@"不用显示时间"); //
+  }
+}
+
 
 - (JMUIChatModel *)getMessageWithIndex:(NSInteger)index {
   NSString *messageId = _allMessageIdArr[index];
@@ -166,4 +240,11 @@
   NSString *timeId = [NSString stringWithFormat:@"%d",arc4random()%1000000];
   return timeId;
 }
+
+- (NSInteger)getImageIndex:(JMUIChatModel *)model {
+  if([_imgMsgModelArr count] == 0) { return 0; }
+  
+  return [_imgMsgModelArr indexOfObject:model];
+}
+
 @end

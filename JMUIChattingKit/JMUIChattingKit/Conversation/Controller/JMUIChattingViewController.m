@@ -8,11 +8,15 @@
 
 #import "JMUIChattingViewController.h"
 #import "JMUIChattingReuseCellMaker.h"
+#import "UIImage+ResizeMagick.h"
+#import "JMUISendMsgManager.h"
+
 #import <JMUICommon/JMUICommon.h>
 #import "JMUIChattingDatasource.h"
 #import "JMUIChattingLayout.h"
 #import <JMUICommon/MBProgressHUD+Add.h>
 #import <JMUICommon/MBProgressHUD.h>
+#import <MobileCoreServices/UTCoreTypes.h>
 
 #define messageTableColor [UIColor colorWithRed:236/255.0 green:237/255.0 blue:240/255.0 alpha:1]
 
@@ -56,6 +60,10 @@ static NSInteger const messagefristPageNumber = 20;
                                            selector:@selector(inputKeyboardWillHide:)
                                                name:UIKeyboardWillHideNotification
                                              object:nil];
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(keyboardFrameChange:)
+                                               name:UIKeyboardWillChangeFrameNotification
+                                             object:nil];
 }
 
 - (void)setupData {
@@ -67,7 +75,7 @@ static NSInteger const messagefristPageNumber = 20;
 }
 
 - (void)setupAllViews {
-  _messageListTable = [[UITableView alloc] initWithFrame:CGRectZero];
+  _messageListTable = [[JMUIMessageTableView alloc] initWithFrame:CGRectZero];
   _messageListTable.delegate = self;
   _messageListTable.dataSource = self;
   _jmuiInputView = [JMUIInputView new];
@@ -262,6 +270,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
       JMUILoadMessageTableViewCell *cell = [JMUIChattingReuseCellMaker LoadingCellInTable:_messageListTable];
       [cell startLoading];
+      [self performSelector:@selector(flashToLoadMessage) withObject:nil afterDelay:0];
       return cell;
     }
   }
@@ -276,6 +285,34 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     [cell setCellData:model delegate:self indexPath:indexPath];
     return cell;
   }
+}
+
+- (void)flashToLoadMessage {
+//  NSMutableArray * arrList = @[].mutableCopy;
+//  NSArray *newMessageArr = [_conversation messageArrayFromNewestWithOffset:@(messageOffset) limit:@(messagePageNumber)];
+//  [arrList addObjectsFromArray:newMessageArr];
+//  if ([arrList count] < messagePageNumber) {// 判断还有没有新数据
+//    isNoOtherMessage = YES;
+//    [_allmessageIdArr removeObjectAtIndex:0];
+//  }
+//  
+//  messageOffset += messagePageNumber;
+//  for (NSInteger i = 0; i < [arrList count]; i++) {
+//    JMSGMessage *message = arrList[i];
+//    JCHATChatModel *model = [[JCHATChatModel alloc] init];
+//    [model setChatModelWith:message conversationType:_conversation];
+//    
+//    if (message.contentType == kJMSGContentTypeImage) {
+//      [_imgDataArr insertObject:model atIndex:0];
+//      model.photoIndex = [_imgDataArr count] - 1;
+//    }
+//    
+//    [_allMessageDic setObject:model forKey:model.message.msgId];
+//    [_allmessageIdArr insertObject:model.message.msgId atIndex: isNoOtherMessage?0:1];
+//    [self dataMessageShowTimeToTop:message.timestamp];// FIXME:
+//  }
+  [self.messageDatasource getMoreMessage];
+  [_messageListTable loadMoreMessage];
 }
 
 #pragma -mark JMUIToolBarDelegate
@@ -441,17 +478,114 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 }
 
 #pragma -mark JMUIMoreViewDelegate
+- (void)cameraClick {
+  UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+  
+  if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    NSString *requiredMediaType = ( NSString *)kUTTypeImage;
+    NSArray *arrMediaTypes=[NSArray arrayWithObjects:requiredMediaType,nil];
+    [picker setMediaTypes:arrMediaTypes];
+    picker.showsCameraControls = YES;
+    picker.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    picker.editing = YES;
+    picker.delegate = self;
+    [self presentViewController:picker animated:YES completion:nil];
+  }
+}
 
+- (void)photoClick {
+  if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) return;
+  UIImagePickerController *ipc = [[UIImagePickerController alloc] init];
+  ipc.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+  ipc.delegate = self;
+  [self presentViewController:ipc animated:YES completion:nil];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
+  NSString *mediaType = [info objectForKey:UIImagePickerControllerMediaType];
+  
+  if ([mediaType isEqualToString:@"public.movie"]) {
+    [self dismissViewControllerAnimated:YES completion:nil];
+    [MBProgressHUD showMessage:@"不支持视频发送" view:self.view];
+    return;
+  }
+  UIImage *image;
+  image = [info objectForKey:UIImagePickerControllerOriginalImage];
+  [self prepareImageMessage:image];
+//  [self dropToolBarNoAnimate]; // TODO: fix it
+  [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark --发送图片
+- (void)prepareImageMessage:(UIImage *)img {
+  img = [img resizedImageByWidth:upLoadImgWidth];
+  
+  JMSGMessage* message = nil;
+  JMUIChatModel *model = [[JMUIChatModel alloc] init];
+  JMSGImageContent *imageContent = [[JMSGImageContent alloc] initWithImageData:UIImagePNGRepresentation(img)];
+  if (imageContent) {
+    message = [_conversation createMessageWithContent:imageContent];
+    [[JMUISendMsgManager ins] addMessage:message withConversation:_conversation];
+    [self appendMessageShowTimeData:message.timestamp];
+    [model setChatModelWith:message conversationType:_conversation];
+    
+    [model setupImageSize];
+    [self appendMessage:model];
+  }
+}
 
 #pragma -mark Notification listener
+- (void)keyboardFrameChange:(NSNotification *)notification {
+//  let dic = NSDictionary(dictionary: (notification as NSNotification).userInfo!)
+  NSDictionary *dic = notification.userInfo;
+  NSValue *keyboardValue = dic[UIKeyboardFrameEndUserInfoKey];
+  CGFloat bottomDistance = [UIScreen mainScreen].bounds.size.height - keyboardValue.CGRectValue.origin.y;
+  NSNumber *duration = dic[UIKeyboardAnimationDurationUserInfoKey];
+  
+//  [UIView animateWithDuration:duration.doubleValue animations:^{
+    [_conversationLayout showKeyboard: bottomDistance withDuration:duration.floatValue];
+//  }];
+  
+  
+//  let keyboardValue = dic.object(forKey: UIKeyboardFrameEndUserInfoKey) as! NSValue
+//  let bottomDistance = UIScreen.main.bounds.size.height - keyboardValue.cgRectValue.origin.y
+//  let duration = Double(dic.object(forKey: UIKeyboardAnimationDurationUserInfoKey) as! NSNumber)
+//  
+//  UIView.animate(withDuration: duration, animations: {
+//    self.messageInputView.moreView?.snp.updateConstraints({ (make) -> Void in
+//      make.height.equalTo(bottomDistance)
+//    })
+//    self.view.layoutIfNeeded()
+//  }, completion: {
+//    (value: Bool) in
+//  })
+}
 - (void)inputKeyboardWillShow:(NSNotification *)notification {
-  CGRect keyBoardFrame = [[[notification userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
-  [_conversationLayout showKeyboard: keyBoardFrame.size.height];
+//  CGRect keyBoardFrame = [[[notification userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
+//  [_conversationLayout showKeyboard: keyBoardFrame.size.height];
 }
 
 - (void)inputKeyboardWillHide:(NSNotification *)notification {
 
 }
+
+- (void)tapPicture :(NSIndexPath *)index
+           tapView :(UIImageView *)tapView
+      tableViewCell:(JMUIMessageTableViewCell *)tableViewCell {
+  // TODO: get image model
+//  JMUIChatModel *model = tableViewCell.model;
+//  [_messageDatasource getImageIndex:model];   //获得点击图片所在图片的位置
+//  _messageDatasource.imgMsgModelArr;  // 当前会话所有显示的图片 model（JMUIChatModel）
+  NSLog(@"tap image content");
+}
+
+- (void)tapHeadView:(NSIndexPath *)index
+           headView:(UIImageView *)headView
+      tableViewCell:(JMUIMessageTableViewCell *)tableViewCell {
+  NSLog(@"tap header");
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

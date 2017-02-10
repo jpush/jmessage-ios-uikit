@@ -13,18 +13,20 @@
 #import <JMessage/JMessage.h>
 #import "JMUIAudioPlayerHelper.h"
 #import <JMUICommon/JMUICommon.h>
+#import "JMUIMessageTableView.h"
 
 @interface JMUIConversationViewController : UIViewController<
 UITableViewDataSource,
 UITableViewDelegate,
 JMUIToolBarDelegate,
 JMUIMoreViewDelegate,
-JMessageDelegate
+JMessageDelegate,
+UIImagePickerControllerDelegate
 >
 
 @property (strong, nonatomic)JMSGConversation *conversation;
 @property (strong, nonatomic)JMUIInputView *jmuiInputView;
-@property (strong, nonatomic)UITableView *messageListTable;
+@property (strong, nonatomic)JMUIMessageTableView *messageListTable;
 
 /**
  *  管理录音工具对象
