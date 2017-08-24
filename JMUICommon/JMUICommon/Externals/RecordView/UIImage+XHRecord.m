@@ -10,7 +10,7 @@
 
 @implementation UIImage (XHRecord)
 + (UIImage *)xhrecord_imageInResource:(NSString *)imageName {
-  UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"JMUIComman.framework/RecordViewResources.bundle/%@@2x.png",imageName]];
+  UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"JMUIChattingKitResource.bundle/%@@2x.png",imageName]];
   return image;
 }
 @end
