@@ -1,5 +1,9 @@
 # jmessage-ios-uikit
-### 本库不再维护建议使用 [aurora-imui](https://github.com/jpush/aurora-imui) ，[JMessage 和 aurora-imui demo](https://github.com/jpush/aurora-imui-examples/tree/master/JMessage-example/iOS)
+#### 本库不再维护, 建议使用 [aurora-imui](https://github.com/jpush/aurora-imui) ,这个库相对跟灵活和简单。
+
+>  具体可以参考[JMessage 适配 aurora-imui demo](https://github.com/jpush/aurora-imui-examples/tree/master/JMessage-example)。
+
+
 
 本项目为极光IM iOS SDK 提供配套的 UI组件。
 
