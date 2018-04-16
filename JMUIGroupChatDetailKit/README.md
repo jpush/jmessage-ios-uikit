@@ -22,7 +22,7 @@ IM SDK UI 组件
 5.添加JMessage.framework库到自己工程
 ![image](https://github.com/jpush/jmessage-ios-uikit/blob/master/JMUIGroupChatDetailKit/README_JMUIGroupChatDetailKit说明图/添加JMessage库到自己工程.gif)
 
-6.添加JMessage SDK 到自己工程 并且根据官网的集成文档集成该framework [JMessage 集成教程](http://docs.jpush.io/guideline/jmessage_ios_guide/)
+6.添加JMessage SDK 到自己工程 并且根据官网的集成文档集成该framework [JMessage 集成教程](https://docs.jiguang.cn/jmessage/guideline/jmessage_guide/)
 
 
 
